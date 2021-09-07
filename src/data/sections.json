@@ -39,10 +39,10 @@
   "slider_v2": {
     "items": [
       {
-        "title1": "Better",
-        "title2": "promotes sales & profits",
-        "title_color": "software",
-        "description": "There are many variations of passages of Lorem Ipsum available, </br> but the majority have suffered alteration.",
+        "title1": "Grow Your Business",
+        "title2": "With Our Solutions",
+        "title_color": "",
+        "description": "INCREASE YOUR MAXIMUM BRAND VISIBILITY THROUGH OUR BI-DIRECTIONAL LOYALTY PROGRAM &amp; REAL-TIME MARKET ANALYSIS IN AFFORDABLE PRICING PLANS AND FREEMIUM PLANS",
         "button1_image": "assets/img/banner/4.png",
         "button1_url": "#",
         "button2_image": "assets/img/banner/5.png",
@@ -52,10 +52,10 @@
         "video_text": "Watch the Video"
       },
       {
-        "title1": "Crafting online",
-        "title2": "for you",
-        "title_color": "software",
-        "description": "There are many variations of passages of Lorem Ipsum available, </br> but the majority have suffered alteration.",
+        "title1": "ON - JOB TRAINING",
+        "title2": "",
+        "title_color": "",
+        "description": "Invaluable assets for achieving gainful employment",
         "button1_image": "assets/img/banner/4.png",
         "button1_url": "#",
         "button2_image": "assets/img/banner/5.png",
@@ -65,10 +65,10 @@
         "video_text": "Watch the Video"
       },
       {
-        "title1": "Most advantage",
+        "title1": "Migobucks",
         "title2": "",
-        "title_color": "Technology",
-        "description": "There are many variations of passages of Lorem Ipsum available, </br> but the majority have suffered alteration.",
+        "title_color": "App",
+        "description": "Shop, Share & Impress ",
         "button1_image": "assets/img/banner/4.png",
         "button1_url": "#",
         "button2_image": "assets/img/banner/5.png",
@@ -108,10 +108,9 @@
         "image_url": "assets/img/banner/7.png",
         "btntxt": "Read More"
       }
-
     ]
   },
-    "slider_v4": {
+  "slider_v4": {
     "items": [
       {
         "title1": "We Can Solve Your",
@@ -119,16 +118,16 @@
         "description": "There are many variations of passages of Lorem Ipsum available,  ",
         "description2": "but the majority have suffered alteration.",
         "image_url": "assets/img/banner/9.png",
-        "url":"#",
+        "url": "#",
         "btntxt": "Read More"
-      }, 
+      },
       {
         "title1": "Turning  all Ideas Into Real",
         "title_color": "Success",
         "description": "There are many variations of passages of Lorem Ipsum available,  ",
         "description2": "but the majority have suffered alteration.",
         "image_url": "assets/img/banner/10.png",
-        "url":"#",
+        "url": "#",
         "btntxt": "Read More"
       },
       {
@@ -137,15 +136,14 @@
         "description": "There are many variations of passages of Lorem Ipsum available,  ",
         "description2": "but the majority have suffered alteration.",
         "image_url": "assets/img/banner/10.png",
-        "url":"#",
+        "url": "#",
         "btntxt": "Read More"
       }
-
     ]
   },
   "banner": {
     "title": "Turning <br /> all Ideas Into <br /> Real <span>Success</span>",
-    "subtitle":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.",
+    "subtitle": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.",
     "btn_text": "Read More",
     "image_url1": "assets/img/startup/slider/1.png",
     "image_url2": "assets/img/startup/slider/2.png",
@@ -155,32 +153,31 @@
   },
   "bannerv2": {
     "title": "Riyaqas",
-    "subtitle":"Find the Best Solution",
+    "subtitle": "Find the Best Solution",
     "btn_text1": "Try For Free",
     "btn_text2": "Get Started",
     "bannerimage": "assets/img/banner/6.png"
   },
-    "bannerv3": {
+  "bannerv3": {
     "title": "We are the Best",
-    "secitoncolor":"Problem Solution",
-    "subtitle":"Provider company",
-    "content1":"There are many variations of passages of Lorem Ipsum available,",
-    "content2":"but the majority have suffered.",
+    "secitoncolor": "Problem Solution",
+    "subtitle": "Provider company",
+    "content1": "There are many variations of passages of Lorem Ipsum available,",
+    "content2": "but the majority have suffered.",
     "btntxt": "Read More",
     "bannerimage": "assets/img/banner/8.png",
     "bg": "assets/img/bg/sbbs-bg.png",
-    "videourl":"https://www.youtube.com/watch?v=c7XEhXZ_rsk"
+    "videourl": "https://www.youtube.com/watch?v=c7XEhXZ_rsk"
   },
-   "bannerv4": {
+  "bannerv4": {
     "title": "Grow your retail faster with Riyaqas",
-    "secitoncolor":"POS software",
-    "subtitle":"Provider company",
-    "content1":"Riyaqas is a leading retail POS software in the cloud with everything ",
-    "content2":"you need to run & grow and helpfull for your business.",
+    "secitoncolor": "POS software",
+    "subtitle": "Provider company",
+    "content1": "Riyaqas is a leading retail POS software in the cloud with everything ",
+    "content2": "you need to run & grow and helpfull for your business.",
     "btntxt1": "Start Free trial",
     "btntxt2": "Get Premium",
     "bannerimage": "assets/img/banner/12.png"
-
   },
   "features": {
     "sectiontitle": "Awesome <br/> App",
@@ -211,35 +208,34 @@
         "icon": "assets/img/features/4.png",
         "content": "Our support team will get assistance from AI-powered suggestions."
       }
-
     ]
   },
-    "featuresv2": {
+  "featuresv2": {
     "title": "Work from anywhere on ",
     "color": "Multiple Devices",
     "content1": "Access and manage your books from your computer, laptop, tablet, or smartphone anytime you choose. Create access privileges so that your colleague or accountant can login and work with your data online",
     "content2": "Access and manage your books from your computer, laptop, tablet, or smartphone anytime you choose.",
     "btn_text": "Read More ",
     "btn_url": "#",
-    "image":"assets/img/others/17.png"
+    "image": "assets/img/others/17.png"
   },
   "paymentinfo": {
     "title": "Choose from retail's best ",
     "color": "Integrated Payments",
     "content": "Accept all the ways your customers want to pay, in-store, online and on-the go. Vend integrates with leading payment providers for a seamless checkout experience.",
-    "image":"assets/img/others/18.png",
-    "items":[
+    "image": "assets/img/others/18.png",
+    "items": [
       {
-        "content":"Easily accept any payment type"
+        "content": "Easily accept any payment type"
       },
       {
-        "content":"Save time and remove double handling"
+        "content": "Save time and remove double handling"
       },
       {
-        "content":"Enhance the customer experience"
+        "content": "Enhance the customer experience"
       },
       {
-        "content":"Open your store with online payments"
+        "content": "Open your store with online payments"
       }
     ]
   },
@@ -269,32 +265,32 @@
   "team": {
     "sectiontitle": "Riyaqas Creative",
     "sectiontitle_color": "Team",
-    "short_description":"Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork.",
+    "short_description": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork.",
     "items": [
       {
         "name": "Abedin Abed",
-        "url":"#",
+        "url": "#",
         "designation": "Creative Director",
         "content": "Riyaqas One of the best Software Development company.",
         "image_url": "assets/img/startup/team/1.jpg"
       },
       {
         "name": "Jabedin jabed",
-        "url":"#",
+        "url": "#",
         "designation": "Projector Manager",
         "content": "Riyaqas One of the best Software Development company.",
         "image_url": "assets/img/startup/team/2.jpg"
       },
       {
         "name": "Moin Khan",
-        "url":"#",
+        "url": "#",
         "designation": "Art Director",
         "content": "Riyaqas One of the best Software Development company.",
         "image_url": "assets/img/startup/team/3.jpg"
       },
       {
         "name": "Rashed Khan",
-        "url":"#",
+        "url": "#",
         "designation": "Web Developer",
         "content": "Riyaqas One of the best Software Development company.",
         "image_url": "assets/img/startup/team/5.png"
@@ -304,7 +300,7 @@
   "teamv2": {
     "sectiontitle": "Meet Our ",
     "sectiontitle_color": "Team",
-    "short_description":"Riyaqas One of the best Software Development company.",
+    "short_description": "Riyaqas One of the best Software Development company.",
     "items": [
       {
         "title": "User Experience",
@@ -313,7 +309,7 @@
         "name": "Refule Mia",
         "designation": "User Experience Eng.",
         "image_url": "assets/img/startup/team/t1.png"
-      },      
+      },
       {
         "title": "Marketing executive",
         "color": "at Riyaqas",
@@ -330,66 +326,65 @@
         "designation": "User Experience Eng.",
         "image_url": "assets/img/startup/team/t3.png"
       }
-
     ]
   },
-    "teampage": {
+  "teampage": {
     "sectiontitle": "Riyaqas Creative",
     "sectiontitle_color": "Team",
-    "short_description":"Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork.",
+    "short_description": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork.",
     "items": [
       {
         "name": "Abedin Abed",
-        "url":"#",
+        "url": "#",
         "designation": "Creative Director",
         "content": "Riyaqas One of the best Software Development company.",
         "image_url": "assets/img/startup/team/1.jpg"
       },
       {
         "name": "Jabedin jabed",
-        "url":"#",
+        "url": "#",
         "designation": "Projector Manager",
         "content": "Riyaqas One of the best Software Development company.",
         "image_url": "assets/img/startup/team/2.jpg"
       },
       {
         "name": "Moin Khan",
-        "url":"#",
+        "url": "#",
         "designation": "Art Director",
         "content": "Riyaqas One of the best Software Development company.",
         "image_url": "assets/img/startup/team/3.jpg"
       },
       {
         "name": "Rashed Khan",
-        "url":"#",
+        "url": "#",
         "designation": "Web Developer",
         "content": "Riyaqas One of the best Software Development company.",
         "image_url": "assets/img/startup/team/9.png"
-      },      
+      },
       {
         "name": "Djairo van",
-        "url":"#",
+        "url": "#",
         "designation": "Lead Developer",
         "content": "Riyaqas One of the best Software Development company.",
         "image_url": "assets/img/startup/team/5.png"
       },
       {
         "name": "Terry Martin",
-        "url":"#",
+        "url": "#",
         "designation": "Designer",
         "content": "Riyaqas One of the best Software Development company.",
         "image_url": "assets/img/startup/team/6.png"
       },
       {
         "name": "Xav Cotton",
-        "url":"#",
+        "url": "#",
         "designation": "Marketing manager",
         "content": "Riyaqas One of the best Software Development company.",
         "image_url": "assets/img/startup/team/7.png"
       },
       {
         "name": "Jamie burn",
-        "url":"#",
+        "url": "#",
         "designation": "Marketing Exe.",
         "content": "Riyaqas One of the best Software Development company.",
         "image_url": "assets/img/startup/team/8.png"
@@ -399,10 +394,10 @@
   "softboxabout": {
     "sectiontitle": "What is",
     "sectiontitle_color": "Riyaqas?",
-    "short_description":"SoftBox One of the best Softwire Development company. SoftBox is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position. Our clients count on our offshore business",
+    "short_description": "SoftBox One of the best Softwire Development company. SoftBox is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position. Our clients count on our offshore business",
     "bgimg": "assets/img/bg/1h1.png",
     "imgurl": "assets/img/we-provide/5.png",
-    "list_item":[
+    "list_item": [
       {
         "icon": "assets/img/icons/check.png",
         "text": "Concept Design"
@@ -421,211 +416,211 @@
       }
     ]
   },
-    "softbox": {
+  "softbox": {
     "sectiontitle": "Friendly support ",
     "sectiontitle_color": "from the retail professionals",
-    "content":"Get our expert team working for you. Enjoy award winning 24/7 support from retail professionals. We’re ready to get your business set up just right, and keep you growing from there. Get our expert team working for you.",
+    "content": "Get our expert team working for you. Enjoy award winning 24/7 support from retail professionals. We’re ready to get your business set up just right, and keep you growing from there. Get our expert team working for you.",
     "image": "assets/img/others/19.png",
-    "btn_txt":"Read More",
-    "btn_url":"#"
+    "btn_txt": "Read More",
+    "btn_url": "#"
   },
   "softboxv2": {
     "title1": "The ",
     "color": "all-in-one solution ",
     "title2": "for small business management ",
-    "content1":"Business management is the cornerstone of Riyaqas. Process payments, generate ",
-    "content2":"reports, manage your employees and organize your stock with inventory software.",
+    "content1": "Business management is the cornerstone of Riyaqas. Process payments, generate ",
+    "content2": "reports, manage your employees and organize your stock with inventory software.",
     "image": "assets/img/we-provide/5.png",
-    "btn_txt":"Read More",
-    "btn_url":"#",
-    "items":[
-       { "content":"Point of Sale" },
-       { "content":"Order Management" },
-       { "content":"Split Payments" },
-       { "content":"Ingredients Management" },
-       { "content":"Tax Management" },
-       { "content":"Cash Discount" }
+    "btn_txt": "Read More",
+    "btn_url": "#",
+    "items": [
+      { "content": "Point of Sale" },
+      { "content": "Order Management" },
+      { "content": "Split Payments" },
+      { "content": "Ingredients Management" },
+      { "content": "Tax Management" },
+      { "content": "Cash Discount" }
     ]
   },
-  "whyChooseUs" :{
-      "sectiontitle": "Why Choose",
-      "sectiontitle_color": "Riyaqas?",
-      "videoimage":"assets/img/startup/why-choose/1.png",
-      "videourl":"https://www.youtube.com/watch?v=c7XEhXZ_rsk",
-      "short_description":"Riyaqas One of the best Softwire Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position. Our solutions on a regular basis.",
-      "bgimg": "assets/img/startup/why-choose/2.png",
-      "list_item":[
-        {
-          "icon": "assets/img/icons/check.png",
-          "text": "Team Work"
-        },
-        {
-          "icon": "assets/img/icons/check.png",
-          "text": "Good Job Invironment"
-        },
-        {
-          "icon": "assets/img/icons/check.png",
-          "text": "Concept Implementation"
-        },
-        {
-          "icon": "assets/img/icons/check.png",
-          "text": "Work Freedom"
-        }
-      ]
-  },  
-  "skills" :{
-      "sectiontitle": "We Have Strong",
-      "sectiontitle_color": "Skill",
-      "image":"assets/img/startup/skill/1.png",
-      "short_description":"SoftBox One of the best Softwire Development company. SoftBox is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position.",
-      "list_item":[
-        {
-          "title": "User Interface Design",
-          "percentage": "95"
-        },        
-        {
-          "title": "User Experience",
-          "percentage": "86"
-        },        
-        {
-          "title": "Market Analysis",
-          "percentage": "90"
-        },        
-        {
-          "title": "Client Satisfication",
-          "percentage": "97"
-        }
-      ]
-  },  
-  "offer" :{
-      "sectiontitle": "What We are",
-      "sectiontitle_color": "Offering?",
-      "image":"assets/img/startup/skill/1.png",
-      "short_description":"Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most <br> innovative web development company. Our cost efficient and structured teamwork.",
-      "list_item":[
-        {
-          "title": "Challenging Project",
-          "icon": "assets/img/startup/offer/1.png"
-        },        
-        {
-          "title": "Competitive salary",
-          "icon": "assets/img/startup/offer/2.png"
-        },        
-        {
-          "title": "Play Zone",
-          "icon": "assets/img/startup/offer/3.png"
-        },        
-        {
-          "title": "Strong Team",
-          "icon": "assets/img/startup/offer/4.png"
-        },        
-        {
-          "title": "Decorated Office",
-          "icon": "assets/img/startup/offer/5.png"
-        },
-        {
-          "title": "Free Coffee & Snacks",
-          "icon": "assets/img/startup/offer/6.png"
-        }
-      ]
+  "whyChooseUs": {
+    "sectiontitle": "Why Choose",
+    "sectiontitle_color": "Riyaqas?",
+    "videoimage": "assets/img/startup/why-choose/1.png",
+    "videourl": "https://www.youtube.com/watch?v=c7XEhXZ_rsk",
+    "short_description": "Riyaqas One of the best Softwire Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position. Our solutions on a regular basis.",
+    "bgimg": "assets/img/startup/why-choose/2.png",
+    "list_item": [
+      {
+        "icon": "assets/img/icons/check.png",
+        "text": "Team Work"
+      },
+      {
+        "icon": "assets/img/icons/check.png",
+        "text": "Good Job Invironment"
+      },
+      {
+        "icon": "assets/img/icons/check.png",
+        "text": "Concept Implementation"
+      },
+      {
+        "icon": "assets/img/icons/check.png",
+        "text": "Work Freedom"
+      }
+    ]
   },
-   "client" :{
-      "sectiontitle": "Our valuable",
-      "sectiontitle_color": "Client",
-      "short_description":"Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most <br> innovative web development company. Our cost efficient and structured teamwork.",
-      "list_item":[
-        {
-          "image": "assets/img/startup/client/1.png"
-        },        
-        {
-          "image": "assets/img/startup/client/2.png"
-        },        
-        {
-          "image": "assets/img/startup/client/3.png"
-        },        
-        {
-          "image": "assets/img/startup/client/4.png"
-        },        
-        {
-          "image": "assets/img/startup/client/5.png"
-        },
-        {
-          "image": "assets/img/startup/client/1.png"
-        }
-      ]
+  "skills": {
+    "sectiontitle": "We Have Strong",
+    "sectiontitle_color": "Skill",
+    "image": "assets/img/startup/skill/1.png",
+    "short_description": "SoftBox One of the best Softwire Development company. SoftBox is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position.",
+    "list_item": [
+      {
+        "title": "User Interface Design",
+        "percentage": "95"
+      },
+      {
+        "title": "User Experience",
+        "percentage": "86"
+      },
+      {
+        "title": "Market Analysis",
+        "percentage": "90"
+      },
+      {
+        "title": "Client Satisfication",
+        "percentage": "97"
+      }
+    ]
   },
-  "clientv2" :{
-      "sectiontitle": "Trusted by",
-      "sectiontitle_color": "over 40,300",
-      "sectiontitle2":" world’s leading companies",
-      "list_item":[
-        {
-          "image": "assets/img/startup/client/1.png",
-          "url":"#"
-        },        
-        {
-          "image": "assets/img/startup/client/2.png",
-          "url":"#"
-        },        
-        {
-          "image": "assets/img/startup/client/3.png",
-          "url":"#"
-        },        
-        {
-          "image": "assets/img/startup/client/4.png",
-          "url":"#"
-        },        
-        {
-          "image": "assets/img/startup/client/5.png",
-          "url":"#"
-        },
-        {
-          "image": "assets/img/startup/client/1.png",
-          "url":"#"
-        }
-      ]
+  "offer": {
+    "sectiontitle": "What We are",
+    "sectiontitle_color": "Offering?",
+    "image": "assets/img/startup/skill/1.png",
+    "short_description": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most <br> innovative web development company. Our cost efficient and structured teamwork.",
+    "list_item": [
+      {
+        "title": "Challenging Project",
+        "icon": "assets/img/startup/offer/1.png"
+      },
+      {
+        "title": "Competitive salary",
+        "icon": "assets/img/startup/offer/2.png"
+      },
+      {
+        "title": "Play Zone",
+        "icon": "assets/img/startup/offer/3.png"
+      },
+      {
+        "title": "Strong Team",
+        "icon": "assets/img/startup/offer/4.png"
+      },
+      {
+        "title": "Decorated Office",
+        "icon": "assets/img/startup/offer/5.png"
+      },
+      {
+        "title": "Free Coffee & Snacks",
+        "icon": "assets/img/startup/offer/6.png"
+      }
+    ]
   },
-   "clientv3" :{
-      "list_item":[
-        { 
-          "url":"#",
-          "image": "assets/img/startup/client/6.png"
-        },        
-        { 
-          "url":"#",
-          "image": "assets/img/startup/client/7.png"
-        },        
-        { 
-          "url":"#",
-          "image": "assets/img/startup/client/8.png"
-        },        
-        {
-           "url":"#",
-          "image": "assets/img/startup/client/9.png"
-        },        
-        { 
-          "url":"#",
-          "image": "assets/img/startup/client/10.png"
-        },
-        { 
-          "url":"#",
-          "image": "assets/img/startup/client/11.png"
-        },
-        {
-          "url":"#",
-          "image": "assets/img/startup/client/7.png"
-        }
-      ]
+  "client": {
+    "sectiontitle": "Our valuable",
+    "sectiontitle_color": "Client",
+    "short_description": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most <br> innovative web development company. Our cost efficient and structured teamwork.",
+    "list_item": [
+      {
+        "image": "assets/img/startup/client/1.png"
+      },
+      {
+        "image": "assets/img/startup/client/2.png"
+      },
+      {
+        "image": "assets/img/startup/client/3.png"
+      },
+      {
+        "image": "assets/img/startup/client/4.png"
+      },
+      {
+        "image": "assets/img/startup/client/5.png"
+      },
+      {
+        "image": "assets/img/startup/client/1.png"
+      }
+    ]
+  },
+  "clientv2": {
+    "sectiontitle": "Trusted by",
+    "sectiontitle_color": "over 40,300",
+    "sectiontitle2": " world’s leading companies",
+    "list_item": [
+      {
+        "image": "assets/img/startup/client/1.png",
+        "url": "#"
+      },
+      {
+        "image": "assets/img/startup/client/2.png",
+        "url": "#"
+      },
+      {
+        "image": "assets/img/startup/client/3.png",
+        "url": "#"
+      },
+      {
+        "image": "assets/img/startup/client/4.png",
+        "url": "#"
+      },
+      {
+        "image": "assets/img/startup/client/5.png",
+        "url": "#"
+      },
+      {
+        "image": "assets/img/startup/client/1.png",
+        "url": "#"
+      }
+    ]
+  },
+  "clientv3": {
+    "list_item": [
+      {
+        "url": "#",
+        "image": "assets/img/startup/client/6.png"
+      },
+      {
+        "url": "#",
+        "image": "assets/img/startup/client/7.png"
+      },
+      {
+        "url": "#",
+        "image": "assets/img/startup/client/8.png"
+      },
+      {
+        "url": "#",
+        "image": "assets/img/startup/client/9.png"
+      },
+      {
+        "url": "#",
+        "image": "assets/img/startup/client/10.png"
+      },
+      {
+        "url": "#",
+        "image": "assets/img/startup/client/11.png"
+      },
+      {
+        "url": "#",
+        "image": "assets/img/startup/client/7.png"
+      }
+    ]
   },
   "softboxleftsideimage": {
     "sectiontitle_part1": "All kind of",
     "sectiontitle_color": "Business tools",
     "sectiontitle_part2": "integration.",
-    "short_description":"Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.",
+    "short_description": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.",
     "imgurl": "assets/img/business-tool/1.png",
     "section_bg": "assets/img/bg/1h2.png",
     "section_after_bg": "../../assets/img/service/bg.png",
-    "list_item":[
+    "list_item": [
       {
         "icon": "assets/img/business-tool/pencil.png",
         "text": "Our support team will get assistance from AI-powered suggestions, making it quicker than."
@@ -639,12 +634,11 @@
         "text": "Our support team will get assistance from AI-powered suggestions, making it quicker than."
       }
     ]
-
   },
   "softboxmanage": {
     "sectiontitle_part1": "Easy to Manage Your All Data by",
     "sectiontitle_color": "This App",
-    "short_description":"Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle",
+    "short_description": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle",
     "imgurl": "assets/img/we-provide/4.png"
   },
   "video": {
@@ -672,7 +666,7 @@
       }
     ]
   },
-    "videov2": {
+  "videov2": {
     "title": "We is the <span>",
     "title_color": "Riyaqas ?",
     "description": "<p>Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position. Our clients count on our offshore business solutions on a regular basis from concept.</p><p>Design to development, testing &amp; implementation, our team is here to support and guide you every step of the way. Riyaqas One of the best Software Development company.</p>",
@@ -697,523 +691,495 @@
       }
     ]
   },
-  "services":{
+  "services": {
     "sectiontitle": "What",
     "sectiontitle_color": "Service",
     "sectiontitle_2": "We are Providing?",
     "short_description": "Offer your business with the best assistance for growth.",
-    "items":[
-        {
-          "title": "Branding Idendity",
-          "icon": "assets/img/service/project.png",
-          "url": "#",
-          "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-        },
-        {
-          "title": "Business Consultancy",
-          "icon": "assets/img/service/hiring.png",
-          "url": "#",
-          "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-        },
-        {
-          "title": "UI/UX - Design",
-          "icon": "assets/img/service/checklist.png",
-          "url": "#",
-          "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-        },
-        {
-          "title": "Market Analysis",
-          "icon": "assets/img/service/analytics.png",
-          "url": "#",
-          "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-        }
-      ]
- 
+    "items": [
+      {
+        "title": "Branding Idendity",
+        "icon": "assets/img/service/project.png",
+        "url": "#",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      },
+      {
+        "title": "Business Consultancy",
+        "icon": "assets/img/service/hiring.png",
+        "url": "#",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      },
+      {
+        "title": "UI/UX - Design",
+        "icon": "assets/img/service/checklist.png",
+        "url": "#",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      },
+      {
+        "title": "Market Analysis",
+        "icon": "assets/img/service/analytics.png",
+        "url": "#",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      }
+    ]
   },
-    "servicesv2":{
+  "servicesv2": {
     "sectiontitle": "Riyaqas",
     "sectiontitle_color": "was Built Specifically for",
     "short_description": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. Our support team will get assistance from AI-powered suggestions.",
-    "items":[
-        {
-          "title": "Management",
-          "icon": "assets/img/icons/f1.png",
-          "url": "#",
-          "content": "Our support team will get assistance from AI-powered suggestions, making it quicker handle."
-        },
-        {
-          "title": "Customer Support",
-          "icon": "assets/img/icons/f2.png",
-          "url": "#",
-          "content": "Our support team will get assistance from AI-powered suggestions, making it quicker handle."
-        },
-        {
-          "title": "Customer Support",
-          "icon": "assets/img/icons/f2.png",
-          "url": "#",
-          "content": "Our support team will get assistance from AI-powered suggestions, making it quicker handle."
-        }
-
-      ]
- 
+    "items": [
+      {
+        "title": "Management",
+        "icon": "assets/img/icons/f1.png",
+        "url": "#",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker handle."
+      },
+      {
+        "title": "Customer Support",
+        "icon": "assets/img/icons/f2.png",
+        "url": "#",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker handle."
+      },
+      {
+        "title": "Customer Support",
+        "icon": "assets/img/icons/f2.png",
+        "url": "#",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker handle."
+      }
+    ]
   },
-   "servicesv3":{
-    "items":[
-        {
-          "icon": "assets/img/startup/service/1.png",
-          "title":"Great Advices",
-          "content": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative"
-        },        
-        {
-          "icon": "assets/img/startup/service/2.png",
-          "title":"24/7 Support",
-          "content": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative"
-        },        
-        {
-          "icon": "assets/img/startup/service/3.png",
-          "title":"Optimal Choice",
-          "content": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative"
-        },
-        {
-          "icon": "assets/img/startup/service/4.png",
-          "title":"Clear Navigation",
-          "content": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative"
-        }
-
-
-      ]
+  "servicesv3": {
+    "items": [
+      {
+        "icon": "assets/img/startup/service/1.png",
+        "title": "Great Advices",
+        "content": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative"
+      },
+      {
+        "icon": "assets/img/startup/service/2.png",
+        "title": "24/7 Support",
+        "content": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative"
+      },
+      {
+        "icon": "assets/img/startup/service/3.png",
+        "title": "Optimal Choice",
+        "content": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative"
+      },
+      {
+        "icon": "assets/img/startup/service/4.png",
+        "title": "Clear Navigation",
+        "content": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative"
+      }
+    ]
   },
-  "servicesv4":{
-    "items":[
-        {
-          "icon": "assets/img/icons/s01.png",
-          "title":"Easy to use",
-          "content": "Riyaqas One of the best Softwire Development company."
-        }, 
-        {
-          "icon": "assets/img/icons/s02.png",
-          "title":"Automatic",
-          "content": "Riyaqas One of the best Softwire Development company."
-        },          
-        {
-          "icon": "assets/img/icons/s03.png",
-          "title":"Take a Command",
-          "content": "Riyaqas One of the best Softwire Development company."
-        },  
-        {
-          "icon": "assets/img/icons/s04.png",
-          "title":"Artificial Intelligence",
-          "content": "Riyaqas One of the best Softwire Development company."
-        }       
-
-
-      ]
+  "servicesv4": {
+    "items": [
+      {
+        "icon": "assets/img/icons/s01.png",
+        "title": "Easy to use",
+        "content": "Riyaqas One of the best Softwire Development company."
+      },
+      {
+        "icon": "assets/img/icons/s02.png",
+        "title": "Automatic",
+        "content": "Riyaqas One of the best Softwire Development company."
+      },
+      {
+        "icon": "assets/img/icons/s03.png",
+        "title": "Take a Command",
+        "content": "Riyaqas One of the best Softwire Development company."
+      },
+      {
+        "icon": "assets/img/icons/s04.png",
+        "title": "Artificial Intelligence",
+        "content": "Riyaqas One of the best Softwire Development company."
+      }
+    ]
   },
-    "servicesv5":{
-    "title1":"What ",
-    "color":"Service ",
-    "title2":"We are Providing? ",
-    "description":"Offer your business with the best assistance for growth.",
-    "items":[
-        {
-          "icon": "assets/img/service/1.png",
-          "title":"Digital Analytics",
-          "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to support requests."
-        },
-        {
-          "icon": "assets/img/service/2.png",
-          "title":"Digital Marketing",
-          "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to support requests."
-        },
-        {
-          "icon": "assets/img/service/3.png",
-          "title":"Email Marketing",
-          "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to support requests."
-        },
-        {
-          "icon": "assets/img/service/4.png",
-          "title":"Market Analysis",
-          "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to support requests."
-        }         
-
-
-      ]
+  "servicesv5": {
+    "title1": "What ",
+    "color": "Service ",
+    "title2": "We are Providing? ",
+    "description": "Offer your business with the best assistance for growth.",
+    "items": [
+      {
+        "icon": "assets/img/service/1.png",
+        "title": "Digital Analytics",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to support requests."
+      },
+      {
+        "icon": "assets/img/service/2.png",
+        "title": "Digital Marketing",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to support requests."
+      },
+      {
+        "icon": "assets/img/service/3.png",
+        "title": "Email Marketing",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to support requests."
+      },
+      {
+        "icon": "assets/img/service/4.png",
+        "title": "Market Analysis",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to support requests."
+      }
+    ]
   },
-    "servicesv6":{
-    "title1":"Benefits ",
-    "title2":"of Point of Sale ",
-    "description":"Guaranteed to The save you time, increase the accuracy of your inventory, and help to you make informed decisions for your The business",
-    "items":[
-        {
-          "icon": "assets/img/icons/s21.png",
-          "title":"Save Time",
-          "content": "Everyday save your time 1/2 hours that our system automates manage"
-        },
-        {
-          "icon": "assets/img/icons/s22.png",
-          "title":"Increase Sales",
-          "content": "Everyday save your time 1/2 hours that our system automates manage"
-        },
-        {
-          "icon": "assets/img/icons/s23.png",
-          "title":"Make Info Decisions",
-          "content": "Everyday save your time 1/2 hours that our system automates manage"
-        },        
-        {
-          "icon": "assets/img/icons/s24.png",
-          "title":"Access your data",
-          "content": "Everyday save your time 1/2 hours that our system automates manage"
-        }
-         
-
-
-      ]
+  "servicesv6": {
+    "title1": "Benefits ",
+    "title2": "of Point of Sale ",
+    "description": "Guaranteed to The save you time, increase the accuracy of your inventory, and help to you make informed decisions for your The business",
+    "items": [
+      {
+        "icon": "assets/img/icons/s21.png",
+        "title": "Save Time",
+        "content": "Everyday save your time 1/2 hours that our system automates manage"
+      },
+      {
+        "icon": "assets/img/icons/s22.png",
+        "title": "Increase Sales",
+        "content": "Everyday save your time 1/2 hours that our system automates manage"
+      },
+      {
+        "icon": "assets/img/icons/s23.png",
+        "title": "Make Info Decisions",
+        "content": "Everyday save your time 1/2 hours that our system automates manage"
+      },
+      {
+        "icon": "assets/img/icons/s24.png",
+        "title": "Access your data",
+        "content": "Everyday save your time 1/2 hours that our system automates manage"
+      }
+    ]
   },
-  "servicesv7":{
-    "title1":"Our ",
-    "title2":"Services ",
-    "description":"Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. Our support team will get assistance from AI-powered suggestions.",
-    "items":[
-        {
-          "icon": "assets/img/icons/ss11.png",
-          "title":"Storage & Backup",
-          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo rutrum leo feugiat tincidunt.",
-          "url":"/services"
-        },
-        {
-          "icon": "assets/img/icons/ss12.png",
-          "title":"Automatic",
-          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo rutrum leo feugiat tincidunt.",
-          "url":"/services"
-        },
-        {
-          "icon": "assets/img/icons/ss13.png",
-          "title":"Take a Command",
-          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo rutrum leo feugiat tincidunt.",
-          "url":"/services"
-        },
-        {
-          "icon": "assets/img/icons/ss14.png",
-          "title":"Artificial Intelligence",
-          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo rutrum leo feugiat tincidunt.",
-          "url":"/services"
-        },
-        {
-          "icon": "assets/img/icons/ss15.png",
-          "title":"Easy to use",
-          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo rutrum leo feugiat tincidunt.",
-          "url":"/services"
-        },
-        {
-          "icon": "assets/img/icons/ss16.png",
-          "title":"Automatic",
-          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo rutrum leo feugiat tincidunt.",
-          "url":"/services"
-        }
-
-
-      ]
+  "servicesv7": {
+    "title1": "Our ",
+    "title2": "Services ",
+    "description": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. Our support team will get assistance from AI-powered suggestions.",
+    "items": [
+      {
+        "icon": "assets/img/icons/ss11.png",
+        "title": "Storage & Backup",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo rutrum leo feugiat tincidunt.",
+        "url": "/services"
+      },
+      {
+        "icon": "assets/img/icons/ss12.png",
+        "title": "Automatic",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo rutrum leo feugiat tincidunt.",
+        "url": "/services"
+      },
+      {
+        "icon": "assets/img/icons/ss13.png",
+        "title": "Take a Command",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo rutrum leo feugiat tincidunt.",
+        "url": "/services"
+      },
+      {
+        "icon": "assets/img/icons/ss14.png",
+        "title": "Artificial Intelligence",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo rutrum leo feugiat tincidunt.",
+        "url": "/services"
+      },
+      {
+        "icon": "assets/img/icons/ss15.png",
+        "title": "Easy to use",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo rutrum leo feugiat tincidunt.",
+        "url": "/services"
+      },
+      {
+        "icon": "assets/img/icons/ss16.png",
+        "title": "Automatic",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo rutrum leo feugiat tincidunt.",
+        "url": "/services"
+      }
+    ]
   },
-   "softwarestore":{
-    "title1":"Perfect POS software for most ",
-    "title2":"retail stores",
-    "description":"Perfect POS software for most retail stores. Access and manage your books from Riyaqas.",
-    "items":[
-        {
-          "icon": "assets/img/icons/ss1.png",
-          "title":"Restaurent",
-          "url":"#"
-        },
-        {
-          "icon": "assets/img/icons/ss2.png",
-          "title":"Mega Shop",
-          "url":"#"
-        },
-        {
-          "icon": "assets/img/icons/ss3.png",
-          "title":"Handicraft",
-          "url":"#"
-        },
-        {
-          "icon": "assets/img/icons/ss4.png",
-          "title":"Home Appliance",
-          "url":"#"
-        },
-        {
-          "icon": "assets/img/icons/ss5.png",
-          "title":"Hospital",
-          "url":"#"
-        },
-        {
-          "icon": "assets/img/icons/ss6.png",
-          "title":"Dispensary",
-          "url":"#"
-        },
-        {
-          "icon": "assets/img/icons/ss7.png",
-          "title":"Sports & Outdoors",
-          "url":"#"
-        },
-        {
-          "icon": "assets/img/icons/ss8.png",
-          "title":"Beauty Product",
-          "url":"#"
-        },
-        {
-          "icon": "assets/img/icons/ss9.png",
-          "title":"Storage",
-          "url":"#"
-        },
-        {
-          "icon": "assets/img/icons/ss10.png",
-          "title":"Toy & Hobbies",
-          "url":"#"
-        }
-
-         
-
-      ]
+  "softwarestore": {
+    "title1": "Perfect POS software for most ",
+    "title2": "retail stores",
+    "description": "Perfect POS software for most retail stores. Access and manage your books from Riyaqas.",
+    "items": [
+      {
+        "icon": "assets/img/icons/ss1.png",
+        "title": "Restaurent",
+        "url": "#"
+      },
+      {
+        "icon": "assets/img/icons/ss2.png",
+        "title": "Mega Shop",
+        "url": "#"
+      },
+      {
+        "icon": "assets/img/icons/ss3.png",
+        "title": "Handicraft",
+        "url": "#"
+      },
+      {
+        "icon": "assets/img/icons/ss4.png",
+        "title": "Home Appliance",
+        "url": "#"
+      },
+      {
+        "icon": "assets/img/icons/ss5.png",
+        "title": "Hospital",
+        "url": "#"
+      },
+      {
+        "icon": "assets/img/icons/ss6.png",
+        "title": "Dispensary",
+        "url": "#"
+      },
+      {
+        "icon": "assets/img/icons/ss7.png",
+        "title": "Sports & Outdoors",
+        "url": "#"
+      },
+      {
+        "icon": "assets/img/icons/ss8.png",
+        "title": "Beauty Product",
+        "url": "#"
+      },
+      {
+        "icon": "assets/img/icons/ss9.png",
+        "title": "Storage",
+        "url": "#"
+      },
+      {
+        "icon": "assets/img/icons/ss10.png",
+        "title": "Toy & Hobbies",
+        "url": "#"
+      }
+    ]
   },
-  "businessmanage":{
+  "businessmanage": {
     "sectiontitle": "Quick &amp; Easy",
     "sectionsubtitle": "Process to manage",
-    "image":"assets/img/others/4.png",
+    "image": "assets/img/others/4.png",
     "short_description": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.",
-     "items":[
-        {
-          "title": "Secure and reliable"
-        },
-        {
-          "title": "Predictable pricing"
-        },
-        {
-          "title": "Build better apps faster"
-        }
-
-      ]
- 
+    "items": [
+      {
+        "title": "Secure and reliable"
+      },
+      {
+        "title": "Predictable pricing"
+      },
+      {
+        "title": "Build better apps faster"
+      }
+    ]
   },
-   "about":{
+  "about": {
     "sectiontitle": "About the",
     "color": "Artificial Intelligence",
-    "image":"assets/img/others/10.png",
+    "image": "assets/img/others/10.png",
     "short_description": "Riyaqas One of the best Softwire Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position. Our clients count on our offshore",
-     "items":[
-        {
-          "icon": "assets/img/icons/t4.png"
-        },
-        {
-          "icon": "assets/img/icons/t5.png"
-        },
-        {
-          "icon": "assets/img/icons/t6.png"
-        }
-
-      ]
+    "items": [
+      {
+        "icon": "assets/img/icons/t4.png"
+      },
+      {
+        "icon": "assets/img/icons/t5.png"
+      },
+      {
+        "icon": "assets/img/icons/t6.png"
+      }
+    ]
   },
-  "help":{
+  "help": {
     "sectiontitle": "Our Strong team help ",
-    "subtitle":"you to",
+    "subtitle": "you to",
     "sectioncolor": "Succeed",
-    "image":"assets/img/others/4.png",
+    "image": "assets/img/others/4.png",
     "content1": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position. Our clients count on our offshore",
-    "content2":"From concept design to development, testing &amp; implementation, our team is here to support and guide you every step of the way."
+    "content2": "From concept design to development, testing &amp; implementation, our team is here to support and guide you every step of the way."
   },
-  "helpv2":{
+  "helpv2": {
     "sectiontitle": "How to get ",
     "color": "better Service",
-    "image":"assets/img/others/9.png",
-     "items":[
-        {
-          "content": "Riyaqas One of the best Softwire Development company"
-        },
-        {
-          "content": "From concept design to development, testing & implementation"
-        },
-        {
-          "content": "our team is here to support and guide you every step of the way."
-        },
-        {
-          "content": "Our cost efficient and structured teamwork"
-        },
-        {
-          "content": "Riyaqas One of the best Softwire Development company"
-        },        
-        {
-          "content": "our team is here to support and guide you every step of the way."
-        }
-
-      ]
+    "image": "assets/img/others/9.png",
+    "items": [
+      {
+        "content": "Riyaqas One of the best Softwire Development company"
+      },
+      {
+        "content": "From concept design to development, testing & implementation"
+      },
+      {
+        "content": "our team is here to support and guide you every step of the way."
+      },
+      {
+        "content": "Our cost efficient and structured teamwork"
+      },
+      {
+        "content": "Riyaqas One of the best Softwire Development company"
+      },
+      {
+        "content": "our team is here to support and guide you every step of the way."
+      }
+    ]
   },
-   "helpv3":{
+  "helpv3": {
     "title1": "Get ",
     "color": "tips & tricks ",
     "title2": "on how to Promote your sales. ",
-    "description1":"Riyaqas One of the best Softwire Development company. Riyaqas is at",
-    "description2":"as the most innovative web development company.",
-    "image":"assets/img/others/13.png",
-     "items":[
-        {
-          "content": "Riyaqas One of the best Softwire Development company"
-        },
-        {
-          "content": "From concept design to development, testing & implementation"
-        },
-        {
-          "content": "our team is here to support and guide you every step of the way."
-        },
-        {
-          "content": "Our cost efficient and structured teamwork"
-        },
-        {
-          "content": "Riyaqas One of the best Softwire Development company"
-        },        
-        {
-          "content": "our team is here to support and guide you every step of the way."
-        },
-        {
-          "content": "From concept design to development, testing"
-        }
-
-      ]
+    "description1": "Riyaqas One of the best Softwire Development company. Riyaqas is at",
+    "description2": "as the most innovative web development company.",
+    "image": "assets/img/others/13.png",
+    "items": [
+      {
+        "content": "Riyaqas One of the best Softwire Development company"
+      },
+      {
+        "content": "From concept design to development, testing & implementation"
+      },
+      {
+        "content": "our team is here to support and guide you every step of the way."
+      },
+      {
+        "content": "Our cost efficient and structured teamwork"
+      },
+      {
+        "content": "Riyaqas One of the best Softwire Development company"
+      },
+      {
+        "content": "our team is here to support and guide you every step of the way."
+      },
+      {
+        "content": "From concept design to development, testing"
+      }
+    ]
   },
-    "markeking":{
+  "markeking": {
     "title": "We craft ",
     "color": "marketing",
     "subtitle": "& digital products that grow businesses.",
-    "content1":"Riyaqas One of the best Softwire Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position. Our clients count on our offshore business solutions on a regular basis. business solutions on a regular basis. business on a regular basis.business",
-    "content2":"From concept design to development, testing & implementation, our team is here to support and guide you every step of the way.",
-    "image":"assets/img/others/8.png",
-     "items":[
-        {
-          "icon":"assets/img/others/m1.png",
-          "content": "We craft marketing & digital products that grow businesses."
-        },
-        {
-          "icon":"assets/img/others/m2.png",
-          "content": "We craft marketing & digital products that grow businesses."
-        },
-        {
-          "icon":"assets/img/others/m3.png",
-          "content": "We craft marketing & digital products that grow businesses."
-        }
-
-      ]
+    "content1": "Riyaqas One of the best Softwire Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position. Our clients count on our offshore business solutions on a regular basis. business solutions on a regular basis. business on a regular basis.business",
+    "content2": "From concept design to development, testing & implementation, our team is here to support and guide you every step of the way.",
+    "image": "assets/img/others/8.png",
+    "items": [
+      {
+        "icon": "assets/img/others/m1.png",
+        "content": "We craft marketing & digital products that grow businesses."
+      },
+      {
+        "icon": "assets/img/others/m2.png",
+        "content": "We craft marketing & digital products that grow businesses."
+      },
+      {
+        "icon": "assets/img/others/m3.png",
+        "content": "We craft marketing & digital products that grow businesses."
+      }
+    ]
   },
-   "markekingv2":{
+  "markekingv2": {
     "title": "Start Your Own ",
     "color": "Digital Marketing",
     "subtitle": "In No Time",
-    "content":"Riyaqas One of the best Softwire Development company. Riyaqas is at the  forefront as the most innovative web development company.",
-    "image":"assets/img/others/8.png",
-     "items":[
-        {
-          "icon":"assets/img/business-tool/pencil.png",
-          "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than.",
-          "mg":"mg-top-45"
-        },
-        {
-          "icon":"assets/img/business-tool/search.png",
-          "content": "Our support team will get assistance from AI-powered suggestions."
-        },
-        {
-          "icon":"assets/img/business-tool/settings.png",
-          "content": "Our support team will get assistance from AI-powered, making it quicker than ever to handle support."
-        }
-
-      ]
+    "content": "Riyaqas One of the best Softwire Development company. Riyaqas is at the  forefront as the most innovative web development company.",
+    "image": "assets/img/others/8.png",
+    "items": [
+      {
+        "icon": "assets/img/business-tool/pencil.png",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than.",
+        "mg": "mg-top-45"
+      },
+      {
+        "icon": "assets/img/business-tool/search.png",
+        "content": "Our support team will get assistance from AI-powered suggestions."
+      },
+      {
+        "icon": "assets/img/business-tool/settings.png",
+        "content": "Our support team will get assistance from AI-powered, making it quicker than ever to handle support."
+      }
+    ]
   },
-  "businesstime":{
+  "businesstime": {
     "title": "Start Your Own ",
     "color": "Digital Marketing",
     "subtitle": "Business Time",
-    "content1":"Riyaqas One of the best Software Development company. Riyaqas is at",
-    "content2":"the forefront as the most innovative web development company.",
-    "image":"assets/img/bg/12.png",
-     "items":[
-        {
-          "icon":"assets/img/business-tool/pencil.png",
-          "content": "Our support team will get from AI-powered suggestions."
-        },
-        {
-          "icon":"assets/img/business-tool/search.png",
-          "content": "Our support team will get assistance from AI-powered."
-        },
-        {
-          "icon":"assets/img/business-tool/settings.png",
-          "content": "making it quicker than ever to handle support."
-        }
-
-      ]
+    "content1": "Riyaqas One of the best Software Development company. Riyaqas is at",
+    "content2": "the forefront as the most innovative web development company.",
+    "image": "assets/img/bg/12.png",
+    "items": [
+      {
+        "icon": "assets/img/business-tool/pencil.png",
+        "content": "Our support team will get from AI-powered suggestions."
+      },
+      {
+        "icon": "assets/img/business-tool/search.png",
+        "content": "Our support team will get assistance from AI-powered."
+      },
+      {
+        "icon": "assets/img/business-tool/settings.png",
+        "content": "making it quicker than ever to handle support."
+      }
+    ]
   },
-    "casestudy":{
+  "casestudy": {
     "title": "Our  ",
     "color": "case ",
     "title2": "Business Time",
-    "content":"Offer your business with the best assistance for growth.",
-    "image":"assets/img/bg/12.png",
-     "items":[
-        {
-          "image":"assets/img/blog/9.png",
-          "url":"#",
-          "content": "Digital Marketing Problem Solving Meating"
-        },
-        {
-          "image":"assets/img/blog/10.png",
-          "url":"#",
-          "content": "We are Solving Digital Marketing System"
-        },
-        {
-          "image":"assets/img/blog/8.png",
-          "url":"#",
-          "content": "Market Analysis Process We are Solving"
-        }
-
-      ]
+    "content": "Offer your business with the best assistance for growth.",
+    "image": "assets/img/bg/12.png",
+    "items": [
+      {
+        "image": "assets/img/blog/9.png",
+        "url": "#",
+        "content": "Digital Marketing Problem Solving Meating"
+      },
+      {
+        "image": "assets/img/blog/10.png",
+        "url": "#",
+        "content": "We are Solving Digital Marketing System"
+      },
+      {
+        "image": "assets/img/blog/8.png",
+        "url": "#",
+        "content": "Market Analysis Process We are Solving"
+      }
+    ]
   },
-  "data_analytics":{
+  "data_analytics": {
     "sectiontitle": "Get the Real time Data ",
     "sectionsubtitle": "Analytics",
-    "image":"assets/img/others/5.png",
+    "image": "assets/img/others/5.png",
     "short_description": "Our support team will get assistance from AI-powered suggestions, making it quicker assistance than ever to handle support requests. Our support team will get",
-    "items":[
-        {
-          "title": "Our support team will get assistance from AI-powered suggestions, making it quicker than.",
-          "icon":"assets/img/business-tool/pencil.png"
-        },        
-        {
-          "title": "Our support team will get assistance from AI-powered suggestions.",
-          "icon":"assets/img/business-tool/search.png"
-        },        
-        {
-          "title": "Our support team will get assistance from AI-powered, making it quicker than ever to handle support requests.",
-          "icon":"assets/img/business-tool/settings.png"
-        }
-
-      ]
+    "items": [
+      {
+        "title": "Our support team will get assistance from AI-powered suggestions, making it quicker than.",
+        "icon": "assets/img/business-tool/pencil.png"
+      },
+      {
+        "title": "Our support team will get assistance from AI-powered suggestions.",
+        "icon": "assets/img/business-tool/search.png"
+      },
+      {
+        "title": "Our support team will get assistance from AI-powered, making it quicker than ever to handle support requests.",
+        "icon": "assets/img/business-tool/settings.png"
+      }
+    ]
   },
-    "business_soluation":{
+  "business_soluation": {
     "sectiontitle": "Perfect ",
     "section_color": "solution",
     "section_sub_title": "for your business",
-    "image":"assets/img/others/6.png",
-    "video":"https://www.youtube.com/watch?v=c7XEhXZ_rsk",
+    "image": "assets/img/others/6.png",
+    "video": "https://www.youtube.com/watch?v=c7XEhXZ_rsk",
     "short_description": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. Our supportteam will get assistance from AI-powered suggestions, making itquicker than ever to handle support requests.",
-    "items":[
-        {
-          "title": "Our support team will get assistance from AI-powered suggestions, making it quicker than.",
-          "icon":"assets/img/business-tool/pencil.png"
-        },        
-        {
-          "title": "Our support team will get assistance from AI-powered suggestions.",
-          "icon":"assets/img/business-tool/search.png"
-        },        
-        {
-          "title": "Our support team will get assistance from AI-powered, making it quicker than ever to handle support requests.",
-          "icon":"assets/img/business-tool/settings.png"
-        }
-
-      ]
+    "items": [
+      {
+        "title": "Our support team will get assistance from AI-powered suggestions, making it quicker than.",
+        "icon": "assets/img/business-tool/pencil.png"
+      },
+      {
+        "title": "Our support team will get assistance from AI-powered suggestions.",
+        "icon": "assets/img/business-tool/search.png"
+      },
+      {
+        "title": "Our support team will get assistance from AI-powered, making it quicker than ever to handle support requests.",
+        "icon": "assets/img/business-tool/settings.png"
+      }
+    ]
   },
   "subscribe": {
     "sectiontitle": "Get our latest",
@@ -1279,7 +1245,7 @@
         ]
       },
       {
-      "title": "SMALL BUSINESS",
+        "title": "SMALL BUSINESS",
         "currency": "$",
         "price": "11",
         "duration": "/anully",
@@ -1375,7 +1341,7 @@
   "whatwedo": {
     "sectiontitle": "What We",
     "sectiontitle_color": "Do?",
-    "offertitel":"What we",
+    "offertitel": "What we",
     "offer_color": "Offer?",
     "short_description": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position.",
     "items": [
@@ -1401,359 +1367,349 @@
       }
     ]
   },
-  "testimonial":{
+  "testimonial": {
     "sectiontitle": "What Our",
     "sectiontitle_color": "Client Say?",
     "short_description": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.",
-    "items":[
-    {
-      "client": "Ema Wilson",
-      "designation": "CEO at craft",
-      "star": 5,
-      "imgurl": "assets/img/client/5.png",
-      "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-    },
-    {
-      "client": "John Mojika",
-      "designation": "CTO of Uxa",
-      "star": 5,
-      "imgurl": "assets/img/client/6.png",
-      "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-    },
-    {
-      "client": "Refule Mia",
-      "designation": "Branding Idendity",
-      "star": 5,
-      "imgurl": "assets/img/client/4.png",
-      "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-    },
-    {
-      "client": "Ema Wilson",
-      "designation": "CTO of Uxa",
-      "star": 5,
-      "imgurl": "assets/img/client/5.png",
-      "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-    },
-    {
-      "client": "John Mojika",
-      "designation": "CTO of Uxa",
-      "star": 5,
-      "imgurl": "assets/img/client/6.png",
-      "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-    },
-    {
-      "client": "John Mojika",
-      "designation": "CTO of Uxa",
-      "star": 5,
-      "imgurl": "assets/img/client/4.png",
-      "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-    }
-    
-  ]
-},
-"testimonial_v1":{
+    "items": [
+      {
+        "client": "Ema Wilson",
+        "designation": "CEO at craft",
+        "star": 5,
+        "imgurl": "assets/img/client/5.png",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      },
+      {
+        "client": "John Mojika",
+        "designation": "CTO of Uxa",
+        "star": 5,
+        "imgurl": "assets/img/client/6.png",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      },
+      {
+        "client": "Refule Mia",
+        "designation": "Branding Idendity",
+        "star": 5,
+        "imgurl": "assets/img/client/4.png",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      },
+      {
+        "client": "Ema Wilson",
+        "designation": "CTO of Uxa",
+        "star": 5,
+        "imgurl": "assets/img/client/5.png",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      },
+      {
+        "client": "John Mojika",
+        "designation": "CTO of Uxa",
+        "star": 5,
+        "imgurl": "assets/img/client/6.png",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      },
+      {
+        "client": "John Mojika",
+        "designation": "CTO of Uxa",
+        "star": 5,
+        "imgurl": "assets/img/client/4.png",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      }
+    ]
+  },
+  "testimonial_v1": {
     "sectiontitle": "What Our",
     "sectiontitle_color": "Client Say?",
     "short_description": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.",
-    "items":[
-    {
-      "client": "Ema Wilson",
-      "designation": "CEO at craft",
-      "star": 5,
-      "imgurl": "assets/img/client/1.png",
-      "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-    },
-    {
-      "client": "John Mojika",
-      "designation": "CTO of Uxa",
-      "star": 5,
-      "imgurl": "assets/img/client/2.png",
-      "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-    },
-    {
-      "client": "Refule Mia",
-      "designation": "Branding Idendity",
-      "star": 5,
-      "imgurl": "assets/img/client/3.png",
-      "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-    }
-  ]
-},
-"testimonial_v2":{
-    "items":[
-    {
-      "client": "Ema Wilson",
-      "designation": "CEO at craft",
-      "clientimg": "assets/img/business/testimonial/2.png",
-      "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-    },
-    {
-      "client": "John Mojika",
-      "designation": "CTO of Uxa",
-      "clientimg": "assets/img/business/testimonial/3.png",
-      "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-    },
-    {
-      "client": "Refule Mia",
-      "designation": "Branding Idendity",
-      "clientimg": "assets/img/business/testimonial/3.png",
-      "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
-    }
-  ]
-},
-"blogs":{
-  "sectiontitle": "LATEST BLOG",
-  "blogs":[
-    {
-      "title": "Top inspirational apps UI for you 2019",
-      "date": "20 Nov. 2018",
-      "imgurl": "/assets/img/blog/4.jpg",
-      "author": "Appiya",
-      "comment": "05 Comments",
-      "category": "Apps UI",
-      "content": "Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small."
-    },
-    {
-      "title": "Trendy Google apps you should check 2019",
-      "date": "20 Nov. 2018",
-      "imgurl": "/assets/img/blog/4.jpg",
-      "author": "Appiya",
-      "comment": "05 Comments",
-      "category": "Google Play",
-      "content": "Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small."
-    },
-    {
-      "title": "Booming news: Google play apps has been relese",
-      "date": "20 Nov. 2018",
-      "imgurl": "/assets/img/blog/4.jpg",
-      "author": "Appiya",
-      "comment": "05 Comments",
-      "category": "App Features",
-      "content": "Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small."
-    }
-  ]
-},
-"joblisting": {
-  "sectiontitle": "Open <span>Job</span> Positions",
-  "buttontext":" Apply Now ",
-  "job":[
-     {
-      "jobtitle": "Property Agent For UK Office Required",
-      "date": "August 29, 2019",
-      "icon": "assets/img/icons/j1.png"
-     },
+    "items": [
       {
-      "jobtitle": "Property Agent For UK Office Required",
-      "date": "August 29, 2019",
-      "icon": "assets/img/icons/j2.png"
-     },
+        "client": "Ema Wilson",
+        "designation": "CEO at craft",
+        "star": 5,
+        "imgurl": "assets/img/client/1.png",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      },
       {
-      "jobtitle": "Property Agent For UK Office Required",
-      "date": "August 29, 2019",
-      "icon": "assets/img/icons/j3.png"
-     },
-    {
-      "jobtitle": "Property Agent For UK Office Required",
-      "date": "August 29, 2019",
-      "icon": "assets/img/icons/j4.png"
-     },
-     {
-      "jobtitle": "Property Agent For UK Office Required",
-      "date": "August 29, 2019",
-      "icon": "assets/img/icons/j5.png"
-     },
-    {
-      "jobtitle": "Property Agent For UK Office Required",
-      "date": "August 29, 2019",
-      "icon": "assets/img/icons/j6.png"
-     }
-  ]
-},
-"faq":{
+        "client": "John Mojika",
+        "designation": "CTO of Uxa",
+        "star": 5,
+        "imgurl": "assets/img/client/2.png",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      },
+      {
+        "client": "Refule Mia",
+        "designation": "Branding Idendity",
+        "star": 5,
+        "imgurl": "assets/img/client/3.png",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      }
+    ]
+  },
+  "testimonial_v2": {
+    "items": [
+      {
+        "client": "Ema Wilson",
+        "designation": "CEO at craft",
+        "clientimg": "assets/img/business/testimonial/2.png",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      },
+      {
+        "client": "John Mojika",
+        "designation": "CTO of Uxa",
+        "clientimg": "assets/img/business/testimonial/3.png",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      },
+      {
+        "client": "Refule Mia",
+        "designation": "Branding Idendity",
+        "clientimg": "assets/img/business/testimonial/3.png",
+        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+      }
+    ]
+  },
+  "blogs": {
+    "sectiontitle": "LATEST BLOG",
+    "blogs": [
+      {
+        "title": "Top inspirational apps UI for you 2019",
+        "date": "20 Nov. 2018",
+        "imgurl": "/assets/img/blog/4.jpg",
+        "author": "Appiya",
+        "comment": "05 Comments",
+        "category": "Apps UI",
+        "content": "Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small."
+      },
+      {
+        "title": "Trendy Google apps you should check 2019",
+        "date": "20 Nov. 2018",
+        "imgurl": "/assets/img/blog/4.jpg",
+        "author": "Appiya",
+        "comment": "05 Comments",
+        "category": "Google Play",
+        "content": "Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small."
+      },
+      {
+        "title": "Booming news: Google play apps has been relese",
+        "date": "20 Nov. 2018",
+        "imgurl": "/assets/img/blog/4.jpg",
+        "author": "Appiya",
+        "comment": "05 Comments",
+        "category": "App Features",
+        "content": "Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small."
+      }
+    ]
+  },
+  "joblisting": {
+    "sectiontitle": "Open <span>Job</span> Positions",
+    "buttontext": " Apply Now ",
+    "job": [
+      {
+        "jobtitle": "Property Agent For UK Office Required",
+        "date": "August 29, 2019",
+        "icon": "assets/img/icons/j1.png"
+      },
+      {
+        "jobtitle": "Property Agent For UK Office Required",
+        "date": "August 29, 2019",
+        "icon": "assets/img/icons/j2.png"
+      },
+      {
+        "jobtitle": "Property Agent For UK Office Required",
+        "date": "August 29, 2019",
+        "icon": "assets/img/icons/j3.png"
+      },
+      {
+        "jobtitle": "Property Agent For UK Office Required",
+        "date": "August 29, 2019",
+        "icon": "assets/img/icons/j4.png"
+      },
+      {
+        "jobtitle": "Property Agent For UK Office Required",
+        "date": "August 29, 2019",
+        "icon": "assets/img/icons/j5.png"
+      },
+      {
+        "jobtitle": "Property Agent For UK Office Required",
+        "date": "August 29, 2019",
+        "icon": "assets/img/icons/j6.png"
+      }
+    ]
+  },
+  "faq": {
     "sectiontitle": "Frequently",
-    "sectiioncolor":"Asked Questions",
-    "items":[
+    "sectiioncolor": "Asked Questions",
+    "items": [
       {
-        "title":"How do i pay?",
-        "class":"show",
+        "title": "How do i pay?",
+        "class": "show",
         "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"
       },
       {
-        "title":"How long does delivery take?",
-        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"
-      },      
-      {
-        "title":"How is the payment methode?",
-        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"
-      },      
-      {
-        "title":"When will i receive my refund?",
+        "title": "How long does delivery take?",
         "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"
       },
       {
-        "title":"How long does delivery take?",
+        "title": "How is the payment methode?",
         "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"
-      },      
+      },
       {
-        "title":"How much is the shipping?",
+        "title": "When will i receive my refund?",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"
+      },
+      {
+        "title": "How long does delivery take?",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"
+      },
+      {
+        "title": "How much is the shipping?",
         "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour"
       }
     ]
-},
-"latestpost":{
+  },
+  "latestpost": {
     "sectiontitle": "Our Latest",
-    "sectiioncolor":"Post",
-    "subtitle":"Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most.",
-    "items":[
+    "sectiioncolor": "Post",
+    "subtitle": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most.",
+    "items": [
       {
-        "title":"Digital Marketing Problem Solving Meating",
+        "title": "Digital Marketing Problem Solving Meating",
         "content": "Riyaqas One of the best Software Development company. Web Riyaqas is forefront as the most innovative",
-        "url":"/blog-details",
-        "image":"assets/img/blog/9.png",
-        "author":"admin",
-        "date":"Nov 18, 2019",
-        "author_image":"assets/img/blog/comments/2.png"
+        "url": "/blog-details",
+        "image": "assets/img/blog/9.png",
+        "author": "admin",
+        "date": "Nov 18, 2019",
+        "author_image": "assets/img/blog/comments/2.png"
       },
       {
-        "title":"We are Solving Digital Marketing System",
+        "title": "We are Solving Digital Marketing System",
         "content": "Riyaqas One of the best Software Development company. Web Riyaqas is forefront as the most innovative",
-        "url":"/blog-details",
-        "image":"assets/img/blog/10.png",
-        "author":"admin",
-        "date":"Nov 18, 2019",
-        "author_image":"assets/img/blog/comments/2.png"
+        "url": "/blog-details",
+        "image": "assets/img/blog/10.png",
+        "author": "admin",
+        "date": "Nov 18, 2019",
+        "author_image": "assets/img/blog/comments/2.png"
       },
       {
-        "title":"Market Analysis Process We are Solving",
+        "title": "Market Analysis Process We are Solving",
         "content": "Riyaqas One of the best Software Development company. Web Riyaqas is forefront as the most innovative",
-        "url":"/blog-details",
-        "image":"assets/img/blog/8.png",
-        "author":"admin",
-        "date":"Nov 18, 2019",
-        "author_image":"assets/img/blog/comments/2.png"
+        "url": "/blog-details",
+        "image": "assets/img/blog/8.png",
+        "author": "admin",
+        "date": "Nov 18, 2019",
+        "author_image": "assets/img/blog/comments/2.png"
       }
-
     ]
-},
-"getintouch":{
+  },
+  "getintouch": {
     "sectiontitle": "Get In Touch",
-    "subtitle":"Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. support team will get assistance from AI-powered suggestions.",
-    "items":[
+    "subtitle": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. support team will get assistance from AI-powered suggestions.",
+    "items": [
       {
-        "title":"Phone Number",
-          "features": [
-          "+088 012121240",
-          "+088 5412586887"
-        ]
+        "title": "Phone Number",
+        "features": ["+088 012121240", "+088 5412586887"]
       },
       {
-        "title":"Email Address",
-          "features": [
-          "riyaqas@gmail.com",
-          "codingeek@gmail.com"
-        ]
-      },      
+        "title": "Email Address",
+        "features": ["riyaqas@gmail.com", "codingeek@gmail.com"]
+      },
       {
-        "title":"Office Address",
-          "features": [
+        "title": "Office Address",
+        "features": [
           "Address: 198 West 21th Street, Suite 721 New York NY 10010"
         ]
-      }      
+      }
     ]
-},
-"gallery":{
-  "categorylist":[
-    {
-      "catname":"Business",
-      "slug":"business"
-    },    
-    {
-      "catname":"Finance",
-      "slug":"finance"
-    },    
-    {
-      "catname":"Technology",
-      "slug":"technology"
-    },    
-    {
-      "catname":"Development",
-      "slug":"development"
-    }
-  ],
-  "items":[
-    {
-      "class":"business technology",
-      "img":"assets/img/gallery/1.png",
-      "title":"Ui Problem solving",
-      "tag":"UI/UX Design"
-    },    
-    {
-      "class":"finance technology",
-      "img":"assets/img/gallery/2.png",
-      "title":"Ui Problem solving",
-      "tag":"UI/UX Design"
-    },
-    {
-      "class":"business development",
-      "img":"assets/img/gallery/3.png",
-      "title":"Ui Problem solving",
-      "tag":"UI/UX Design"
-    },
-    {
-      "class":"finance development",
-      "img":"assets/img/gallery/4.png",
-      "title":"Ui Problem solving",
-      "tag":"UI/UX Design"
-    },
-    {
-      "class":"business technology",
-      "img":"assets/img/gallery/6.png",
-      "title":"Ui Problem solving",
-      "tag":"UI/UX Design"
-    },
-    {
-      "class":"finance development",
-      "img":"assets/img/gallery/7.png",
-      "title":"Ui Problem solving",
-      "tag":"UI/UX Design"
-    },    
-    {
-      "class":"finance technology",
-      "img":"assets/img/gallery/8.png",
-      "title":"Ui Problem solving",
-      "tag":"UI/UX Design"
-    },    
-    {
-      "class":"technology development",
-      "img":"assets/img/gallery/9.png",
-      "title":"Ui Problem solving",
-      "tag":"UI/UX Design"
-    },    
-    {
-      "class":"finance technology",
-      "img":"assets/img/gallery/4.png",
-      "title":"Ui Problem solving",
-      "tag":"UI/UX Design"
-    }
-  ]
-},
-"JobAplly":{
-   "sectiontitle": "Apply Now",
-   "sectionsubtitle": "Please upload your resume and fill in the fields below to apply for your desired position."
-},
-"contactinfo": {
-  "title":"Contact info:",
-  "description": "Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tosh",
-  "address": "198 West 21th Street, Suite 721 <br/> New York NY 10010",
-  "mobile": "+088 012121240",
-  "mail": "riyaqas@gmail.com"
-},
-"contactform": {
-  "title": "Send you",
-  "title_color": "inquary",
-  "description": "Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tit, excuse my French owt to do with me up the kyver matie boy.",
-  "image": "assets/img/others/21.png"
-  
-}
-
+  },
+  "gallery": {
+    "categorylist": [
+      {
+        "catname": "Business",
+        "slug": "business"
+      },
+      {
+        "catname": "Finance",
+        "slug": "finance"
+      },
+      {
+        "catname": "Technology",
+        "slug": "technology"
+      },
+      {
+        "catname": "Development",
+        "slug": "development"
+      }
+    ],
+    "items": [
+      {
+        "class": "business technology",
+        "img": "assets/img/gallery/1.png",
+        "title": "Ui Problem solving",
+        "tag": "UI/UX Design"
+      },
+      {
+        "class": "finance technology",
+        "img": "assets/img/gallery/2.png",
+        "title": "Ui Problem solving",
+        "tag": "UI/UX Design"
+      },
+      {
+        "class": "business development",
+        "img": "assets/img/gallery/3.png",
+        "title": "Ui Problem solving",
+        "tag": "UI/UX Design"
+      },
+      {
+        "class": "finance development",
+        "img": "assets/img/gallery/4.png",
+        "title": "Ui Problem solving",
+        "tag": "UI/UX Design"
+      },
+      {
+        "class": "business technology",
+        "img": "assets/img/gallery/6.png",
+        "title": "Ui Problem solving",
+        "tag": "UI/UX Design"
+      },
+      {
+        "class": "finance development",
+        "img": "assets/img/gallery/7.png",
+        "title": "Ui Problem solving",
+        "tag": "UI/UX Design"
+      },
+      {
+        "class": "finance technology",
+        "img": "assets/img/gallery/8.png",
+        "title": "Ui Problem solving",
+        "tag": "UI/UX Design"
+      },
+      {
+        "class": "technology development",
+        "img": "assets/img/gallery/9.png",
+        "title": "Ui Problem solving",
+        "tag": "UI/UX Design"
+      },
+      {
+        "class": "finance technology",
+        "img": "assets/img/gallery/4.png",
+        "title": "Ui Problem solving",
+        "tag": "UI/UX Design"
+      }
+    ]
+  },
+  "JobAplly": {
+    "sectiontitle": "Apply Now",
+    "sectionsubtitle": "Please upload your resume and fill in the fields below to apply for your desired position."
+  },
+  "contactinfo": {
+    "title": "Contact info:",
+    "description": "Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tosh",
+    "address": "198 West 21th Street, Suite 721 <br/> New York NY 10010",
+    "mobile": "+088 012121240",
+    "mail": "riyaqas@gmail.com"
+  },
+  "contactform": {
+    "title": "Send you",
+    "title_color": "inquary",
+    "description": "Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tit, excuse my French owt to do with me up the kyver matie boy.",
+    "image": "assets/img/others/21.png"
+  }
 }
