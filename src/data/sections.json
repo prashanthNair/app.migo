@@ -1429,30 +1429,30 @@
     ]
   },
   "testimonial_v1": {
-    "sectiontitle": "What Our",
-    "sectiontitle_color": "Client Say?",
-    "short_description": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests.",
+    "sectiontitle": "Testimonials",
+    "sectiontitle_color": "",
+    "short_description": "Do not just listen to us, check out what our clients are saying!",
     "items": [
       {
         "client": "Ema Wilson",
         "designation": "CEO at craft",
         "star": 5,
         "imgurl": "assets/img/client/1.png",
-        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+        "content": "If you aren't using Hala Talents, you're missing out, groundbreaking stuff. I am very pleased."
       },
       {
         "client": "John Mojika",
         "designation": "CTO of Uxa",
         "star": 5,
         "imgurl": "assets/img/client/2.png",
-        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+        "content": "If you aren't using Hala Talents, you're missing out, groundbreaking stuff. I am very pleased."
       },
       {
         "client": "Refule Mia",
         "designation": "Branding Idendity",
         "star": 5,
         "imgurl": "assets/img/client/3.png",
-        "content": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests."
+        "content": "If you aren't using Hala Talents, you're missing out, groundbreaking stuff. I am very pleased."
       }
     ]
   },
