@@ -20,8 +20,8 @@ const Home_V2 = () => {
       <VideoV2 />
       <SoftBoxManage />
       <MigoBrand />
-      <Screenshot />
-      <PricingTable />
+      {/* <Screenshot /> */}
+      {/* <PricingTable /> */}
       <TestimonialV2 />
       <Subscribe />
       <FooterV2 />

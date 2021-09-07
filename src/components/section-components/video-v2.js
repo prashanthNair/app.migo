@@ -41,7 +41,7 @@ class Video_V2 extends Component {
                         className="video-play-btn mfp-iframe"
                       >
                         <img
-                          src={publicUrl + "/assets/img/we-provide/3.png"}
+                          src={publicUrl + "assets/img/we-provide/3.png"}
                           alt={imgattr}
                         />
                       </a>
