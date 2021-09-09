@@ -703,6 +703,31 @@
       }
     ]
   },
+  "videov4": {
+    "title": "About ",
+    "title_color": "Us",
+    "description": "Migobucks, is a brand owned by migobucks technologies private limited, bangalore, a software company operating worldwide. We are working on a Social Commerce platform which can solve few problems of business owners, and can give a better shopping experience for individual customers, also providing a platform to make money for influencers and individuals who wants to earn some money by doing a few tasks.",
+    "image_url": "assets/img/we-provide/01.png",
+    "video_url": "https://www.youtube.com/watch?v=c7XEhXZ_rsk",
+    "list": [
+      {
+        "icon": "assets/img/icons/9.png",
+        "title": "Unique Design"
+      },
+      {
+        "icon": "assets/img/icons/11.png",
+        "title": "Mobile ready"
+      },
+      {
+        "icon": "assets/img/icons/10.png",
+        "title": "Custom domain"
+      },
+      {
+        "icon": "assets/img/icons/12.png",
+        "title": "Testing work"
+      }
+    ]
+  },
   "services": {
     "sectiontitle": "What",
     "sectiontitle_color": "Service",
