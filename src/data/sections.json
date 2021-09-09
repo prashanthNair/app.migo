@@ -1351,31 +1351,31 @@
   },
 
   "whatwedo": {
-    "sectiontitle": "What We",
-    "sectiontitle_color": "Do?",
-    "offertitel": "What we",
-    "offer_color": "Offer?",
-    "short_description": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position.",
+    "sectiontitle": "Features",
+    "sectiontitle_color": "Our ",
+    "offertitel": "Features",
+    "offer_color": "Our ",
+    "short_description": "",
     "items": [
       {
-        "title": "Consultation",
+        "title": "Unparallel Business Model",
         "icon": "assets/img/startup/service/1.png",
-        "content": "Riyaqas One of the best Software Development company.Riyaqas is the forefront as the most innovative."
+        "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
       },
       {
-        "title": "Brand & Identity",
+        "title": "Modern Marketting Techniques",
         "icon": "assets/img/startup/service/2.png",
-        "content": "Riyaqas One of the best Software Development company.Riyaqas is the forefront as the most innovative."
+        "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
       },
       {
-        "title": "Web Design",
+        "title": "Revenue From Multiple Accounts",
         "icon": "assets/img/startup/service/3.png",
-        "content": "Riyaqas One of the best Software Development company.Riyaqas is the forefront as the most innovative."
+        "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
       },
       {
         "title": "Apps Development",
         "icon": "assets/img/startup/service/4.png",
-        "content": "Riyaqas One of the best Software Development company.Riyaqas is the forefront as the most innovative."
+        "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
       }
     ]
   },
