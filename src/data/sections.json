@@ -1738,15 +1738,15 @@
   },
   "contactinfo": {
     "title": "Contact info:",
-    "description": "Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tosh",
-    "address": "198 West 21th Street, Suite 721 <br/> New York NY 10010",
-    "mobile": "+088 012121240",
-    "mail": "riyaqas@gmail.com"
+    "description": "",
+    "address": " OLD MADRAS ROAD,KR PURAM BANGALORE Bangalore Karnataka - 560049 India",
+    "mobile": "+91-7012454545",
+    "mail": "hr@migobucks.com"
   },
   "contactform": {
-    "title": "Send you",
-    "title_color": "inquary",
-    "description": "Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tit, excuse my French owt to do with me up the kyver matie boy.",
+    "title": "Get In",
+    "title_color": "Touch",
+    "description": "Ask Your Queries",
     "image": "assets/img/others/21.png"
   }
 }
