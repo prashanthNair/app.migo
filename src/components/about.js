@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./global-components/navbar-v2";
+import Navbar from "./global-components/navbar";
 import PageHeader from "./global-components/page-header";
 import VideoV4 from "./section-components/video-v4";
 import WhatWeDo from "./section-components/what-we-do";
