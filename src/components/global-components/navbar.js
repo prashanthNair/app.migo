@@ -102,13 +102,13 @@ class Navbar extends Component {
                   <Link to="/">Home</Link>
                 </li>
                 <li className="menu-item-has-children">
-                  <Link to="#">Solutions</Link>
+                  <Link to="/sollutions">Solutions</Link>
                   <ul className="sub-menu">
                     <li>
-                      <Link to="/customer-app">Customer App</Link>
+                      <Link to="/customer-app">Migobucks App</Link>
                     </li>
                     <li>
-                      <Link to="/brands-app">Brands Application</Link>
+                      <Link to="/brands-app">Migobucks Brands</Link>
                     </li>
                   </ul>
                 </li>

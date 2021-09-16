@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./global-components/navbar-v2";
+import Navbar from "./global-components/navbar";
 import PageHeader from "./global-components/page-header";
 import SliderV2 from "./section-components/slider-v2";
 import WorkProcessing from "./section-components/work-processing";
@@ -11,6 +11,7 @@ const WorkProcessingPage = () => {
     <div>
       <Navbar />
       <SliderV2 />
+      {/* <PageHeader headertitle="Work Processing" /> */}
       <WorkProcessing customclass="pd-top-120" />
       <Subscribe />
       <FooterV2 />
