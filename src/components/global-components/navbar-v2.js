@@ -16,66 +16,82 @@ class Navbar_v2 extends Component {
                   <img src={publicUrl + "assets/img/logo.png"} alt={imgattr} />
                 </a>
               </div>
-              {/* <div className="nav-right-content">
-                                <ul>
-                                   <li className="search">
-                                        <i className="ti-search" />
-                                      </li>
-                                      <li className="cart">
-                                       <div className="notification">
-                                              <a href="#">
-                                                <i className="la la-shopping-cart" />
-                                                <span className="notification-count">2</span>
-                                              </a>
-                                       </div>
-                                        <div className="widget_shopping_cart_content">
-                                          <ul>
-                                            <li>
-                                              <div className="media">
-                                                <div className="media-left">
-                                                  <img src={publicUrl+"assets/img/checkout/7.png"} alt="img" />
-                                                </div>
-                                                <div className="media-body">
-                                                  <a className="title" href="#">Smart watch red color</a>
-                                                  <p>Quantity: 1</p>
-                                                  <span className="price">$150.00</span>
-                                                </div>
-                                              </div>
-                                              <a className="remove-product" href="#"><span className="ti-close" /></a>
-                                            </li>
-                                            <li>
-                                              <div className="media">
-                                                <div className="media-left">
-                                                  <img src="assets/img/checkout/8.png" alt="img" />
-                                                </div>
-                                                <div className="media-body">
-                                                  <a className="title" href="#">Smart watch red color</a>
-                                                  <p>Quantity: 1</p>
-                                                  <span className="price">$150.00</span>
-                                                </div>
-                                              </div>
-                                              <a className="remove-product" href="#"><span className="ti-close" /></a>
-                                            </li>
-                                          </ul>
-                                          <p className="total">
-                                            <strong>Subtotal:</strong> 
-                                            <span className="amount">
-                                              <span className="woocommerce-Price-currencySymbol">$</span>129.00
-                                            </span>       
-                                          </p>
-                                          <p className="buttons">
-                                              <Link to="/checkout" className="button">View Card &amp; Check out</Link>
-                                          </p>
-                                        </div>
-                                      </li>
-                                      <li className="notification">
-                                        <a href="#">
-                                          <i className="fa fa-heart-o" />
-                                          <span className="notification-count">0</span>
-                                        </a>
-                                  </li>
-                                </ul>
-                            </div> */}
+              <div className="nav-right-content">
+                <ul>
+                  <li className="search">
+                    <i className="ti-search" />
+                  </li>
+                  <li className="cart">
+                    <div className="notification">
+                      <a href="#">
+                        <i className="la la-shopping-cart" />
+                        <span className="notification-count">2</span>
+                      </a>
+                    </div>
+                    <div className="widget_shopping_cart_content">
+                      <ul>
+                        <li>
+                          <div className="media">
+                            <div className="media-left">
+                              <img
+                                src={publicUrl + "assets/img/checkout/7.png"}
+                                alt="img"
+                              />
+                            </div>
+                            <div className="media-body">
+                              <a className="title" href="#">
+                                Smart watch red color
+                              </a>
+                              <p>Quantity: 1</p>
+                              <span className="price">$150.00</span>
+                            </div>
+                          </div>
+                          <a className="remove-product" href="#">
+                            <span className="ti-close" />
+                          </a>
+                        </li>
+                        <li>
+                          <div className="media">
+                            <div className="media-left">
+                              <img src="assets/img/checkout/8.png" alt="img" />
+                            </div>
+                            <div className="media-body">
+                              <a className="title" href="#">
+                                Smart watch red color
+                              </a>
+                              <p>Quantity: 1</p>
+                              <span className="price">$150.00</span>
+                            </div>
+                          </div>
+                          <a className="remove-product" href="#">
+                            <span className="ti-close" />
+                          </a>
+                        </li>
+                      </ul>
+                      <p className="total">
+                        <strong>Subtotal:</strong>
+                        <span className="amount">
+                          <span className="woocommerce-Price-currencySymbol">
+                            $
+                          </span>
+                          129.00
+                        </span>
+                      </p>
+                      <p className="buttons">
+                        <Link to="/checkout" className="button">
+                          View Card &amp; Check out
+                        </Link>
+                      </p>
+                    </div>
+                  </li>
+                  <li className="notification">
+                    <a href="#">
+                      <i className="fa fa-heart-o" />
+                      <span className="notification-count">0</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
               <button
                 className="navbar-toggler"
                 type="button"
