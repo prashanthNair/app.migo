@@ -5,7 +5,7 @@ class Navbar extends Component {
   render() {
     let publicUrl = process.env.PUBLIC_URL + "/";
     let imgattr = "logo";
-    let anchor = "#";
+    let anchor = "/";
     return (
       <div>
         <nav className="navbar navbar-area navbar-expand-lg nav-style-01">
@@ -93,7 +93,7 @@ class Navbar extends Component {
             </div>
             <div className="collapse navbar-collapse" id="Riyaqas_main_menu">
               <div className="logo-wrapper desktop-logo">
-                <a href="#" className="logo">
+                <a href="/" className="logo">
                   <img src={publicUrl + "assets/img/logo.png"} alt={imgattr} />
                 </a>
               </div>
