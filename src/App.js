@@ -8,6 +8,7 @@ import TrainingListingPage from "./components/job-listing";
 import TrainingDetailsPage from "./components/job-details";
 import Brands from "./components/home-v4";
 import Buddy from "./components/home-v7";
+import MigoApp from "./components/home-v3";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/ojt/details/:id" component={TrainingDetailsPage} />
         <Route exact path="/brands" component={Brands} />
         <Route exact path="/buddy" component={Buddy} />
+        <Route exact path="/app" component={MigoApp} />
       </Switch>
     </div>
   );

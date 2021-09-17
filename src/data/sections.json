@@ -142,8 +142,8 @@
     ]
   },
   "banner": {
-    "title": "Turning <br /> all Ideas Into <br /> Real <span>Success</span>",
-    "subtitle": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.",
+    "title": "Migobucks <span>App</span>",
+    "subtitle": "Shop, Share & Impress ",
     "btn_text": "Read More",
     "image_url1": "assets/img/startup/slider/1.png",
     "image_url2": "assets/img/startup/slider/2.png",
@@ -443,11 +443,11 @@
     ]
   },
   "whyChooseUs": {
-    "sectiontitle": "Why Choose",
-    "sectiontitle_color": "Riyaqas?",
+    "sectiontitle": "Shopping Experience",
+    "sectiontitle_color": "New ",
     "videoimage": "assets/img/startup/why-choose/1.png",
     "videourl": "https://www.youtube.com/watch?v=c7XEhXZ_rsk",
-    "short_description": "Riyaqas One of the best Softwire Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position. Our solutions on a regular basis.",
+    "short_description": "Migobucks One of the best Software Development company. Migobucks is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position. Our solutions on a regular basis.",
     "bgimg": "assets/img/startup/why-choose/2.png",
     "list_item": [
       {
@@ -1376,29 +1376,29 @@
   },
 
   "whatwedo": {
-    "sectiontitle": "Features",
-    "sectiontitle_color": "Our ",
-    "offertitel": "Features",
-    "offer_color": "Our ",
+    "sectiontitle": "Why",
+    "sectiontitle_color": "Migobucks? ",
+    "offertitel": "Why",
+    "offer_color": "Migobucks ",
     "short_description": "",
     "items": [
       {
-        "title": "Unparallel Business Model",
+        "title": "Earn Free Shopping Credits",
         "icon": "assets/img/startup/service/1.png",
         "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
       },
       {
-        "title": "Modern Marketting Techniques",
+        "title": "Connect With people",
         "icon": "assets/img/startup/service/2.png",
         "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
       },
       {
-        "title": "Revenue From Multiple Accounts",
+        "title": "Stories",
         "icon": "assets/img/startup/service/3.png",
         "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
       },
       {
-        "title": "Apps Development",
+        "title": "Create And Join Circles",
         "icon": "assets/img/startup/service/4.png",
         "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
       }

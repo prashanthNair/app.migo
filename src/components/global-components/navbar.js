@@ -105,7 +105,7 @@ class Navbar extends Component {
                   <Link to="/sollutions">Solutions</Link>
                   <ul className="sub-menu">
                     <li>
-                      <Link to="/customer-app">Migobucks App</Link>
+                      <Link to="/app">Migobucks App</Link>
                     </li>
                     <li>
                       <Link to="/brands">Migobucks Brands</Link>
