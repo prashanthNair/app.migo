@@ -34,7 +34,7 @@ function Job_Listing(props) {
   const handleJobApply = useCallback(
     async (job) => {
       setLoading(true);
-      console.log("Making Req");
+
       const payload = {
         amount: job.amount * 100,
         currency: "INR",
@@ -66,7 +66,7 @@ function Job_Listing(props) {
           color: "#2575BB",
         },
       };
-      console.log(paymentOptions);
+
       setLoading(false);
       const rzp1 = new Razorpay(paymentOptions);
       rzp1.open();

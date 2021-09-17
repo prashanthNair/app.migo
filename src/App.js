@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, HashRouter, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Home from "./components/home-v2";
 import About from "./components/about";
 import Contact from "./components/contact";
@@ -8,7 +8,6 @@ import TrainingListingPage from "./components/job-listing";
 import TrainingDetailsPage from "./components/job-details";
 
 function App() {
-  console.log(process.env);
   return (
     <div className="App">
       <Switch>
