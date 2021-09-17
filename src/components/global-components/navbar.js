@@ -119,7 +119,7 @@ class Navbar extends Component {
                       <Link to="/migobucks-assets">Migobucks Assets</Link>
                     </li>
                     <li>
-                      <Link to="/migobucks-brands">Migobucks Brand</Link>
+                      <Link to="/buddy">Migobucks Buddy</Link>
                     </li>
                   </ul>
                 </li>
