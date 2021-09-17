@@ -6,6 +6,7 @@ import Contact from "./components/contact";
 import Sollutions from "./components/work-processing";
 import TrainingListingPage from "./components/job-listing";
 import TrainingDetailsPage from "./components/job-details";
+import Brands from "./components/home-v4";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/sollutions" component={Sollutions} />
         <Route exact path="/ojt" component={TrainingListingPage} />
         <Route exact path="/ojt/details/:id" component={TrainingDetailsPage} />
+        <Route exact path="/brands" component={Brands} />
       </Switch>
     </div>
   );
