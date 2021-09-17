@@ -8,6 +8,7 @@ import TrainingListingPage from "./components/job-listing";
 import TrainingDetailsPage from "./components/job-details";
 
 function App() {
+  console.log(process.env);
   return (
     <div className="App">
       <Switch>

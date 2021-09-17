@@ -1,5 +1,6 @@
 import React, { Component, useEffect, useState, useCallback } from "react";
 import { useParams } from "react-router-dom";
+import PuffLoader from "react-spinners/PuffLoader";
 import useRazorpay from "react-razorpay";
 import sectiondata from "../../data/sections.json";
 import { creatPayment } from "../../api/payment";
@@ -18,6 +19,8 @@ function Job_Listing(props) {
     amount: 0,
   });
 
+  const [loading, setLoading] = useState(false);
+
   let publicUrl = process.env.PUBLIC_URL + "/";
   let imgattr = "image";
   let data = sectiondata.joblisting;
@@ -30,6 +33,7 @@ function Job_Listing(props) {
 
   const handleJobApply = useCallback(
     async (job) => {
+      setLoading(true);
       console.log("Making Req");
       const payload = {
         amount: job.amount * 100,
@@ -43,7 +47,10 @@ function Job_Listing(props) {
         currency: "INR",
         name: "Migobucks",
         description: job.jobtitle,
-        image: job.icon,
+        image:
+          process.env.NODE_ENV === "production"
+            ? `https://dev.migobucks.com/${job.icon}`
+            : ``,
         order_id: payment.order.id, //This is a sample Order ID. Pass the `id` obtained in the response of createOrder().
         handler: function (response) {
           alert(response.razorpay_payment_id);
@@ -56,9 +63,11 @@ function Job_Listing(props) {
           jobId: job.jobId,
         },
         theme: {
-          color: "#3399cc",
+          color: "#2575BB",
         },
       };
+      console.log(paymentOptions);
+      setLoading(false);
       const rzp1 = new Razorpay(paymentOptions);
       rzp1.open();
     },
@@ -77,12 +86,20 @@ function Job_Listing(props) {
               <h6 className="title">{jobData.jobtitle}</h6>
               <span>Migobucks</span>
               <div dangerouslySetInnerHTML={{ __html: jobData.description }} />
-              <button
-                onClick={handleJobApply({ ...jobData })}
-                className="job-apply-btn"
-              >
-                Apply Now
-              </button>
+              {loading ? (
+                <PuffLoader
+                  speedMultiplier={1.5}
+                  loading={loading}
+                  color={"#2575BB"}
+                />
+              ) : (
+                <button
+                  onClick={() => handleJobApply({ ...jobData })}
+                  className="job-apply-btn"
+                >
+                  Apply Now
+                </button>
+              )}
             </div>
           </div>
         </div>
