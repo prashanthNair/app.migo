@@ -56,6 +56,10 @@ function Job_Listing(props) {
           alert(response.razorpay_payment_id);
           alert(response.razorpay_order_id);
           alert(response.razorpay_signature);
+
+          // -> Migo's webhook
+          // redirect -> Payment Sucess
+          // await -> lambda
         },
         prefill: {},
         notes: {
