@@ -16,8 +16,7 @@ class What_We_Do extends Component {
               <div className="col-xl-6 col-lg-10">
                 <div className="section-title text-center">
                   <h2 className="title">
-                    <span>{data.sectiontitle_color}</span>
-                    {data.sectiontitle}{" "}
+                    {data.sectiontitle} <span>{data.sectiontitle_color}</span>
                   </h2>
                   <p>{data.short_description}</p>
                 </div>
