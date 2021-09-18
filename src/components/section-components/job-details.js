@@ -135,7 +135,7 @@ function Job_Listing(props) {
       await enroll(payload);
       setLoading(false);
       setDrawerOpen(false);
-      Alert.info("Registration Successfull", 5000);
+      Alert.success("Registration Successfull", 5000);
     },
     [handlePayment, jobData]
   );
