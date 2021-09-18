@@ -1,7 +1,9 @@
 import React, { Component, useEffect, useState, useCallback } from "react";
 import { useParams } from "react-router-dom";
 import PuffLoader from "react-spinners/PuffLoader";
+import { Drawer } from "rsuite";
 import useRazorpay from "react-razorpay";
+import JobApplyForm from "../job-apply";
 import sectiondata from "../../data/sections.json";
 import { creatPayment } from "../../api/payment";
 import parse from "html-react-parser";
@@ -20,6 +22,7 @@ function Job_Listing(props) {
   });
 
   const [loading, setLoading] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   let publicUrl = process.env.PUBLIC_URL + "/";
   let imgattr = "image";
@@ -31,7 +34,13 @@ function Job_Listing(props) {
     setJobData(job);
   }, [id]);
 
-  const handleJobApply = useCallback(
+  const handleDrawerClose = useCallback(() => setDrawerOpen(false), []);
+
+  const handleJobApply = useCallback(() => {
+    setDrawerOpen(true);
+  }, []);
+
+  const handlePayment = useCallback(
     async (job) => {
       setLoading(true);
 
@@ -87,8 +96,20 @@ function Job_Listing(props) {
               <div className="section-title">
                 <h2 className="title">Job Details</h2>
               </div>
-              <h6 className="title">{jobData.jobtitle}</h6>
-              <span>Migobucks</span>
+              <h6
+                style={{
+                  color: "#ED536C",
+                  fontWeight: "bold",
+                  fontSize: "35px",
+                  lineHeight: "45px",
+                }}
+                className="title"
+              >
+                {jobData.jobtitle}
+              </h6>
+              <span>
+                <hr />
+              </span>
               <div dangerouslySetInnerHTML={{ __html: jobData.description }} />
               {loading ? (
                 <PuffLoader
@@ -108,6 +129,11 @@ function Job_Listing(props) {
           </div>
         </div>
       </div>
+      <Drawer onHide={handleDrawerClose} show={drawerOpen}>
+        <Drawer.Body>
+          <JobApplyForm />
+        </Drawer.Body>
+      </Drawer>
     </div>
   );
 }

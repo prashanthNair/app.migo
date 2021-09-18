@@ -8,12 +8,15 @@ class Navbar extends Component {
     let anchor = "/";
     return (
       <div>
-        <nav className="navbar navbar-area navbar-expand-lg nav-style-01">
+        <nav
+          style={{ fontFamily: "poppins", fontWeight: "bold" }}
+          className="navbar navbar-area navbar-expand-lg nav-style-01 py-2"
+        >
           <div className="container nav-container">
             <div className="responsive-mobile-menu">
               <div className="logo-wrapper mobile-logo">
                 <a href={anchor} className="logo">
-                  <img src={publicUrl + "assets/img/logo.png"} alt={imgattr} />
+                  <img src={publicUrl + "assets/img/logo.svg"} alt={imgattr} />
                 </a>
               </div>
               {/* <div className="nav-right-content">
@@ -94,7 +97,7 @@ class Navbar extends Component {
             <div className="collapse navbar-collapse" id="Riyaqas_main_menu">
               <div className="logo-wrapper desktop-logo">
                 <a href="/" className="logo">
-                  <img src={publicUrl + "assets/img/logo.png"} alt={imgattr} />
+                  <img src={publicUrl + "assets/img/logo.svg"} alt={imgattr} />
                 </a>
               </div>
               <ul className="navbar-nav">
