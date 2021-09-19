@@ -1,5 +1,6 @@
-import React, { Component, useState } from "react";
+import React, { Component, useCallback, useState } from "react";
 import sectiondata from "../../data/sections.json";
+import { upload } from "../../api/file";
 import parse from "html-react-parser";
 
 function ApplyForm(props) {
@@ -11,13 +12,51 @@ function ApplyForm(props) {
   const [qualification, setQualification] = useState("");
   const [note1, setNote1] = useState("");
   const [note, setNote] = useState("");
+  const [fileUrl, setFileUrl] = useState("");
+
+  const [resume, setResumeFile] = useState(null);
+
+  const [loading, setLoading] = useState(false);
 
   let customclass = props.customclass ? props.customclass : "";
   let data = sectiondata.JobAplly;
 
-  console.log(props);
+  const uploadFileToAPI = useCallback(async (file) => {
+    const formData = new FormData();
+    formData.append("file", file);
+    setLoading(true);
+    const { data } = await upload(formData);
+    setLoading(false);
+    setFileUrl(data[0]);
+  }, []);
 
-  const handleFormSubmit = React.useCallback(
+  const handleFileDrop = useCallback(
+    (e) => {
+      e.preventDefault();
+      const selectedFile = e.dataTransfer.files[0];
+      setResumeFile(selectedFile);
+      uploadFileToAPI(selectedFile);
+    },
+    [uploadFileToAPI]
+  );
+
+  const handleRemoveFile = useCallback(() => {
+    setResumeFile(null);
+    setFileUrl("");
+  }, []);
+
+  const handleSelectFile = useCallback(() => {
+    const el = document.createElement("input");
+    el.type = "file";
+    el.addEventListener("change", (event) => {
+      const selectedFile = event.target.files[0];
+      setResumeFile(selectedFile);
+      uploadFileToAPI(selectedFile);
+    });
+    el.click();
+  }, [uploadFileToAPI]);
+
+  const handleFormSubmit = useCallback(
     (ev) => {
       ev.preventDefault();
       if (props.onApply) {
@@ -31,10 +70,22 @@ function ApplyForm(props) {
           note,
           experience,
           qualification,
+          fileUrl,
         });
       }
     },
-    [email, fullName, joinDate, note, note1, phone, props]
+    [
+      email,
+      experience,
+      fullName,
+      joinDate,
+      note,
+      note1,
+      phone,
+      props,
+      qualification,
+      fileUrl,
+    ]
   );
 
   return (
@@ -147,7 +198,6 @@ function ApplyForm(props) {
                           value={note1}
                           onChange={(ev) => setNote1(ev.target.value)}
                           cols={20}
-                          defaultValue={""}
                         />
                       </div>
                     </div>
@@ -160,14 +210,55 @@ function ApplyForm(props) {
                           autoComplete="none"
                           value={note}
                           onChange={(ev) => setNote(ev.target.value)}
-                          defaultValue={""}
-                          required
                         />
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      {resume === null && (
+                        <div className="single-input-wrap">
+                          <div
+                            onClick={handleSelectFile}
+                            onDragOver={(e) => e.preventDefault()}
+                            onDragEnter={(e) => e.preventDefault()}
+                            onDrop={handleFileDrop}
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              height: "100px",
+                              cursor: "move",
+                              fontFamily: "poppins",
+                              border: "2px dashed lightgrey",
+                            }}
+                          >
+                            <p>Drag {"&"} Drop your resume here</p>
+                          </div>
+                        </div>
+                      )}
+
+                      <div style={{ marginTop: "10px" }}>
+                        {resume ? (
+                          <p>
+                            {resume.name}{" "}
+                            <button
+                              onClick={handleRemoveFile}
+                              className={"ml-4"}
+                            >
+                              Remove
+                            </button>
+                          </p>
+                        ) : (
+                          <p>No File Selected</p>
+                        )}
                       </div>
                     </div>
                     <div className="col-12"></div>
                     <div className="col-12 text-center">
-                      <button type="submit" className="btn btn-blue">
+                      <button
+                        disabled={loading}
+                        type="submit"
+                        className="btn btn-blue"
+                      >
                         Make Payment
                       </button>
                     </div>

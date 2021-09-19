@@ -100,6 +100,7 @@ function Job_Listing(props) {
         note,
         experience,
         qualification,
+        fileUrl,
       } = params;
       const paymentResponse = await handlePayment(jobData);
       const payload = {
@@ -113,6 +114,7 @@ function Job_Listing(props) {
         },
         meta: {
           ...jobData,
+          fileUrl,
           experience,
           qualification,
           questions: [
