@@ -129,6 +129,7 @@ function Job_Listing(props) {
         startDate: joinDate,
         duration: "null",
         jobId: jobData.jobId,
+        amount: jobData.amount,
       };
       await enroll(payload);
       setLoading(false);

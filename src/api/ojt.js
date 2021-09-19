@@ -14,6 +14,7 @@ export async function enroll(params) {
     startDate,
     duration,
     jobId,
+    amount,
   } = params;
   const { data } = await axios.post(`${ojtApiUrl}/enroll`, {
     firstName,
@@ -26,6 +27,7 @@ export async function enroll(params) {
     startDate,
     duration,
     jobId,
+    amount,
   });
 
   return data;

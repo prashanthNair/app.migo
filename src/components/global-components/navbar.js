@@ -115,7 +115,7 @@ class Navbar extends Component {
                     </li>
                   </ul>
                 </li>
-                <li className="menu-item-has-children">
+                {/* <li className="menu-item-has-children">
                   <Link to="#">For Business</Link>
                   <ul className="sub-menu">
                     <li>
@@ -125,7 +125,7 @@ class Navbar extends Component {
                       <Link to="/buddy">Migobucks Buddy</Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li className="menu-item-has-children">
                   <Link to="#">Opportunities</Link>
                   <ul className="sub-menu">
