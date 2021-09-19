@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <PageHeader headertitle="Contact" />
+      {/* <PageHeader headertitle="Contact" /> */}
       <ContactForm />
       <ContactInfo />
       <FooterV2 />
