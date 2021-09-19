@@ -13,6 +13,11 @@ function Job_Listing(props) {
   const { id } = useParams();
   const Razorpay = useRazorpay();
 
+  const currentUrl = React.useMemo(() => {
+    const { host, protocol } = window.location;
+    return `${protocol}//${host}`;
+  }, []);
+
   const [jobData, setJobData] = useState({
     jobId: "",
     jobtitle: "",
@@ -58,20 +63,10 @@ function Job_Listing(props) {
           currency: "INR",
           name: "Migobucks",
           description: job.jobtitle,
-          image:
-            process.env.NODE_ENV === "production"
-              ? `https://dev.migobucks.com/${job.icon}`
-              : ``,
+          image: `${currentUrl}/${job.icon}`,
           order_id: payment.order.id, //This is a sample Order ID. Pass the `id` obtained in the response of createOrder().
           handler: function (response) {
-            // alert(response.razorpay_payment_id);
-            // alert(response.razorpay_order_id);
-            // alert(response.razorpay_signature);
             resolve(response);
-
-            // -> Migo's webhook
-            // redirect -> Payment Sucess
-            // await -> lambda
           },
           prefill: {},
           notes: {
@@ -86,24 +81,16 @@ function Job_Listing(props) {
         setLoading(false);
         const rzp1 = new Razorpay(paymentOptions);
         rzp1.on("payment.failed", function (response) {
-          // alert(response.error.code);
-          // alert(response.error.description);
-          // alert(response.error.source);
-          // alert(response.error.step);
-          // alert(response.error.reason);
-          // alert(response.error.metadata.order_id);
-          // alert(response.error.metadata.payment_id);
           reject(response);
         });
         rzp1.open();
       });
     },
-    [Razorpay]
+    [Razorpay, currentUrl]
   );
 
   const handleApplyFormSubmit = useCallback(
     async (params) => {
-      console.log(arguments);
       const { fullName, email, phone, joinDate, note1, note } = params;
       const paymentResponse = await handlePayment(jobData);
       const payload = {
