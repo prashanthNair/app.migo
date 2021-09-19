@@ -91,7 +91,16 @@ function Job_Listing(props) {
 
   const handleApplyFormSubmit = useCallback(
     async (params) => {
-      const { fullName, email, phone, joinDate, note1, note } = params;
+      const {
+        fullName,
+        email,
+        phone,
+        joinDate,
+        note1,
+        note,
+        experience,
+        qualification,
+      } = params;
       const paymentResponse = await handlePayment(jobData);
       const payload = {
         firstName: fullName.split(" ")[0],
@@ -104,6 +113,8 @@ function Job_Listing(props) {
         },
         meta: {
           ...jobData,
+          experience,
+          qualification,
           questions: [
             {
               q: "why migobucks",
@@ -116,7 +127,7 @@ function Job_Listing(props) {
           ],
         },
         startDate: joinDate,
-        duration: "2 Months",
+        duration: "null",
         jobId: jobData.jobId,
       };
       await enroll(payload);
@@ -147,9 +158,13 @@ function Job_Listing(props) {
               >
                 {jobData.jobtitle}
               </h6>
+              <div>
+                <h6>Training Fee: ₹{jobData.amount}</h6>
+              </div>
               <span>
                 <hr />
               </span>
+
               <div dangerouslySetInnerHTML={{ __html: jobData.description }} />
               {loading ? (
                 <PuffLoader

@@ -7,6 +7,8 @@ function ApplyForm(props) {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [joinDate, setJoinDate] = useState("");
+  const [experience, setExperience] = useState("");
+  const [qualification, setQualification] = useState("");
   const [note1, setNote1] = useState("");
   const [note, setNote] = useState("");
 
@@ -27,6 +29,8 @@ function ApplyForm(props) {
           joinDate,
           note1,
           note,
+          experience,
+          qualification,
         });
       }
     },
@@ -41,15 +45,20 @@ function ApplyForm(props) {
             <div className="col-xl-10 col-lg-10">
               <div className="section-title text-center">
                 <h2 className="title">{data.sectiontitle}</h2>
-                <p>{data.sectionsubtitle}</p>
+                {/* <p>{data.sectionsubtitle}</p> */}
               </div>
               <div className="job-apply-area">
-                <form onSubmit={handleFormSubmit} className="riyaqas-form-wrap">
+                <form
+                  autoComplete={false}
+                  onSubmit={handleFormSubmit}
+                  className="riyaqas-form-wrap"
+                >
                   <div className="row">
                     <div className="col-md-6">
                       <div className="single-input-wrap">
                         <input
                           type="text"
+                          autoComplete="none"
                           placeholder="Full Name"
                           className="single-input"
                           value={fullName}
@@ -62,6 +71,7 @@ function ApplyForm(props) {
                       <div className="single-input-wrap">
                         <input
                           type="email"
+                          autoComplete="none"
                           placeholder="Email"
                           value={email}
                           onChange={(ev) => setEmail(ev.target.value)}
@@ -73,6 +83,7 @@ function ApplyForm(props) {
                     <div className="col-md-6">
                       <div className="single-input-wrap">
                         <input
+                          autoComplete="none"
                           placeholder="Contact Number"
                           type="phone"
                           value={phone}
@@ -86,8 +97,42 @@ function ApplyForm(props) {
                       <div className="single-input-wrap">
                         <input
                           placeholder="Date for joining"
-                          type="date"
+                          type="text"
+                          autoComplete="none"
+                          onFocus={(e) => {
+                            e.currentTarget.type = "date";
+                          }}
+                          onBlur={(e) => {
+                            e.currentTarget.type = "text";
+                            e.currentTarget.placeholder = "Date for joining";
+                          }}
                           onChange={(ev) => setJoinDate(ev.target.value)}
+                          className="single-input"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single-input-wrap">
+                        <input
+                          autoComplete="none"
+                          placeholder="Qualification"
+                          type="text"
+                          value={qualification}
+                          onChange={(ev) => setQualification(ev.target.value)}
+                          className="single-input"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="single-input-wrap">
+                        <input
+                          placeholder="Experience (If any)"
+                          type="text"
+                          autoComplete="none"
+                          value={experience}
+                          onChange={(ev) => setExperience(ev.target.value)}
                           className="single-input"
                           required
                         />
@@ -98,6 +143,7 @@ function ApplyForm(props) {
                         <textarea
                           placeholder="Why Join Migobucks?"
                           className="single-input"
+                          autoComplete="none"
                           value={note1}
                           onChange={(ev) => setNote1(ev.target.value)}
                           cols={20}
@@ -111,6 +157,7 @@ function ApplyForm(props) {
                           placeholder="Note"
                           className="single-input"
                           cols={20}
+                          autoComplete="none"
                           value={note}
                           onChange={(ev) => setNote(ev.target.value)}
                           defaultValue={""}
@@ -121,7 +168,7 @@ function ApplyForm(props) {
                     <div className="col-12"></div>
                     <div className="col-12 text-center">
                       <button type="submit" className="btn btn-blue">
-                        Submit
+                        Make Payment
                       </button>
                     </div>
                   </div>
