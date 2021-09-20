@@ -240,7 +240,7 @@ function ApplyForm(props) {
                               justifyContent: "center",
                               alignItems: "center",
                               height: "100px",
-                              cursor: "move",
+                              cursor: "pointer",
                               fontFamily: "poppins",
                               border: "2px dashed lightgrey",
                             }}
