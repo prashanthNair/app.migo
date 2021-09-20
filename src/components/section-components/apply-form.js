@@ -1,5 +1,6 @@
 import React, { Component, useCallback, useState } from "react";
 import sectiondata from "../../data/sections.json";
+import { Alert } from "rsuite";
 import { upload } from "../../api/file";
 import parse from "html-react-parser";
 
@@ -18,6 +19,15 @@ function ApplyForm(props) {
 
   const [loading, setLoading] = useState(false);
 
+  const allowedFileTypes = React.useMemo(
+    () => [
+      "application/pdf",
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "application/msword",
+    ],
+    []
+  );
+
   let customclass = props.customclass ? props.customclass : "";
   let data = sectiondata.JobAplly;
 
@@ -34,10 +44,14 @@ function ApplyForm(props) {
     (e) => {
       e.preventDefault();
       const selectedFile = e.dataTransfer.files[0];
+      console.log(selectedFile);
+      if (!allowedFileTypes.includes(selectedFile.type)) {
+        return Alert.error("Only PDF and Doc Files Allowed", 6000);
+      }
       setResumeFile(selectedFile);
       uploadFileToAPI(selectedFile);
     },
-    [uploadFileToAPI]
+    [allowedFileTypes, uploadFileToAPI]
   );
 
   const handleRemoveFile = useCallback(() => {
@@ -48,13 +62,14 @@ function ApplyForm(props) {
   const handleSelectFile = useCallback(() => {
     const el = document.createElement("input");
     el.type = "file";
+    el.setAttribute("accept", allowedFileTypes.toString());
     el.addEventListener("change", (event) => {
       const selectedFile = event.target.files[0];
       setResumeFile(selectedFile);
       uploadFileToAPI(selectedFile);
     });
     el.click();
-  }, [uploadFileToAPI]);
+  }, [allowedFileTypes, uploadFileToAPI]);
 
   const handleFormSubmit = useCallback(
     (ev) => {
@@ -99,11 +114,7 @@ function ApplyForm(props) {
                 {/* <p>{data.sectionsubtitle}</p> */}
               </div>
               <div className="job-apply-area">
-                <form
-                  autoComplete={false}
-                  onSubmit={handleFormSubmit}
-                  className="riyaqas-form-wrap"
-                >
+                <form onSubmit={handleFormSubmit} className="riyaqas-form-wrap">
                   <div className="row">
                     <div className="col-md-6">
                       <div className="single-input-wrap">
