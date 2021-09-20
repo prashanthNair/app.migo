@@ -272,9 +272,15 @@ function ApplyForm(props) {
                       <div style={{ marginTop: "10px" }}>
                         {resume ? (
                           <p>
-                            {resume.name && resume.name.length > 30
-                              ? `${resume.name.substring(0, 30)}...`
-                              : resume.name}{" "}
+                            {resume.name && resume.name.length > 30 ? (
+                              <a download={"resume"} href={fileUrl}>
+                                `${resume.name.substring(0, 30)}...`
+                              </a>
+                            ) : (
+                              <a download={"resume"} href={fileUrl}>
+                                {resume.name}
+                              </a>
+                            )}{" "}
                             <button
                               style={{ background: "#ED536C", color: "#fff" }}
                               onClick={handleRemoveFile}
