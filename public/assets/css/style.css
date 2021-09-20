@@ -8220,7 +8220,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   border-bottom: 1px solid #d9dde4;
   border-radius: 0;
   padding: 0;
-  color: #2575BB;
+  color: #2575bb;
 }
 .job-apply-area .single-input-wrap textarea {
   padding: 10px 0 !important;
@@ -8396,4 +8396,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .navbar-area .nav-container .nav-right-content ul li.cart .notification i {
   font-size: 26px;
   font-weight: 500;
+}
+
+.hovered {
+  background-color: lightblue;
 }

@@ -57,6 +57,7 @@ function ApplyForm(props) {
   const handleFileDrop = useCallback(
     (e) => {
       e.preventDefault();
+      e.currentTarget.classList.remove("hovered");
       const selectedFile = e.dataTransfer.files[0];
 
       if (!allowedFileTypes.includes(selectedFile.type)) {
@@ -248,7 +249,10 @@ function ApplyForm(props) {
                           <div
                             onClick={handleSelectFile}
                             onDragOver={(e) => e.preventDefault()}
-                            onDragEnter={(e) => e.preventDefault()}
+                            onDragEnter={(e) => {
+                              e.preventDefault();
+                              e.currentTarget.classList.add("hovered");
+                            }}
                             onDrop={handleFileDrop}
                             style={{
                               display: "flex",
