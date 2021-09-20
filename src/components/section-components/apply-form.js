@@ -1,6 +1,6 @@
 import React, { Component, useCallback, useState } from "react";
 import sectiondata from "../../data/sections.json";
-import { Alert } from "rsuite";
+import { Alert, Icon, Whisper, Tooltip } from "rsuite";
 import { upload } from "../../api/file";
 import parse from "html-react-parser";
 
@@ -273,25 +273,69 @@ function ApplyForm(props) {
                         </div>
                       )}
 
-                      <div style={{ marginTop: "10px" }}>
+                      <div
+                        style={{
+                          marginTop: "10px",
+                          fontFamily: "poppins",
+                          background: "#ecf0f1",
+                          padding: "10px 20px",
+                          borderRadius: "8px",
+                          position: "relative",
+                        }}
+                      >
                         {resume ? (
                           <p>
-                            {resume.name && resume.name.length > 30 ? (
-                              <a download={"resume"} href={fileUrl}>
-                                `${resume.name.substring(0, 30)}...`
-                              </a>
-                            ) : (
-                              <a download={"resume"} href={fileUrl}>
-                                {resume.name}
-                              </a>
-                            )}{" "}
-                            <button
-                              style={{ background: "#ED536C", color: "#fff" }}
+                            <Icon
+                              icon={
+                                resume.type.includes("pdf")
+                                  ? "file-pdf-o"
+                                  : "file-text"
+                              }
+                              style={{ marginRight: "15px" }}
+                            />
+                            <Whisper
+                              placement="top"
+                              trigger="hover"
+                              speaker={<Tooltip>Click to download</Tooltip>}
+                            >
+                              {resume.name && resume.name.length > 30 ? (
+                                <a download={"resume"} href={fileUrl}>
+                                  {resume.name.substring(0, 30)}...
+                                </a>
+                              ) : (
+                                <a download={"resume"} href={fileUrl}>
+                                  {resume.name}
+                                </a>
+                              )}
+                            </Whisper>{" "}
+                            <Whisper
+                              placement="top"
+                              trigger="hover"
+                              speaker={<Tooltip>Remove</Tooltip>}
+                            >
+                              <Icon
+                                icon="close"
+                                onClick={handleRemoveFile}
+                                style={{
+                                  cursor: "pointer",
+                                  marginLeft: "8px",
+                                  position: "absolute",
+                                  right: "15px",
+                                  top: "15px",
+                                }}
+                              />
+                            </Whisper>
+                            {/* <button
+                              style={{
+                                background: "#ED536C",
+                                color: "#fff",
+                                fontSize: "10px",
+                              }}
                               onClick={handleRemoveFile}
                               className={"ml-4"}
                             >
                               Remove
-                            </button>
+                            </button> */}
                           </p>
                         ) : (
                           <p>No File Selected</p>
