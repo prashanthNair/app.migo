@@ -132,7 +132,11 @@ function ApplyForm(props) {
                 {/* <p>{data.sectionsubtitle}</p> */}
               </div>
               <div className="job-apply-area">
-                <form onSubmit={handleFormSubmit} className="riyaqas-form-wrap">
+                <form
+                  style={{ fontFamily: "poppins" }}
+                  onSubmit={handleFormSubmit}
+                  className="riyaqas-form-wrap"
+                >
                   <div className="row">
                     <div className="col-md-6">
                       <div className="single-input-wrap">
