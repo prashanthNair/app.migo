@@ -47,7 +47,7 @@ Version: 1.0.0
 # Normalize
 --------------------------------------------------------------*/
 :root {
-  --main-color-one: #f9556d;
+  --main-color-one: #ec407d;
   --main-color-two: #f9556d;
   --secondary-color: #30373f;
   --heading-color: #272b2e;
@@ -4863,14 +4863,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .footer-area-2 .footer-widget-area {
-  padding-top: 70px;
+  padding-top: 25px;
   border-top: 1px solid rgba(151, 161, 179, 0.2);
 }
 
 .footer-area-2 .copyright-inner {
   border-top: 1px solid rgba(151, 161, 179, 0.2);
   padding: 12px 0;
-  margin-top: 45px;
+  margin-top: 15px;
 }
 .footer-area-2 .copyright-inner .copyright-text {
   padding-bottom: 0;
@@ -5466,9 +5466,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .btn-green {
-  background: #32e2a9;
-  -webkit-box-shadow: 0px 11px 14px #32e2a94d;
-  box-shadow: 0px 11px 14px #32e2a94d;
+  background: #2575bb;
+  /* -webkit-box-shadow: 0px 11px 14px #32e2a94d; */
+  /* box-shadow: 0px 11px 14px #2575bb; */
   color: #fff;
 }
 .btn-green:hover,
