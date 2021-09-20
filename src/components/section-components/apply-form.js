@@ -28,6 +28,20 @@ function ApplyForm(props) {
     []
   );
 
+  const tomorrow = React.useMemo(() => {
+    const currentDate = new Date();
+    currentDate.setDate(currentDate.getDate() + 1);
+    return `${currentDate.getFullYear()}-${
+      currentDate.getMonth() + 1 < 10
+        ? `0${currentDate.getMonth() + 1}`
+        : currentDate.getMonth() + 1
+    }-${
+      currentDate.getDate() < 10
+        ? `0${currentDate.getDate()}`
+        : currentDate.getDate()
+    }`;
+  }, []);
+
   let customclass = props.customclass ? props.customclass : "";
   let data = sectiondata.JobAplly;
 
@@ -166,6 +180,7 @@ function ApplyForm(props) {
                           autoComplete="none"
                           onFocus={(e) => {
                             e.currentTarget.type = "date";
+                            e.currentTarget.min = tomorrow;
                           }}
                           onBlur={(e) => {
                             e.currentTarget.type = "text";
@@ -255,7 +270,7 @@ function ApplyForm(props) {
                           <p>
                             {resume.name}{" "}
                             <button
-                            style={{ background: '#ED536C', color: '#fff' }}
+                              style={{ background: "#ED536C", color: "#fff" }}
                               onClick={handleRemoveFile}
                               className={"ml-4"}
                             >
