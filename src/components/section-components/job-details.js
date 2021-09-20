@@ -146,7 +146,7 @@ function Job_Listing(props) {
       <div className={"job-details-area " + customclass}>
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-xl-6 col-lg-8 offset-xl-1">
+            <div className="col-xl-10 col-lg-10 offset-xl-1">
               <h6
                 style={{
                   color: "#EC407D",
