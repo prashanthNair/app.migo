@@ -58,7 +58,7 @@ function ApplyForm(props) {
     (e) => {
       e.preventDefault();
       const selectedFile = e.dataTransfer.files[0];
-      console.log(selectedFile);
+
       if (!allowedFileTypes.includes(selectedFile.type)) {
         return Alert.error("Only PDF and Doc Files Allowed", 6000);
       }
@@ -268,7 +268,9 @@ function ApplyForm(props) {
                       <div style={{ marginTop: "10px" }}>
                         {resume ? (
                           <p>
-                            {resume.name}{" "}
+                            {resume.name && resume.name.length > 30
+                              ? `${resume.name.substring(0, 30)}...`
+                              : resume.name}{" "}
                             <button
                               style={{ background: "#ED536C", color: "#fff" }}
                               onClick={handleRemoveFile}
