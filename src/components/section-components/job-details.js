@@ -147,17 +147,14 @@ function Job_Listing(props) {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-8 offset-xl-1">
-              <div className="section-title">
-                <h2 className="title">Job Details</h2>
-              </div>
               <h6
                 style={{
-                  color: "#ED536C",
+                  color: "#EC407D",
                   fontWeight: "bold",
                   fontSize: "35px",
                   lineHeight: "45px",
                 }}
-                className="title"
+                className="title mt-4"
               >
                 {jobData.jobtitle}
               </h6>
