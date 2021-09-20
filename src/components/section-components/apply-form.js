@@ -65,6 +65,9 @@ function ApplyForm(props) {
     el.setAttribute("accept", allowedFileTypes.toString());
     el.addEventListener("change", (event) => {
       const selectedFile = event.target.files[0];
+      if (!allowedFileTypes.includes(selectedFile.type)) {
+        return Alert.error("Only PDF and Doc Files Allowed", 6000);
+      }
       setResumeFile(selectedFile);
       uploadFileToAPI(selectedFile);
     });
@@ -252,6 +255,7 @@ function ApplyForm(props) {
                           <p>
                             {resume.name}{" "}
                             <button
+                            style={{ background: '#ED536C', color: '#fff' }}
                               onClick={handleRemoveFile}
                               className={"ml-4"}
                             >
