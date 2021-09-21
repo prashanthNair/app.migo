@@ -5619,6 +5619,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   font-weight: 700;
   margin-bottom: 0;
   font-family: var(--poppins-font);
+  margin-top: 25px;
 }
 .section-title .title span {
   color: var(--main-color-one);
