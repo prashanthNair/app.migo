@@ -15,7 +15,7 @@ class Contact_Info extends Component {
                     title="riyaqas-map"
                     width="1075"
                     height="440"
-                    src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=London%2C%20United%20Kingdom+(Title)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+                    src="https://www.google.com/maps/embed?&amp;width=700&amp;height=400&amp;pb=!1m14!1m8!1m3!1d15549.532810202556!2d77.694241!3d13.011252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x135b8ff32003484f!2sMigobucks%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1632251341183!5m2!1sen!2sin"
                     frameBorder="0"
                     scrolling="no"
                     marginHeight="0"
