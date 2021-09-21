@@ -6,6 +6,17 @@
     margin-top: 15px;
   }
 }
+
+.revert-mobile {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 992px) {
+  .revert-mobile {
+    flex-direction: column-reverse;
+  }
+}
+
 @media only screen and (min-width: 1600px) {
   .testimonial-slider-2 .media .media-left:before {
     content: "";
@@ -833,7 +844,7 @@
 
   /******** job listing *********/
   .job-apply-area {
-    padding: 80px 50px;
+    /* padding: 80px 50px; */
   }
   .widget-job-details .single-job-details .media-body h6 {
     font-size: 18px;
@@ -1084,6 +1095,7 @@
   .section-title .title {
     line-height: 45px;
     font-size: 35px;
+    text-align: center;
   }
   .single-service {
     margin-bottom: 18px;
@@ -2062,7 +2074,7 @@
     line-height: 51px;
   }
   .job-apply-area {
-    padding: 50px 30px;
+    /* padding: 50px 30px; */
   }
   .job-apply-area .btn-blue {
     margin-top: 50px;
@@ -2402,6 +2414,7 @@
   .section-title .title {
     line-height: 40px;
     font-size: 30px;
+    text-align: center;
   }
   .section-title br {
     display: none;

@@ -149,9 +149,9 @@ function Job_Listing(props) {
             <div className="col-xl-10 col-lg-10 offset-xl-1">
               <h6
                 style={{
-                  color: "#EC407D",
+                  color: "#1b75bb",
                   fontWeight: "bold",
-                  fontSize: "35px",
+                  fontSize: "30px",
                   lineHeight: "45px",
                 }}
                 className="title mt-4"

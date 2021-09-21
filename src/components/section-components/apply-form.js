@@ -93,7 +93,6 @@ function ApplyForm(props) {
     (ev) => {
       ev.preventDefault();
       if (props.onApply) {
-        console.log("a");
         props.onApply({
           fullName,
           email,
@@ -125,12 +124,8 @@ function ApplyForm(props) {
     <div>
       <div className={""}>
         <div className="">
-          <div className="row justify-content-center">
+          <div className="row justify-content-center reset-margins">
             <div className="col-xl-10 col-lg-10">
-              <div className="section-title text-center">
-                <h2 className="title">{data.sectiontitle}</h2>
-                {/* <p>{data.sectionsubtitle}</p> */}
-              </div>
               <div className="job-apply-area">
                 <form
                   style={{ fontFamily: "poppins" }}
@@ -325,17 +320,6 @@ function ApplyForm(props) {
                                 }}
                               />
                             </Whisper>
-                            {/* <button
-                              style={{
-                                background: "#ED536C",
-                                color: "#fff",
-                                fontSize: "10px",
-                              }}
-                              onClick={handleRemoveFile}
-                              className={"ml-4"}
-                            >
-                              Remove
-                            </button> */}
                           </p>
                         ) : (
                           <p>No File Selected</p>
@@ -348,6 +332,7 @@ function ApplyForm(props) {
                         disabled={loading}
                         type="submit"
                         className="btn btn-blue"
+                        style={{ marginTop: "10px" }}
                       >
                         Make Payment
                       </button>

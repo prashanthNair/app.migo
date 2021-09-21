@@ -10,7 +10,7 @@ class Navbar extends Component {
       <div>
         <nav
           style={{ fontFamily: "poppins", fontWeight: "bold" }}
-          className="navbar navbar-area navbar-expand-lg nav-style-01 py-2"
+          className="navbar navbar-area navbar-expand-lg nav-style-01 py-2 navbar-area-fixed"
         >
           <div className="container nav-container">
             <div className="responsive-mobile-menu">
