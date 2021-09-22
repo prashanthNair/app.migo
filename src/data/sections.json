@@ -142,8 +142,8 @@
     ]
   },
   "banner": {
-    "title": "Turning <br /> all Ideas Into <br /> Real <span>Success</span>",
-    "subtitle": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.",
+    "title": "Migobucks <span>App</span>",
+    "subtitle": "Shop, Share & Impress ",
     "btn_text": "Read More",
     "image_url1": "assets/img/startup/slider/1.png",
     "image_url2": "assets/img/startup/slider/2.png",
@@ -263,9 +263,9 @@
     ]
   },
   "team": {
-    "sectiontitle": "Riyaqas Creative",
-    "sectiontitle_color": "Team",
-    "short_description": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork.",
+    "sectiontitle": "Innovative Team",
+    "sectiontitle_color": "Our ",
+    "short_description": "Migobucks, is a brand owned by migobucks technologies private limited, bangalore, a software company operating worldwide.Migobucks, is a brand owned by migobucks technologies private limited, bangalore, a software company operating worldwide.  ",
     "items": [
       {
         "name": "Abedin Abed",
@@ -443,11 +443,11 @@
     ]
   },
   "whyChooseUs": {
-    "sectiontitle": "Why Choose",
-    "sectiontitle_color": "Riyaqas?",
+    "sectiontitle": "Shopping Experience",
+    "sectiontitle_color": "New ",
     "videoimage": "assets/img/startup/why-choose/1.png",
     "videourl": "https://www.youtube.com/watch?v=c7XEhXZ_rsk",
-    "short_description": "Riyaqas One of the best Softwire Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position. Our solutions on a regular basis.",
+    "short_description": "Migobucks One of the best Software Development company. Migobucks is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position. Our solutions on a regular basis.",
     "bgimg": "assets/img/startup/why-choose/2.png",
     "list_item": [
       {
@@ -703,6 +703,31 @@
       }
     ]
   },
+  "videov4": {
+    "title": "About ",
+    "title_color": "Us",
+    "description": "Migobucks, is a brand owned by migobucks technologies private limited, bangalore, a software company operating worldwide. We are working on a Social Commerce platform which can solve few problems of business owners, and can give a better shopping experience for individual customers, also providing a platform to make money for influencers and individuals who wants to earn some money by doing a few tasks.",
+    "image_url": "assets/img/we-provide/01.png",
+    "video_url": "https://www.youtube.com/watch?v=c7XEhXZ_rsk",
+    "list": [
+      {
+        "icon": "assets/img/icons/9.png",
+        "title": "Unique Design"
+      },
+      {
+        "icon": "assets/img/icons/11.png",
+        "title": "Mobile ready"
+      },
+      {
+        "icon": "assets/img/icons/10.png",
+        "title": "Custom domain"
+      },
+      {
+        "icon": "assets/img/icons/12.png",
+        "title": "Testing work"
+      }
+    ]
+  },
   "services": {
     "sectiontitle": "What",
     "sectiontitle_color": "Service",
@@ -736,9 +761,9 @@
     ]
   },
   "servicesv2": {
-    "sectiontitle": "Riyaqas",
-    "sectiontitle_color": "was Built Specifically for",
-    "short_description": "Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle support requests. Our support team will get assistance from AI-powered suggestions.",
+    "sectiontitle": "Migobucks ",
+    "sectiontitle_color": "Brands",
+    "short_description": "Improve your skills, boost your earnings and show your freelance power",
     "items": [
       {
         "title": "Management",
@@ -1351,31 +1376,31 @@
   },
 
   "whatwedo": {
-    "sectiontitle": "What We",
-    "sectiontitle_color": "Do?",
-    "offertitel": "What we",
-    "offer_color": "Offer?",
-    "short_description": "Riyaqas One of the best Software Development company. Riyaqas is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position.",
+    "sectiontitle": "Why",
+    "sectiontitle_color": "Migobucks? ",
+    "offertitel": "Why",
+    "offer_color": "Migobucks ",
+    "short_description": "",
     "items": [
       {
-        "title": "Consultation",
+        "title": "Earn Free Shopping Credits",
         "icon": "assets/img/startup/service/1.png",
-        "content": "Riyaqas One of the best Software Development company.Riyaqas is the forefront as the most innovative."
+        "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
       },
       {
-        "title": "Brand & Identity",
+        "title": "Connect With people",
         "icon": "assets/img/startup/service/2.png",
-        "content": "Riyaqas One of the best Software Development company.Riyaqas is the forefront as the most innovative."
+        "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
       },
       {
-        "title": "Web Design",
+        "title": "Stories",
         "icon": "assets/img/startup/service/3.png",
-        "content": "Riyaqas One of the best Software Development company.Riyaqas is the forefront as the most innovative."
+        "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
       },
       {
-        "title": "Apps Development",
+        "title": "Create And Join Circles",
         "icon": "assets/img/startup/service/4.png",
-        "content": "Riyaqas One of the best Software Development company.Riyaqas is the forefront as the most innovative."
+        "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
       }
     ]
   },
@@ -1511,38 +1536,40 @@
     ]
   },
   "joblisting": {
-    "sectiontitle": "Open <span>Job</span> Positions",
+    "sectiontitle": "On <span>Job</span> Training",
     "buttontext": " Apply Now ",
     "job": [
       {
-        "jobtitle": "Property Agent For UK Office Required",
-        "date": "August 29, 2019",
-        "icon": "assets/img/icons/j1.png"
+        "jobId": "1",
+        "jobtitle": "AWS Developer On Job Training",
+        "date": "September 17, 2021",
+        "icon": "assets/img/icons/aws.png",
+        "amount": 5000,
+        "description": "<p><strong>Pre-requisites</strong></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">You may need basic AWS cloud services knowledge</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Basic IT knowledge is recommended</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">A free-tier AWS account is recommended to follow along with the practice labs - we&rsquo;ll show you step by step how to create one</span></li>\n</ul>\n<p><strong>Training objectives</strong></p>\n<p><span style=\"font-weight: 400;\">This AWS developer OJT is aligned to the latest services released by AWS. It will help you learn the key concepts, latest trends, and best practices for working with the AWS architecture &ndash; and become industry-ready. Practice assignments and three live projects are designed to give you hands-on experience with the AWS management console.&nbsp;</span></p>\n<p><strong>Course Overview</strong></p>\n<p><span style=\"font-weight: 400;\">The course begins with an overview of the AWS platform before diving into its individual elements: IAM, VPC, EC2, EBS, ELB, CDN, S3, EIP, KMS, Route 53, RDS, CloudFront, Dynamo DB, Redshift, Auto Scaling, CloudWatch, Elastic Cache, CloudTrail, and Security.</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">AWS overview</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">IAM</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">AWS VPC</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">EC2</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">AWS S3</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">DynamoDB</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Lambda</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Cloud Formation.&nbsp;&nbsp;</span></li>\n</ul>\n<p><strong>This online OJT is ideal for</strong><span style=\"font-weight: 400;\">:</span></p>\n<p><span style=\"font-weight: 400;\">Graduates&nbsp;</span></p>\n<p><span style=\"font-weight: 400;\">Students</span></p>\n<p><span style=\"font-weight: 400;\">Programmers&nbsp;</span></p>\n<p><span style=\"font-weight: 400;\">Cloud Developers</span></p>\n<p><span style=\"font-weight: 400;\">Professionals interested in hosting highly scalable, fault-tolerant applications on the AWS cloud</span></p>\n<p><strong>Benefits</strong></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">By the end of this OJT, you will be able to formulate solution plans and provide guidance on AWS architectural best practices design and deploy scalable, highly available, and fault tolerant systems on AWS.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">&nbsp;Identify the lift and shift of an existing on-premises application to AWS. Select the appropriate AWS service based on data, compute, database, or security requirements.&nbsp; Estimate AWS costs and identify cost control mechanisms.&nbsp;</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">This AWS Developer training will make you ready for the challenging role as AWS Developer and will enable you to leverage your skills and expertise involving advanced cloud-based solutions and migrating existing workloads to the cloud.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Letter of recommendation to network companies and Job Assurance</span></li>\n</ul>"
       },
       {
-        "jobtitle": "Property Agent For UK Office Required",
-        "date": "August 29, 2019",
-        "icon": "assets/img/icons/j2.png"
+        "jobId": "2",
+        "jobtitle": "API Developer",
+        "date": "September 17, 2021",
+        "icon": "assets/img/icons/api.png",
+        "amount": 5000,
+        "description": "<p><strong>Pre-requisites</strong></p>\n<p><span style=\"font-weight: 400;\">For this API Developer on job training, you need to have knowledge with programming language JavaScript/Type Script</span></p>\n<p><strong>Training objectives</strong></p>\n<p><span style=\"font-weight: 400;\">The Node JS on job training will help you gain an in-depth knowledge of concepts such as Express.js, Node Packet Manager (NPM), NPM Vet, REST, Express.js with DynamoDB, and MySQL. API developer OJT focuses on the essential concepts of Node JS and provides hands-on experience in building an HTTP server. Also </span><span style=\"font-weight: 400;\">practice assignments and three live projects are designed to give you hands-on experience with the serverless architecture&nbsp;</span></p>\n<p><span style=\"font-weight: 400;\">. </span><strong>Training Overview</strong></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Understand the Nodejs framework</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Work with Node projects&nbsp;</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Learn asynchronous programming</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">HTTP server with Nodejs</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Buffer streams and events</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Multiprocessing in Nodejs</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Master ExpressJS&nbsp;&nbsp;</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Master in AWS Lambda</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">PartiQL statements&nbsp;</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Unit and end to end testing</span></li>\n<li style=\"font-weight: 400;\">&nbsp;</li>\n</ul>\n<p><strong>Selected intern's day-to-day responsibilities include</strong></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Collaborate with teams to implement new features, improvements, and fixes needed to handle our current and future scale</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">&nbsp;Write reusable, testable, and efficient code</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Build, optimize and scale our platform and applications</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Architect, design, and implement low-latency, high-availability, and performant applications from the design prototype</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">&nbsp;Implement secure applications and data protection&nbsp;</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">&nbsp;Collaborate across teams and contribute to open source</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Troubleshoot production issues and implement fixes for them&nbsp;</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Stay up to date on emerging technologies Reach out to the open-source community to encourage and help implement mission-critical software fixes.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Understanding code versioning tools such as Git</span><span style=\"font-weight: 400;\"><br /><br /></span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">Benefits</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Node is a popular and fast-growing programming language that allows you to run JavaScript on the server side. After learning the basics of HTML, CSS, JavaScript, and Git in the Become a Web Developer learning path, discover how to build lightening-fast applications in Node.js. In this comprehensive training path, you can learn how to work with data as well as test, secure, and deploy your Node.js applications. Get practical experience building websites, microservices, and APIs using Node.js and AWS lambda.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">This Node.Js OJT can help you build powerful and complex applications without the need of complex codes.&nbsp;</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Real time work experience certificate</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Letter of recommendation for network companies</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Job Assurance</span></li>\n</ul>"
       },
       {
-        "jobtitle": "Property Agent For UK Office Required",
-        "date": "August 29, 2019",
-        "icon": "assets/img/icons/j3.png"
+        "jobId": "3",
+        "jobtitle": "Front-End Developers",
+        "date": "September 17, 2021",
+        "icon": "assets/img/icons/react.svg",
+        "amount": 5000,
+        "description": "<p><strong>Pre</strong><strong>-</strong><strong>requisites</strong></p>\n<p><span style=\"font-weight: 400;\">For this Front-End Developer on job training, you need to have experience with building front-end web applications with ReactJS.</span></p>\n<p>&nbsp;</p>\n<p><strong>Training objectives</strong></p>\n<p><span style=\"font-weight: 400;\">The main objective of this Front-End Developer on job training is to help you become familiar with the process and gain the skills you'll need to become a professional front-end developer with React. You will learn the fundamentals of React through self-paced and instructor-led training to understand and build React components and structure applications with Redux and Typescript. Also, you will learn key design patterns to develop complex enterprise application. You will also involve p</span><span style=\"font-weight: 400;\">ractice assignments and one live project is designed to give you hands-on experience with the React, Redux html and CSS.</span></p>\n<p><strong>Training Overview</strong></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">React components</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">React State and Props</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">React Event Handling</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Routing in React</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">ES</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">React Redux node package</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Live project training</span></li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>Who can apply</strong></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Are available for full time internship (work from home in covid pandemic)&nbsp;</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Can start the internship immediately&nbsp;</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Are available for duration of 6 months</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Have relevant skills and interests</span><span style=\"font-weight: 400;\">&nbsp;</span></li>\n</ul>\n<p>&nbsp;</p>\n<p><strong>&nbsp;Selected intern's day-to-day responsibilities include</strong></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Use markup languages like HTML to create user-friendly and Responsive web pages</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Bringing a designer's concept to life with ReactJS</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Maintain and improve website</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Optimize applications for maximum speed</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Integrating APIs on the front end</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">&nbsp;Collaborate with back-end developers and web designers to improve the usability</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">&nbsp;Get feedback from, and build solutions for, users and customers</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Write functional requirement documents and guides</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">&nbsp;Help back-end developers with coding and troubleshooting</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">&nbsp;Ensure high-quality graphic standards and brand consistency</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Stay up to date on emerging technologies Reach out to the open-source community to encourage and help implement mission-critical software fixes.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Understanding code versioning tools such as Git</span><span style=\"font-weight: 400;\"><br /><br /></span></li>\n</ul>\n<p><strong>Benefits</strong></p>\n<p>&nbsp;</p>\n<ul>\n<li><strong><span style=\"font-weight: 400;\"></span><span style=\"font-weight: 400;\">React.js is a versatile JavaScript library for building interactive user interfaces easily. If you are planning to create UI/UX solutions for mobile or web, this OJT is extremely beneficial to improve your working skills.</span></strong></li>\n</ul>\n<p>&nbsp;</p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Real time work experience certificate</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Letter of recommendation for network companies</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Job Assurance&nbsp;</span></li>\n</ul>\n<p>&nbsp;</p>"
       },
       {
-        "jobtitle": "Property Agent For UK Office Required",
-        "date": "August 29, 2019",
-        "icon": "assets/img/icons/j4.png"
-      },
-      {
-        "jobtitle": "Property Agent For UK Office Required",
-        "date": "August 29, 2019",
-        "icon": "assets/img/icons/j5.png"
-      },
-      {
-        "jobtitle": "Property Agent For UK Office Required",
-        "date": "August 29, 2019",
-        "icon": "assets/img/icons/j6.png"
+        "jobId": "4",
+        "jobtitle": "Mobile Application Developers -Flutter",
+        "date": "September 17, 2021",
+        "icon": "assets/img/icons/flutter.svg",
+        "amount": 5000,
+        "description": "<p><strong>Pre</strong><strong>-</strong><strong>requisites</strong><span style=\"font-weight: 400;\">&nbsp;</span></p>\n<p><span style=\"font-weight: 400;\">For this Mobile App Developer on job training, you need to have experience with building Mobile Applications with Flutter and familiar in Dart.</span></p>\n<p><strong>Skill(s) required</strong></p>\n<p><span style=\"font-weight: 400;\">Flutter, Git, Adobe XD, Figma</span> <span style=\"font-weight: 400;\">&nbsp;</span></p>\n<p>&nbsp;</p>\n<p><strong>Training objectives</strong></p>\n<p><span style=\"font-weight: 400;\">The main objective of this course is to make you to build beautiful native apps. In Android &amp; iOS platforms easily.</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Develop app with customizable widgets.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Impress and attract an audience with powerful &amp; flexible UI.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Create user-friendly apps by incorporating critical platform differences.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Get deep insights on Flutter tool kit.&nbsp;</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">We have created this training program by keeping all young &amp; aspiring developers in mind. Those who want to show their creativity in developing apps. So, we have included all the basic to complex topics in this On Job Training program.</span></p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p><strong>Who can apply?</strong></p>\n<p><span style=\"font-weight: 400;\">Only those candidates can apply who:</span></p>\n<ol>\n<li><span style=\"font-weight: 400;\"> Are available for full time internship (work from home in covid pandemic)&nbsp;</span></li>\n<li><span style=\"font-weight: 400;\"> Can start the internship immediately&nbsp;</span></li>\n<li><span style=\"font-weight: 400;\"> Are available for duration of 6 months</span></li>\n<li><span style=\"font-weight: 400;\"> have relevant skills and interests </span><span style=\"font-weight: 400;\">-&nbsp;</span></li>\n</ol>\n<p><strong>Selected intern's day-to-day responsibilities include:</strong></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Create multi-platform apps for iOS &amp; Android using Google's Flutter development framework</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Publish/Manage app to Play Store and App Store</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Leverage native APIs for deep integrations with both platforms</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Diagnose and fix bugs and performance bottlenecks for performance that feels native</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Stay up to date on emerging technologies Reach out to the open-source community to encourage and help implement mission-critical software fixes.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Understanding code versioning tools such as Git</span></li>\n</ul>\n<p><strong>Benefits</strong></p>\n<p>&nbsp;</p>\n<ul>\n<li><strong><span style=\"font-weight: 400;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"font-weight: 400;\">React.js is a versatile JavaScript library for building interactive user interfaces easily. If you are planning to create UI/UX solutions for mobile or web, this OJT is extremely beneficial to improve your working skills.</span></strong></li>\n</ul>\n<p>&nbsp;</p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Real time work experience certificate</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Letter of recommendation for network companies</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Job Assurance&nbsp;</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\"><br /><br /></span></p>\n<p>&nbsp;</p>"
       }
     ]
   },
@@ -1713,15 +1740,15 @@
   },
   "contactinfo": {
     "title": "Contact info:",
-    "description": "Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tosh",
-    "address": "198 West 21th Street, Suite 721 <br/> New York NY 10010",
-    "mobile": "+088 012121240",
-    "mail": "riyaqas@gmail.com"
+    "description": "",
+    "address": " OLD MADRAS ROAD,KR PURAM BANGALORE Bangalore Karnataka - 560049 India",
+    "mobile": "+91-7012454545",
+    "mail": "hr@migobucks.com"
   },
   "contactform": {
-    "title": "Send you",
-    "title_color": "inquary",
-    "description": "Why I say old chap that is, spiffing jolly good a load of old tosh spend a penny tosser arse over tit, excuse my French owt to do with me up the kyver matie boy.",
+    "title": "Get In",
+    "title_color": "Touch",
+    "description": "Ask Your Queries",
     "image": "assets/img/others/21.png"
   }
 }
