@@ -10,9 +10,9 @@ class MigoBuddy extends Component {
       <div>
         <div className="sba-manage-data-area">
           <div className="container">
-            <div className="row justify-content-md-center">
+            <div className="row justify-content-md-center revert-mobile">
               <div
-                className="col-xl-7 col-lg-6 wow animated fadeInLeft"
+                className="col-xl-7 col-lg-6 order-md-1 wow animated fadeInLeft"
                 data-wow-duration="1s"
                 data-wow-delay="0.3s"
               >
@@ -23,7 +23,7 @@ class MigoBuddy extends Component {
               </div>
               <div className="col-xl-4 col-lg-6 col-md-10 offset-xl-1 desktop-center-item">
                 <div
-                  className="section-title style-two text-lg-left text-center wow animated fadeInRight"
+                  className="section-title style-two text-lg-left text-justify wow animated fadeInRight"
                   data-wow-duration="1s"
                   data-wow-delay="0.3s"
                 >
