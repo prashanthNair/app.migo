@@ -30,6 +30,14 @@ function ApplyForm(props) {
     []
   );
 
+  const handleViewFile = useCallback(
+    (e) => {
+      e.preventDefault();
+      window.open(fileUrl);
+    },
+    [fileUrl]
+  );
+
   const tomorrow = React.useMemo(() => {
     const currentDate = new Date();
     currentDate.setDate(currentDate.getDate() + 1);
@@ -322,21 +330,29 @@ function ApplyForm(props) {
                               }
                               style={{ marginRight: "15px" }}
                             />
-                            <Whisper
-                              placement="top"
-                              trigger="hover"
-                              speaker={<Tooltip>Click to download</Tooltip>}
-                            >
-                              {resume.name && resume.name.length > 30 ? (
-                                <a download={"resume"} href={fileUrl}>
-                                  {resume.name.substring(0, 30)}...
-                                </a>
-                              ) : (
-                                <a download={"resume"} href={fileUrl}>
-                                  {resume.name}
-                                </a>
-                              )}
-                            </Whisper>{" "}
+                            {resume.type === "application/pdf" ? (
+                              <>
+                                {resume.name && resume.name.length > 30
+                                  ? resume.name.substring(0, 30) + "..."
+                                  : resume.name}
+                                <embed
+                                  src={fileUrl}
+                                  type={resume.type}
+                                  height={300}
+                                  width={500}
+                                />
+                              </>
+                            ) : (
+                              <a
+                                href={fileUrl}
+                                rel="noreferrer"
+                                target="_blank"
+                              >
+                                {resume.name && resume.name.length > 30
+                                  ? resume.name.substring(0, 30) + "..."
+                                  : resume.name}
+                              </a>
+                            )}{" "}
                             <Whisper
                               placement="top"
                               trigger="hover"
