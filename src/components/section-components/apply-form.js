@@ -1,6 +1,8 @@
-import React, { useCallback, useState } from "react";
+import React, { Component, useCallback, useState } from "react";
+import sectiondata from "../../data/sections.json";
 import { Alert, Icon, Whisper, Tooltip } from "rsuite";
 import { upload } from "../../api/file";
+import parse from "html-react-parser";
 
 function ApplyForm(props) {
   const [fullName, setFullName] = useState("");
@@ -12,10 +14,6 @@ function ApplyForm(props) {
   const [note1, setNote1] = useState("");
   const [note, setNote] = useState("");
   const [fileUrl, setFileUrl] = useState("");
-
-  const [submitEnabled, setSubmitEnabled] = useState(false);
-
-  const [isValidEmail, setEmailValid] = useState(true);
 
   const [resume, setResumeFile] = useState(null);
 
@@ -44,22 +42,8 @@ function ApplyForm(props) {
     }`;
   }, []);
 
-  React.useEffect(() => {
-    if (email.length <= 0) return setSubmitEnabled(false);
-    if (!isValidEmail || loading) {
-      return setSubmitEnabled(false);
-    } else {
-      setSubmitEnabled(true);
-    }
-  }, [email.length, isValidEmail, loading]);
-
-  const validateEmail = useCallback((e) => {
-    if (String(e).trim().length === 0) return setEmailValid(false);
-    const EMAIL_PATTERN =
-      /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/gi;
-    const isValid = EMAIL_PATTERN.test(String(e));
-    setEmailValid(isValid);
-  }, []);
+  let customclass = props.customclass ? props.customclass : "";
+  let data = sectiondata.JobAplly;
 
   const uploadFileToAPI = useCallback(async (file) => {
     const formData = new FormData();
@@ -163,42 +147,24 @@ function ApplyForm(props) {
                       </div>
                     </div>
                     <div className="col-md-6">
-                      <Whisper
-                        placement="top"
-                        trigger="hover"
-                        speaker={
-                          !isValidEmail ? (
-                            <Tooltip>Invalid Email</Tooltip>
-                          ) : (
-                            <></>
-                          )
-                        }
-                      >
-                        <div className="single-input-wrap">
-                          <input
-                            type="email"
-                            autoComplete="none"
-                            placeholder="Email"
-                            value={email}
-                            onChange={(ev) => {
-                              setEmail(ev.target.value);
-                              validateEmail(ev.target.value);
-                            }}
-                            style={{
-                              borderColor: !isValidEmail && "red",
-                            }}
-                            className="single-input"
-                            required
-                          />
-                        </div>
-                      </Whisper>
+                      <div className="single-input-wrap">
+                        <input
+                          type="email"
+                          autoComplete="none"
+                          placeholder="Email"
+                          value={email}
+                          onChange={(ev) => setEmail(ev.target.value)}
+                          className="single-input"
+                          required
+                        />
+                      </div>
                     </div>
                     <div className="col-md-6">
                       <div className="single-input-wrap">
                         <input
                           autoComplete="none"
                           placeholder="Contact Number"
-                          type="tel"
+                          type="phone"
                           value={phone}
                           onChange={(ev) => setPhone(ev.target.value)}
                           className="single-input"
@@ -363,7 +329,7 @@ function ApplyForm(props) {
                     <div className="col-12"></div>
                     <div className="col-12 text-center">
                       <button
-                        disabled={!submitEnabled}
+                        disabled={loading}
                         type="submit"
                         className="btn btn-blue"
                         style={{ marginTop: "10px" }}
