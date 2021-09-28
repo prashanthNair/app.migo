@@ -50,6 +50,7 @@ function Job_Listing(props) {
     (job) => {
       return new Promise(async (resolve, reject) => {
         setLoading(true);
+        if (job.amount <= 0) return resolve();
 
         const payload = {
           amount: job.amount * 100,
@@ -187,7 +188,10 @@ function Job_Listing(props) {
       <Drawer onHide={handleDrawerClose} show={drawerOpen}>
         <Drawer.Header />
         <Drawer.Body>
-          <JobApplyForm onApply={handleApplyFormSubmit} />
+          <JobApplyForm
+            submitBtnText={`${jobData.amount <= 0 ? "Submit" : "Make Payment"}`}
+            onApply={handleApplyFormSubmit}
+          />
         </Drawer.Body>
       </Drawer>
     </div>

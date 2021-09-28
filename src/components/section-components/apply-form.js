@@ -368,7 +368,7 @@ function ApplyForm(props) {
                         className="btn btn-blue"
                         style={{ marginTop: "10px" }}
                       >
-                        Make Payment
+                        {props.submitBtnText}
                       </button>
                     </div>
                   </div>

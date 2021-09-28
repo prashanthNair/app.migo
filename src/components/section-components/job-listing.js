@@ -29,7 +29,24 @@ function Job_Listing(props) {
                   <div key={i} className="single-job-list media">
                     <img src={publicUrl + item.icon} alt={imgattr} />
                     <div className="media-body">
-                      <h6>{item.jobtitle}</h6>
+                      <h6>
+                        {item.jobtitle}{" "}
+                        {item.amount <= 0 && (
+                          <span
+                            style={{
+                              display: "inline-block",
+                              background: "#27ae60",
+                              padding: "2px 10px",
+                              fontSize: "10px",
+                              color: "#fff",
+                              fontWeight: "bold",
+                              borderRadius: "15px",
+                            }}
+                          >
+                            Free
+                          </span>
+                        )}
+                      </h6>
                       <span>{item.date}</span>
                     </div>
                     <button
