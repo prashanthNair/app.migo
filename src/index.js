@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import "rsuite/dist/rsuite.min.css";
+import "rsuite/dist/styles/rsuite-default.css";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
