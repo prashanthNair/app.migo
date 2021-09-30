@@ -13,7 +13,7 @@ class Features extends Component {
           <div className="container">
             <div className="row custom-gutters-16 justify-content-center">
               <div className="col-xl-4 col-lg-9">
-                <div className="section-title style-two text-xl-left text-center">
+                <div className="section-title style-two text-justify">
                   <h2 className="title">
                     {parse(sectiondata.features.sectiontitle)}{" "}
                     <span>{sectiondata.features.sectiontitle_color}</span>
@@ -36,7 +36,7 @@ class Features extends Component {
                         alt="feature"
                       />
                       <div className="media-body">
-                        <h6>Clean Design</h6>
+                        <h6>Security</h6>
                         <p>
                           Our support team will get assistance from AI-powered
                           suggestions, making it quicker than ever to handle.
@@ -52,7 +52,7 @@ class Features extends Component {
                         alt="feature"
                       />
                       <div className="media-body">
-                        <h6>Fully Responsive</h6>
+                        <h6>Intuitive design</h6>
                         <p>
                           Our support team will get assistance from AI-powered
                           suggestions making.
@@ -72,7 +72,7 @@ class Features extends Component {
                         alt="feature"
                       />
                       <div className="media-body">
-                        <h6>Customizable</h6>
+                        <h6>Customer Support </h6>
                         <p>
                           Our support team will get assistance from AI-powered
                           suggestions, making it quicker handle.
@@ -88,7 +88,7 @@ class Features extends Component {
                         alt="feature"
                       />
                       <div className="media-body">
-                        <h6>Retina Ready</h6>
+                        <h6>Convenience </h6>
                         <p>
                           Our support team will get assistance from AI-powered
                           suggestions.
