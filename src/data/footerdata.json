@@ -29,7 +29,7 @@
     "title": "Contact",
     "address": "Migobucks Technologies Pvt Ltd, Address: NO.14, Hosabasavanapura, Krishnarajapura, Bengaluru, Karnataka",
     "contact": "Mob: 7090070200, 9037243199",
-    "email": "hr@migobucks.com"
+    "email": "prashath@migobucks.com"
   },
   "quicklink": {
     "title": "Quick Link",
@@ -64,12 +64,8 @@
         "url": "#"
       },
       {
-        "title": "Privacy",
-        "url": "#"
-      },
-      {
-        "title": "Policy",
-        "url": "#"
+        "title": "Privacy Policy",
+        "url": "Privacy"
       },
       {
         "title": "Support",
