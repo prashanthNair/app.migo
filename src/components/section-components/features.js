@@ -36,7 +36,7 @@ class Features extends Component {
                         alt="feature"
                       />
                       <div className="media-body">
-                        <h6>Security</h6>
+                        <h6>Bringing New Customers everyday</h6>
                         <p>
                           Our support team will get assistance from AI-powered
                           suggestions, making it quicker than ever to handle.
@@ -52,7 +52,7 @@ class Features extends Component {
                         alt="feature"
                       />
                       <div className="media-body">
-                        <h6>Intuitive design</h6>
+                        <h6>Engage, Retain and Build loyal Customers</h6>
                         <p>
                           Our support team will get assistance from AI-powered
                           suggestions making.
@@ -72,7 +72,9 @@ class Features extends Component {
                         alt="feature"
                       />
                       <div className="media-body">
-                        <h6>Customer Support </h6>
+                        <h6>
+                          Build, Maintain and Motivate the right employees/team
+                        </h6>
                         <p>
                           Our support team will get assistance from AI-powered
                           suggestions, making it quicker handle.
@@ -88,7 +90,7 @@ class Features extends Component {
                         alt="feature"
                       />
                       <div className="media-body">
-                        <h6>Convenience </h6>
+                        <h6>Manage and Ensure the CX in every Stores</h6>
                         <p>
                           Our support team will get assistance from AI-powered
                           suggestions.
