@@ -169,7 +169,8 @@ const Terms = () => {
           and conditions that apply to transactions at our company. We&rsquo;ll
           be as brief as our attorneys will allow. The main thing to remember is
           that by placing an order or making a purchase from us, you agree to
-          the terms along with our Privacy Policy.
+          the terms along with our Privacy Policy. Refunds would be initiated
+          within 10 Working days
         </p>
         <p>
           If, for any reason, You are not completely satisfied with any good or
