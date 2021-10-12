@@ -165,6 +165,21 @@ function Job_Listing(props) {
               <span>
                 <hr />
               </span>
+              <div id="discount-banner">
+                <img
+                  alt="discount-banner"
+                  class="banner-img"
+                  src="https://i.imgur.com/P6Z9BOr.png"
+                />
+                <div>
+                  <p style={{ color: "#fff" }}>
+                    Score 85% or above to avail 90% cashback on this training.
+                  </p>
+                  <p style={{ color: "#fff" }}>
+                    Total Cashback Amount: ₹ {jobData.amount * 0.9}/-
+                  </p>
+                </div>
+              </div>
 
               <div dangerouslySetInnerHTML={{ __html: jobData.description }} />
               {loading ? (
