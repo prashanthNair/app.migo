@@ -160,7 +160,14 @@ function Job_Listing(props) {
                 {jobData.jobtitle}
               </h6>
               <div>
-                <h6>Training Fee: ₹{jobData.amount}</h6>
+                <h6 style={{ fontFamily: "sans-serif" }}>
+                  Training Fee:{" "}
+                  {jobData.amount.toLocaleString("en-IN", {
+                    maximumFractionDigits: 0,
+                    style: "currency",
+                    currency: "INR",
+                  })}
+                </h6>
               </div>
               <span>
                 <hr />
@@ -176,7 +183,13 @@ function Job_Listing(props) {
                     Score 85% or above to avail 90% cashback on this training.
                   </p>
                   <p style={{ color: "#fff" }}>
-                    Total Cashback Amount: ₹ {jobData.amount * 0.9}/-
+                    Total Cashback Amount:{" "}
+                    {(jobData.amount * 0.9).toLocaleString("en-IN", {
+                      maximumFractionDigits: 0,
+                      style: "currency",
+                      currency: "INR",
+                    })}
+                    /-
                   </p>
                 </div>
               </div>
