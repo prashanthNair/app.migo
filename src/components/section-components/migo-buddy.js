@@ -23,7 +23,7 @@ class MigoBuddy extends Component {
               </div>
               <div className="col-xl-4 col-lg-6 col-md-10 offset-xl-1 desktop-center-item">
                 <div
-                  className="section-title style-two text-lg-left text-justify wow animated fadeInRight"
+                  className="section-title style-two text-lg text-justify wow animated fadeInRight"
                   data-wow-duration="1s"
                   data-wow-delay="0.3s"
                 >

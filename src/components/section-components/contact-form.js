@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Contact_Form extends Component {
   render() {
@@ -63,7 +64,19 @@ class Contact_Form extends Component {
                         <label className="single-input-label">Message</label>
                       </div>
                     </div>
+                    <div class="form-check col-md-12">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        <Link to="/terms">Terms and Conditions</Link>
+                      </label>
+                    </div>
                     <div className="col-12">
+                      <br />
                       <a className="btn btn-red mt-0" href={anchor}>
                         Send
                       </a>

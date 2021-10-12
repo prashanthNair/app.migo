@@ -27,9 +27,9 @@
   "copyrighttext": " © Migobucks 2021 All rights reserved, Made with<a href='https://migobucks.com' target='_blank'><i class='fa fa-heart'></i><span>Migobucks.</span></a>",
   "contactwidget": {
     "title": "Contact",
-    "address": "Migobucks Technologies Pvt Ltd, No.14, Bhattrahalli, Old Madras Road, K R Puram, Bangalore-560049",
-    "contact": "+91 7012454545",
-    "email": "friends@migobucks.com"
+    "address": "Migobucks Technologies Pvt Ltd, Address: NO.14, Hosabasavanapura, Krishnarajapura, Bengaluru, Karnataka",
+    "contact": "Mob: 7090070200, 9037243199",
+    "email": "prashath@migobucks.com"
   },
   "quicklink": {
     "title": "Quick Link",
@@ -64,20 +64,16 @@
         "url": "#"
       },
       {
-        "title": "Privacy",
-        "url": "#"
-      },
-      {
-        "title": "Policy",
-        "url": "#"
+        "title": "Privacy Policy",
+        "url": "Privacy"
       },
       {
         "title": "Support",
         "url": "#"
       },
       {
-        "title": "Documentation",
-        "url": "#"
+        "title": "Terms and Conditions",
+        "url": "Terms"
       }
     ]
   },
