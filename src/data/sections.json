@@ -447,24 +447,24 @@
     "sectiontitle_color": "New ",
     "videoimage": "assets/img/startup/why-choose/1.png",
     "videourl": "https://www.youtube.com/watch?v=c7XEhXZ_rsk",
-    "short_description": "Migobucks One of the best Software Development company. Migobucks is at the forefront as the most innovative web development company. Our cost efficient and structured teamwork justifies our position. Our solutions on a regular basis.",
+    "short_description": "When the user start shopping with Migobucks, they will be able to free credits and free vouchers through circle program, so that he can increase his purchase capacity, instead spending from his pocket he will be receiving shopping credits from Migobucks",
     "bgimg": "assets/img/startup/why-choose/2.png",
     "list_item": [
       {
         "icon": "assets/img/icons/check.png",
-        "text": "Team Work"
+        "text": "Smart Gifting "
       },
       {
         "icon": "assets/img/icons/check.png",
-        "text": "Good Job Invironment"
+        "text": "Private & Public Stories"
       },
       {
         "icon": "assets/img/icons/check.png",
-        "text": "Concept Implementation"
+        "text": "Vouchers from popular brands"
       },
       {
         "icon": "assets/img/icons/check.png",
-        "text": "Work Freedom"
+        "text": "Grab offers on favorite brands"
       }
     ]
   },
@@ -1383,24 +1383,24 @@
     "short_description": "",
     "items": [
       {
-        "title": "Free Brand promotion",
+        "title": "True Reviews & Linkshares",
         "icon": "assets/img/startup/service/1.png",
-        "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
+        "content": "It provides a real time traffic to your website, mobile app and to your products inventory in your system, which can increase your product & brand identity"
       },
       {
-        "title": "Reach more customers",
+        "title": "Analytical dashboard",
         "icon": "assets/img/startup/service/2.png",
-        "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
+        "content": "You can view all your customer engagement status of subscribed services and available services to boost up your engagement activities."
       },
       {
-        "title": "Brand stories",
+        "title": "Customized business tools and services",
         "icon": "assets/img/startup/service/3.png",
-        "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
+        "content": "We provide cloud based tool & services for your customer engagement, pay only for the service you subscribe"
       },
       {
-        "title": "Create Your Brand identity",
+        "title": "Earn free migobucks for your stories",
         "icon": "assets/img/startup/service/4.png",
-        "content": "Migobucks One of the best Software Development company.Migobucks is the forefront as the most innovative."
+        "content": "We reward you for your stories shared on our platform, more stories you share and more rewards to earn."
       }
     ]
   },

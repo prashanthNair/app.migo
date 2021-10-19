@@ -38,8 +38,9 @@ class Features extends Component {
                       <div className="media-body">
                         <h6>Bringing New Customers everyday</h6>
                         <p>
-                          Our support team will get assistance from AI-powered
-                          suggestions, making it quicker than ever to handle.
+                          Most important is to bring in new customers which is
+                          crucial along with holding onto the customers you
+                          already have.
                         </p>
                       </div>
                     </div>
@@ -54,8 +55,8 @@ class Features extends Component {
                       <div className="media-body">
                         <h6>Engage, Retain and Build loyal Customers</h6>
                         <p>
-                          Our support team will get assistance from AI-powered
-                          suggestions making.
+                          Holding onto the customers you already have and that’s
+                          where customer engagement comes in.
                         </p>
                       </div>
                     </div>
@@ -76,8 +77,9 @@ class Features extends Component {
                           Build, Maintain and Motivate the right employees/team
                         </h6>
                         <p>
-                          Our support team will get assistance from AI-powered
-                          suggestions, making it quicker handle.
+                          Converging and reaping the interest instilled into
+                          revenue generation is the core idea of the Migobucks
+                          ecosystem.
                         </p>
                       </div>
                     </div>
@@ -92,8 +94,9 @@ class Features extends Component {
                       <div className="media-body">
                         <h6>Manage and Ensure the CX in every Stores</h6>
                         <p>
-                          Our support team will get assistance from AI-powered
-                          suggestions.
+                          By using our Store Management System, brands can add
+                          the Store and Store-type which will be added in their
+                          proﬁle.
                         </p>
                       </div>
                     </div>
