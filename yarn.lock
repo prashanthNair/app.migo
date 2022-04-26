@@ -9842,7 +9842,7 @@ rsuite-table@^3.15.1:
     element-resize-event "^3.0.2"
     lodash "^4.17.20"
 
-rsuite@^4.10.3:
+rsuite@4.10.3:
   version "4.10.3"
   resolved "https://registry.yarnpkg.com/rsuite/-/rsuite-4.10.3.tgz#ea76599295de1cbf7abb854590bd45a38b8ea4e5"
   integrity sha512-o4mOJUHobbDOmL5cN3cQK8sFhIUDrqGOvDC/7uqK7bkjhwNwL5e5fg+R1fGGDs2VswiM7Ilqxhti9f6eMuEjIg==

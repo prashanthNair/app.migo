@@ -24,7 +24,7 @@ const Home_V2 = () => {
       <MigoBrand />
       {/* <Screenshot /> */}
       {/* <PricingTable /> */}
-      <TestimonialV2 />
+      {/* <TestimonialV2 /> */}
       <Subscribe />
       <FooterV2 />
     </div>

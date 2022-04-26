@@ -50,6 +50,7 @@ function Job_Listing(props) {
     (job) => {
       return new Promise(async (resolve, reject) => {
         setLoading(true);
+        if (job.amount <= 0) return resolve();
 
         const payload = {
           amount: job.amount * 100,
@@ -159,11 +160,39 @@ function Job_Listing(props) {
                 {jobData.jobtitle}
               </h6>
               <div>
-                <h6>Training Fee: ₹{jobData.amount}</h6>
+                <h6 style={{ fontFamily: "sans-serif" }}>
+                  Training Fee:{" "}
+                  {jobData.amount.toLocaleString("en-IN", {
+                    maximumFractionDigits: 0,
+                    style: "currency",
+                    currency: "INR",
+                  })}
+                </h6>
               </div>
               <span>
                 <hr />
               </span>
+              <div id="discount-banner">
+                <img
+                  alt="discount-banner"
+                  class="banner-img"
+                  src="https://i.imgur.com/P6Z9BOr.png"
+                />
+                <div>
+                  <p style={{ color: "#fff" }}>
+                    Score 85% or above to avail 90% cashback on this training.
+                  </p>
+                  <p style={{ color: "#fff" }}>
+                    Total Cashback Amount:{" "}
+                    {(jobData.amount * 0.9).toLocaleString("en-IN", {
+                      maximumFractionDigits: 0,
+                      style: "currency",
+                      currency: "INR",
+                    })}
+                    /-
+                  </p>
+                </div>
+              </div>
 
               <div dangerouslySetInnerHTML={{ __html: jobData.description }} />
               {loading ? (
@@ -187,7 +216,10 @@ function Job_Listing(props) {
       <Drawer onHide={handleDrawerClose} show={drawerOpen}>
         <Drawer.Header />
         <Drawer.Body>
-          <JobApplyForm onApply={handleApplyFormSubmit} />
+          <JobApplyForm
+            submitBtnText={`${jobData.amount <= 0 ? "Submit" : "Make Payment"}`}
+            onApply={handleApplyFormSubmit}
+          />
         </Drawer.Body>
       </Drawer>
     </div>

@@ -8221,7 +8221,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   border-bottom: 1px solid #d9dde4;
   border-radius: 0;
   padding: 0;
-  color: #2575bb;
+  color: #000;
 }
 .job-apply-area .single-input-wrap textarea {
   padding: 10px 0 !important;
@@ -8406,4 +8406,25 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .reset-margins {
   margin-right: unset;
   margin-left: unset;
+}
+
+#discount-banner {
+  margin: 45px 0px;
+  font-family: "poppins";
+  font-weight: 500;
+  background: #000000c9;
+  height: 100px;
+  width: 600px;
+  border-radius: 20px;
+  color: #fff !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-img {
+  width: 150px;
+  margin-top: -5px;
+  margin-left: -30px;
+  float: left;
 }

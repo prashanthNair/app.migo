@@ -9,6 +9,8 @@ import TrainingDetailsPage from "./components/job-details";
 import Brands from "./components/home-v4";
 import Buddy from "./components/home-v7";
 import MigoApp from "./components/home-v3";
+import Terms from "./components/terms-components/terms";
+import Privacy from "./components/terms-components/privacy";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route exact path="/brands" component={Brands} />
         <Route exact path="/buddy" component={Buddy} />
         <Route exact path="/app" component={MigoApp} />
+        <Route exact path="/terms" component={Terms} />
+        <Route exact path="/privacy" component={Privacy} />
       </Switch>
     </div>
   );
