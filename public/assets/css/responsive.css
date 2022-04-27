@@ -2990,6 +2990,9 @@
     float: left !important;
   }
 
+  .job-highlight-btn {
+    float: left !important;
+  }
   /********** home 8 *********/
   .software-store-wrap li {
     width: 50%;
@@ -3140,6 +3143,9 @@
     margin-top: 20px;
   }
   .job-apply-btn {
+    margin-top: 20px;
+  }
+  .job-highlight-btn{
     margin-top: 20px;
   }
   .footer-widget.widget_nav_menu {

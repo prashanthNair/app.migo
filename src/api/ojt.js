@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const ojtApiUrl = "https://qzqvuzsu4g.execute-api.ap-south-1.amazonaws.com/dev";
+const ojtApiUrl = "https://api.dev.migobucks.com/brand/ojt/register";
 
 export async function enroll(params) {
   const {
@@ -9,6 +9,8 @@ export async function enroll(params) {
     contactNumber,
     email,
     courseTitle,
+    experience,
+    qualification,
     meta,
     paymentDetails,
     startDate,
@@ -16,11 +18,14 @@ export async function enroll(params) {
     jobId,
     amount,
   } = params;
-  const { data } = await axios.post(`${ojtApiUrl}/enroll`, {
+  debugger;
+  const { data } = await axios.post(`${ojtApiUrl}`, {
     firstName,
     lastName,
     contactNumber,
     email,
+    experience,
+    qualification,
     courseTitle,
     meta,
     paymentDetails,

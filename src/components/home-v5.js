@@ -10,9 +10,8 @@ import Testimonialv4 from './section-components/testimonial-v4';
 import FaqV2 from './section-components/faq-v2';
 import Subscribe from './section-components/subscribe';
 import FooterV2 from './global-components/footer-v2';
-
 const Home_v5 = () => {
-    return <div>
+    return <div> 
         <Navbar />
         <BannerV3 />
         <ServiceV3 />

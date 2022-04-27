@@ -103,15 +103,17 @@ function Job_Listing(props) {
         qualification,
         fileUrl,
       } = params;
-      const paymentResponse = await handlePayment(jobData);
+      // const paymentResponse = await handlePayment(jobData);
       const payload = {
         firstName: fullName.split(" ")[0],
         lastName: fullName.split(" ")[1] || "",
-        contactNumber: phone,
+        contactNumber: phone, 
         email,
         courseTitle: jobData.jobtitle,
+        experience,
+        qualification,
         paymentDetails: {
-          ...paymentResponse,
+          // ...paymentResponse,
         },
         meta: {
           ...jobData,
@@ -217,7 +219,7 @@ function Job_Listing(props) {
         <Drawer.Header />
         <Drawer.Body>
           <JobApplyForm
-            submitBtnText={`${jobData.amount <= 0 ? "Submit" : "Make Payment"}`}
+            submitBtnText= "Apply"    //{`${jobData.amount <= 0 ? "Submit" : "Make Payment"}`}
             onApply={handleApplyFormSubmit}
           />
         </Drawer.Body>
