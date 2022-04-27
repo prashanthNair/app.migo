@@ -6,6 +6,7 @@ import Contact from "./components/contact";
 import Sollutions from "./components/work-processing";
 import TrainingListingPage from "./components/job-listing";
 import TrainingDetailsPage from "./components/job-details";
+import ExecutiveProgram from "./components/exe-program"
 import Brands from "./components/home-v4";
 import Buddy from "./components/home-v7";
 import MigoApp from "./components/home-v3";
@@ -21,7 +22,8 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/sollutions" component={Sollutions} />
-        <Route exact path="/ojt" component={TrainingListingPage} />
+        <Route exact path="/ojt" component={TrainingListingPage} />/exe-program
+        <Route exact path="/exe-program" component={ExecutiveProgram} />
         <Route exact path="/ojt/details/:id" component={TrainingDetailsPage} />
         <Route exact path="/brands" component={Brands} />
         <Route exact path="/buddy" component={Buddy} />

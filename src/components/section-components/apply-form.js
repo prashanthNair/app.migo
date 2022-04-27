@@ -242,8 +242,8 @@ function ApplyForm(props) {
                     <div className="col-md-6">
                       <div className="single-input-wrap">
                         <input
-                          placeholder="Experience (If any)"
-                          type="text"
+                          placeholder="Experience *" 
+                          type="number"
                           autoComplete="none"
                           value={experience}
                           onChange={(ev) => setExperience(ev.target.value)}

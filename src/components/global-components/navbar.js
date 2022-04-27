@@ -132,6 +132,9 @@ class Navbar extends Component {
                     <li>
                       <Link to="/ojt">On job training</Link>
                     </li>
+                    <li>
+                      <Link to="/exe-program">Executive Program</Link>
+                    </li>
                   </ul>
                 </li>
 
