@@ -15,8 +15,7 @@ import Privacy from "./components/terms-components/privacy";
 
 function App() {
   return (
-    <div className="App">
-      <div id="dismissible-container"></div>
+    <div className="App"> 
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />

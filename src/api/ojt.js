@@ -3,6 +3,7 @@ import axios from "axios";
 const ojtApiUrl = "https://api.dev.migobucks.com/brand/ojt/register";
 
 export async function enroll(params) {
+  debugger
   const {
     firstName,
     lastName,
@@ -11,6 +12,7 @@ export async function enroll(params) {
     courseTitle,
     experience,
     qualification,
+    jobType,
     meta,
     paymentDetails,
     startDate,
@@ -26,6 +28,7 @@ export async function enroll(params) {
     email,
     experience,
     qualification,
+    type:jobType,
     courseTitle,
     meta,
     paymentDetails,

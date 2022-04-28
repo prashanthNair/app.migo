@@ -37,7 +37,10 @@ function Highlighted() {
           <span>Start at { highlighted.job[0].date}</span>
         </div>
         <button
-          onClick={() => history.push(`/ojt/details/${highlighted.job[0].jobId}`)}
+       
+          onClick= {() => history.push({pathname:`/ojt/details/${highlighted.job[0].jobId}`,state: {
+            type:"Executive Program" ,
+          }})}
           className='job-highlight-btn'
         >
           {data.buttontext}

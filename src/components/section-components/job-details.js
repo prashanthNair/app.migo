@@ -8,11 +8,14 @@ import sectiondata from "../../data/sections.json";
 import { creatPayment } from "../../api/payment";
 import parse from "html-react-parser";
 import { enroll } from "../../api/ojt";
+import {useLocation} from 'react-router-dom'
 
 function Job_Listing(props) {
+  debugger
+  const location = useLocation() 
   const { id } = useParams();
   const Razorpay = useRazorpay();
-
+  const jobType = location?.state?.type
   const currentUrl = React.useMemo(() => {
     const { host, protocol } = window.location;
     return `${protocol}//${host}`;
@@ -91,7 +94,9 @@ function Job_Listing(props) {
   );
 
   const handleApplyFormSubmit = useCallback(
+   
     async (params) => {
+      debugger;
       const {
         fullName,
         email,
@@ -101,7 +106,7 @@ function Job_Listing(props) {
         note,
         experience,
         qualification,
-        fileUrl,
+        fileUrl, 
       } = params;
       // const paymentResponse = await handlePayment(jobData);
       const payload = {
@@ -112,6 +117,7 @@ function Job_Listing(props) {
         courseTitle: jobData.jobtitle,
         experience,
         qualification,
+        jobType,
         paymentDetails: {
           // ...paymentResponse,
         },

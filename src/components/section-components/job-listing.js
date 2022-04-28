@@ -45,7 +45,9 @@ function Job_Listing(props) {
                       <span>{item.date}</span>
                     </div>
                     <button
-                      onClick={() => history.push(`/ojt/details/${item.jobId}`)}
+                      onClick={() => history.push({pathname:`/ojt/details/${item.jobId}`,state: {
+                        type:"OJT" ,
+                      }})}
                       className='job-apply-btn align-self-center float-right'
                     >
                       {data.buttontext}
