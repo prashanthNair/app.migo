@@ -1,13 +1,13 @@
-import CreditCard from "@mui/icons-material/CreditCard";
-import { Box, Button, Grid, TextField } from "@mui/material";
-import Card1 from "components/Card1";
-import CustomerDashboardLayout from "components/layouts/customer-dashboard";
-import DashboardPageHeader from "components/layouts/DashboardPageHeader";
-import { Formik } from "formik";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import React from "react";
-import * as yup from "yup";
+import CreditCard from '@mui/icons-material/CreditCard';
+import { Box, Button, Grid, TextField } from '@mui/material';
+import Card1 from 'components/Card1';
+import CustomerDashboardLayout from 'components/layouts/customer-dashboard';
+import DashboardPageHeader from 'components/layouts/DashboardPageHeader';
+import { Formik } from 'formik';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import React from 'react';
+import * as yup from 'yup';
 
 const PaymentMethodEditor = () => {
   const {
@@ -22,14 +22,14 @@ const PaymentMethodEditor = () => {
     <CustomerDashboardLayout>
       <DashboardPageHeader
         icon={CreditCard}
-        title={`${id === "add" ? "Add New" : "Edit"} Payment Method`}
+        title={`${id === 'add' ? 'Add New' : 'Edit'} Payment Method`}
         button={
-          <Link href="/payment-methods" passHref>
+          <Link href='/payment-methods' passHref>
             <Button
-              color="primary"
+              color='primary'
               sx={{
-                bgcolor: "primary.light",
-                px: "2rem",
+                bgcolor: 'primary.light',
+                px: '2rem',
               }}
             >
               Back to Payment Methods
@@ -57,48 +57,48 @@ const PaymentMethodEditor = () => {
                 <Grid container spacing={3}>
                   <Grid item md={6} xs={12}>
                     <TextField
-                      name="card_no"
-                      label="Card Number"
+                      name='card_no'
+                      label='Card Number'
                       fullWidth
                       onBlur={handleBlur}
                       onChange={handleChange}
-                      value={values.card_no || ""}
+                      value={values.card_no || ''}
                       error={!!touched.card_no && !!errors.card_no}
                       helperText={touched.card_no && errors.card_no}
                     />
                   </Grid>
                   <Grid item md={6} xs={12}>
                     <TextField
-                      name="name"
-                      label="Name on Card"
+                      name='name'
+                      label='Name on Card'
                       fullWidth
                       onBlur={handleBlur}
                       onChange={handleChange}
-                      value={values.name || ""}
+                      value={values.name || ''}
                       error={!!touched.name && !!errors.name}
                       helperText={touched.name && errors.name}
                     />
                   </Grid>
                   <Grid item md={6} xs={12}>
                     <TextField
-                      name="exp"
-                      label="Exp. Date"
+                      name='exp'
+                      label='Exp. Date'
                       fullWidth
                       onBlur={handleBlur}
                       onChange={handleChange}
-                      value={values.exp || ""}
+                      value={values.exp || ''}
                       error={!!touched.exp && !!errors.exp}
                       helperText={touched.exp && errors.exp}
                     />
                   </Grid>
                   <Grid item md={6} xs={12}>
                     <TextField
-                      name="cvc"
-                      label="CVC"
+                      name='cvc'
+                      label='CVC'
                       fullWidth
                       onBlur={handleBlur}
                       onChange={handleChange}
-                      value={values.cvc || ""}
+                      value={values.cvc || ''}
                       error={!!touched.cvc && !!errors.cvc}
                       helperText={touched.cvc && errors.cvc}
                     />
@@ -106,7 +106,7 @@ const PaymentMethodEditor = () => {
                 </Grid>
               </Box>
 
-              <Button type="submit" variant="contained" color="primary">
+              <Button type='submit' variant='contained' color='primary'>
                 Save Changes
               </Button>
             </form>
@@ -118,15 +118,15 @@ const PaymentMethodEditor = () => {
 };
 
 const initialValues = {
-  card_no: "",
-  name: "",
-  exp: "",
-  cvc: "",
+  card_no: '',
+  name: '',
+  exp: '',
+  cvc: '',
 };
 const checkoutSchema = yup.object().shape({
-  name: yup.string().required("required"),
-  card_no: yup.string().required("required"),
-  exp: yup.string().required("required"),
-  cvc: yup.string().required("required"),
+  name: yup.string().required('required'),
+  card_no: yup.string().required('required'),
+  exp: yup.string().required('required'),
+  cvc: yup.string().required('required'),
 });
 export default PaymentMethodEditor;

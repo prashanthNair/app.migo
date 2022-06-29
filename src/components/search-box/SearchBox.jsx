@@ -133,7 +133,6 @@ const SearchBox = () => {
 
 const categories = [
   'All Categories',
-  'Car',
   'Clothes',
   'Electronics',
   'Laptop',

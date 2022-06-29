@@ -1,25 +1,25 @@
-import { Box, Container, Grid } from "@mui/material";
-import CarouselCard3 from "components/carousel-cards/CarouselCard3";
-import Carousel from "components/carousel/Carousel";
-import CategorySectionCreator from "components/CategorySectionCreator";
-import Navbar from "components/navbar/Navbar";
-import React, { Fragment } from "react";
-import CarouselSection from "./CarouselSection";
-import HomeFourCard1 from "./homeFour-cards/HomeFourCard1";
+import { Box, Container, Grid } from '@mui/material';
+import CarouselCard3 from 'components/carousel-cards/CarouselCard3';
+import Carousel from 'components/carousel/Carousel';
+import CategorySectionCreator from 'components/CategorySectionCreator';
+import Navbar from 'components/navbar/Navbar';
+import React, { Fragment } from 'react';
+import CarouselSection from './CarouselSection';
+import HomeFourCard1 from './homeFour-cards/HomeFourCard1';
 
 const Section1 = (props) => {
   const { topPickList, mainCarousel } = props;
   const arrowButtonStyle = {
-    boxShadow: "none",
-    background: "transparent",
-    color: "#7D879C",
+    boxShadow: 'none',
+    background: 'transparent',
+    color: '#7D879C',
   };
   return (
     <Fragment>
       <Navbar />
       <Container
         sx={{
-          pt: "3rem",
+          pt: '3rem',
         }}
       >
         <Grid container spacing={5}>
@@ -36,14 +36,14 @@ const Section1 = (props) => {
             </Carousel>
           </Grid>
           <Grid item md={7} xs={12}>
-            <CategorySectionCreator title="Top Picks">
+            <CategorySectionCreator title='Top Picks'>
               <CarouselSection productList={topPickList} />
 
-              <Box my="3rem">
+              <Box my='3rem'>
                 <HomeFourCard1
-                  title="Converse Collecitons"
-                  body="Get the most exciting deals. Starting at $59"
-                  imgUrl="/assets/images/products/red-shoe.png"
+                  title='Converse Collecitons'
+                  body='Get the most exciting deals. Starting at $59'
+                  imgUrl='/assets/images/products/red-shoe.png'
                 />
               </Box>
 

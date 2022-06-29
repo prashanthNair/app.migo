@@ -1,15 +1,15 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Box, styled } from "@mui/material";
-import React, { useEffect, useRef, useState } from "react";
-import CategoryMenuCard from "./CategoryMenuCard"; // styled component
+import { Box, styled } from '@mui/material';
+import React, { useEffect, useRef, useState } from 'react';
+import CategoryMenuCard from './CategoryMenuCard'; // styled component
 
 const Wrapper = styled(Box)(({ open }) => ({
-  position: "relative",
-  cursor: "pointer",
-  "& .dropdown-icon": {
-    marginLeft: "0.25rem",
-    transition: "all 250ms ease-in-out",
-    transform: `rotate(${open ? "90deg" : "0deg"})`,
+  position: 'relative',
+  cursor: 'pointer',
+  '& .dropdown-icon': {
+    marginLeft: '0.25rem',
+    transition: 'all 250ms ease-in-out',
+    transform: `rotate(${open ? '90deg' : '0deg'})`,
   },
 })); // ===========================================================
 
@@ -29,9 +29,9 @@ const CategoryMenu = ({ open: isOpen = false, children }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("click", handleDocumentClick);
+    window.addEventListener('click', handleDocumentClick);
     return () => {
-      window.removeEventListener("click", handleDocumentClick);
+      window.removeEventListener('click', handleDocumentClick);
     };
   }, []);
   return (

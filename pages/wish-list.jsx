@@ -1,26 +1,26 @@
-import Favorite from "@mui/icons-material/Favorite";
-import { Button, Grid, Pagination } from "@mui/material";
-import { FlexBox } from "components/flex-box";
-import CustomerDashboardLayout from "components/layouts/customer-dashboard";
-import CustomerDashboardNavigation from "components/layouts/customer-dashboard/Navigations";
-import DashboardPageHeader from "components/layouts/DashboardPageHeader";
-import ProductCard1 from "components/product-cards/ProductCard1";
-import productDatabase from "data/product-database";
-import React from "react";
+import Favorite from '@mui/icons-material/Favorite';
+import { Button, Grid, Pagination } from '@mui/material';
+import { FlexBox } from 'components/flex-box';
+import CustomerDashboardLayout from 'components/layouts/customer-dashboard';
+import CustomerDashboardNavigation from 'components/layouts/customer-dashboard/Navigations';
+import DashboardPageHeader from 'components/layouts/DashboardPageHeader';
+import ProductCard from 'components/product-cards/ProductCard';
+import productDatabase from 'data/product-database';
+import React from 'react';
 
 const WishList = () => {
   return (
     <CustomerDashboardLayout>
       <DashboardPageHeader
         icon={Favorite}
-        title="My Wish List"
+        title='My Wish List'
         navigation={<CustomerDashboardNavigation />}
         button={
           <Button
-            color="primary"
+            color='primary'
             sx={{
               px: 4,
-              bgcolor: "primary.light",
+              bgcolor: 'primary.light',
             }}
           >
             Add All to Cart
@@ -31,16 +31,16 @@ const WishList = () => {
       <Grid container spacing={3}>
         {productDatabase.slice(53, 59).map((item) => (
           <Grid item lg={4} sm={6} xs={12} key={item.id}>
-            <ProductCard1 {...item} />
+            <ProductCard {...item} />
           </Grid>
         ))}
       </Grid>
 
-      <FlexBox justifyContent="center" mt={5}>
+      <FlexBox justifyContent='center' mt={5}>
         <Pagination
           count={5}
-          color="primary"
-          variant="outlined"
+          color='primary'
+          variant='outlined'
           onChange={(data) => console.log(data)}
         />
       </FlexBox>

@@ -2,13 +2,11 @@ import { Box, styled, Tab, Tabs } from '@mui/material';
 import NavbarLayout from 'components/layouts/NavbarLayout';
 import FrequentlyBought from 'components/products/FrequentlyBought';
 import ProductDescription from 'components/products/ProductDescription';
-import ProductIntro from 'components/products/ProductIntro';
 import ProductReview from 'components/products/ProductReview';
 import RelatedProducts from 'components/products/RelatedProducts';
-import { H2 } from 'components/Typography';
-import bazarReactDatabase from 'data/bazar-react-database';
+import ProductIntro from 'components/products/ProductIntro';
 import { useRouter } from 'next/router';
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { getProductDetails } from 'utils/api/products';
 import {
   getFrequentlyBought,
@@ -28,19 +26,20 @@ const StyledTabs = styled(Tabs)(({ theme }) => ({
 
 // ===============================================================
 const ProductDetails = (props) => {
+  debugger;
   const { frequentlyBought, relatedProducts, data } = props;
   const router = useRouter();
   const { id } = router.query;
   const [product, setProduct] = useState();
   const [selectedOption, setSelectedOption] = useState(0);
-  useEffect(() => {
-    if (id) {
-      const productData = bazarReactDatabase.find(
-        (item) => item.id === parseInt(`${id}`)
-      );
-      setProduct(productData);
-    }
-  }, [id]);
+  // useEffect(() => {
+  //   if (id) {
+  //     const productData = bazarReactDatabase.find(
+  //       (item) => item.id === parseInt(`${id}`)
+  //     );
+  //     setProduct(productData);
+  //   }
+  // }, [id]);
 
   const handleOptionClick = (_, newValue) => {
     setSelectedOption(newValue);
@@ -48,8 +47,8 @@ const ProductDetails = (props) => {
 
   return (
     <NavbarLayout>
-      {product ? <ProductIntro product={data} /> : <H2>Loading...</H2>}
-
+      {/* {product ? <ProductIntro product={data} /> : <H2>Loading...</H2>} */}
+      <ProductIntro product={data} />
       <StyledTabs
         textColor='primary'
         value={selectedOption}
@@ -57,7 +56,7 @@ const ProductDetails = (props) => {
         onChange={handleOptionClick}
       >
         <Tab className='inner-tab' label='Description' />
-        <Tab className='inner-tab' label='Review (3)' />
+        <Tab className='inner-tab' label={`Reviews ${data?.Reviews?.length}`} />
       </StyledTabs>
 
       <Box mb={6}>
@@ -83,15 +82,17 @@ export const getStaticPaths = async () => {
 };
 export async function getStaticProps(context) {
   console.log(context);
+  debugger;
   const productId = context.params.id;
-  const { data } = await getProductDetails(productId);
+  const data = await getProductDetails(productId);
   const frequentlyBought = await getFrequentlyBought();
   const relatedProducts = await getRelatedProducts();
+
   return {
     props: {
       frequentlyBought,
       relatedProducts,
-      data,
+      data: data || null,
     },
   };
 }

@@ -1,21 +1,22 @@
 /* eslint-disable react/display-name */
-import { CacheProvider } from "@emotion/react";
-import createEmotionServer from "@emotion/server/create-instance";
-import Document, { Head, Html, Main, NextScript } from "next/document";
-import React from "react";
-import createEmotionCache from "../src/createEmotionCache";
+import { CacheProvider } from '@emotion/react';
+import createEmotionServer from '@emotion/server/create-instance';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
+import React from 'react';
+import createEmotionCache from '../src/createEmotionCache';
 export default class Bazar extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang='en'>
         <Head>
+          <link rel='icon' href='/favicon.ico' />
           <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;900&display=swap"
-            rel="stylesheet"
+            href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;900&display=swap'
+            rel='stylesheet'
           />
           <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel='stylesheet'
+            href='https://fonts.googleapis.com/icon?family=Material+Icons'
           />
         </Head>
 
@@ -72,7 +73,7 @@ Bazar.getInitialProps = async (ctx) => {
   const emotionStyles = extractCriticalToChunks(initialProps.html);
   const emotionStyleTags = emotionStyles.styles.map((style) => (
     <style
-      data-emotion={`${style.key} ${style.ids.join(" ")}`}
+      data-emotion={`${style.key} ${style.ids.join(' ')}`}
       key={style.key} // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{
         __html: style.css,

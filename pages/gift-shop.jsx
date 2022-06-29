@@ -1,46 +1,46 @@
-import { Box, Container, styled } from "@mui/material";
-import GroceryLayout from "components/layouts/GroceryLayout";
-import MobileNavigationBar2 from "components/mobile-navigation/MobileNavigationBar2";
-import PageFooter from "components/page-footer/PageFooter";
-import GiftFurnitureSideNav from "components/page-sidenav/GiftFurnitureSideNav";
-import Setting from "components/Setting";
-import GiftShopAllProducts from "pages-sections/giftshop/GiftShopAllProducts";
-import GiftShopPopularItems from "pages-sections/giftshop/GiftShopPopularItems";
-import GiftShopSection1 from "pages-sections/giftshop/GiftShopSection1";
-import GiftShopSection3 from "pages-sections/giftshop/GiftShopSection3";
-import GiftShopServices from "pages-sections/giftshop/GiftShopServices";
-import GiftShopTopSales from "pages-sections/giftshop/GiftShopTopSales";
-import TopCategorySection from "pages-sections/giftshop/TopCategorySection";
-import api from "utils/api/gift-shop";
-import { layoutConstant } from "utils/constants";
+import { Box, Container, styled } from '@mui/material';
+import GroceryLayout from 'components/layouts/GroceryLayout';
+import MobileNavigationBar2 from 'components/mobile-navigation/MobileNavigationBar2';
+import PageFooter from 'components/page-footer/PageFooter';
+import GiftFurnitureSideNav from 'components/page-sidenav/GiftFurnitureSideNav';
+import Setting from 'components/Setting';
+import GiftShopAllProducts from 'pages-sections/giftshop/GiftShopAllProducts';
+import GiftShopPopularItems from 'pages-sections/giftshop/GiftShopPopularItems';
+import GiftShopSection1 from 'pages-sections/giftshop/GiftShopSection1';
+import GiftShopSection3 from 'pages-sections/giftshop/GiftShopSection3';
+import GiftShopServices from 'pages-sections/giftshop/GiftShopServices';
+import GiftShopTopSales from 'pages-sections/giftshop/GiftShopTopSales';
+import TopCategorySection from 'pages-sections/giftshop/TopCategorySection';
+import api from 'utils/api/gift-shop';
+import { layoutConstant } from 'utils/constants';
 const StyledContainer = styled(Container)(({ theme }) => ({
-  display: "flex",
-  ".sidenav": {
+  display: 'flex',
+  '.sidenav': {
     top: 0,
     bottom: 0,
-    position: "relative",
-    transition: "all 350ms ease-in-out",
+    position: 'relative',
+    transition: 'all 350ms ease-in-out',
     width: layoutConstant.grocerySidenavWidth,
     minWidth: layoutConstant.grocerySidenavWidth,
-    "& .MuiPaper-root": {
+    '& .MuiPaper-root': {
       borderRadius: 0,
     },
-    [theme.breakpoints.down("md")]: {
-      display: "none",
+    [theme.breakpoints.down('md')]: {
+      display: 'none',
     },
   },
-  ".pageContent": {
-    left: "unset",
-    position: "relative",
-    marginLeft: "1.75rem",
+  '.pageContent': {
+    left: 'unset',
+    position: 'relative',
+    marginLeft: '1.75rem',
     width: `calc(100% - 2.5rem - ${layoutConstant.grocerySidenavWidth}px)`,
-    [theme.breakpoints.down("md")]: {
-      width: "100%",
-      "& .MuiGrid-item": {
+    [theme.breakpoints.down('md')]: {
+      width: '100%',
+      '& .MuiGrid-item': {
         paddingLeft: 0,
       },
-      "& .categories": {
-        marginLeft: "-1.75rem",
+      '& .categories': {
+        marginLeft: '-1.75rem',
       },
     },
   },
@@ -65,18 +65,18 @@ const HealthAndBeauty = (props) => {
           mb: 6,
         }}
       >
-        <Box className="sidenav">
+        <Box className='sidenav'>
           <GiftFurnitureSideNav
             navList={giftShopNavList}
-            sidebarHeight="85vh"
+            sidebarHeight='85vh'
           />
         </Box>
 
-        <Box className="pageContent">
+        <Box className='pageContent'>
           <GiftShopServices serviceData={giftShopServicesList} />
           <GiftShopSection3 />
 
-          <Box my={6} className="categories">
+          <Box my={6} className='categories'>
             <TopCategorySection categoryList={giftShopTopCategories} />
           </Box>
         </Box>
@@ -87,17 +87,17 @@ const HealthAndBeauty = (props) => {
       <GiftShopAllProducts productsData={giftShopProducts} />
 
       <PageFooter
-        id="footer"
+        id='footer'
         sx={{
-          borderRadius: "none",
-          backgroundColor: "primary.main",
+          borderRadius: 'none',
+          backgroundColor: 'primary.main',
         }}
       />
 
       <Setting />
 
       <MobileNavigationBar2>
-        <GiftFurnitureSideNav navList={giftShopNavList} sidebarHeight="100%" />
+        <GiftFurnitureSideNav navList={giftShopNavList} sidebarHeight='100%' />
       </MobileNavigationBar2>
     </GroceryLayout>
   );

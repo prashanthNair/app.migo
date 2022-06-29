@@ -1,9 +1,9 @@
-import { Avatar, Box, useMediaQuery } from "@mui/material";
-import { FlexBetween } from "components/flex-box";
-import Scrollbar from "components/Scrollbar";
-import { useRouter } from "next/router";
-import { useState } from "react";
-import LayoutDrawer from "../LayoutDrawer";
+import { Avatar, Box, useMediaQuery } from '@mui/material';
+import { FlexBetween } from 'components/flex-box';
+import Scrollbar from 'components/Scrollbar';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
+import LayoutDrawer from '../LayoutDrawer';
 import {
   BadgeValue,
   BulletIcon,
@@ -15,9 +15,9 @@ import {
   NavWrapper,
   SidebarWrapper,
   StyledText,
-} from "./LayoutStyledComponents";
-import { navigations } from "./LayoutV3NavList";
-import SidebarAccordion from "./SidebarAccordion";
+} from './LayoutStyledComponents';
+import { navigations } from './LayoutV3NavList';
+import SidebarAccordion from './SidebarAccordion';
 const TOP_HEADER_AREA = 70; // -----------------------------------------------------------------------------
 
 // -----------------------------------------------------------------------------
@@ -30,7 +30,7 @@ const DashboardSidebar = (props) => {
   } = props;
   const router = useRouter();
   const [onHover, setOnHover] = useState(false);
-  const downLg = useMediaQuery((theme) => theme.breakpoints.down("lg")); // side hover when side bar is compacted
+  const downLg = useMediaQuery((theme) => theme.breakpoints.down('lg')); // side hover when side bar is compacted
 
   const COMPACT = sidebarCompact && !onHover ? 1 : 0; // handle active current page
 
@@ -43,7 +43,7 @@ const DashboardSidebar = (props) => {
 
   const renderLevels = (data) => {
     return data.map((item, index) => {
-      if (item.type === "label")
+      if (item.type === 'label')
         return (
           <ListLabel key={index} compact={COMPACT}>
             {item.label}
@@ -56,21 +56,21 @@ const DashboardSidebar = (props) => {
             {renderLevels(item.children)}
           </SidebarAccordion>
         );
-      } else if (item.type === "extLink") {
+      } else if (item.type === 'extLink') {
         return (
           <ExternalLink
             key={index}
             href={item.path}
-            rel="noopener noreferrer"
-            target="_blank"
+            rel='noopener noreferrer'
+            target='_blank'
           >
-            <NavItemButton key={item.name} name="child" active={0}>
+            <NavItemButton key={item.name} name='child' active={0}>
               {item.icon ? (
                 <ListIconWrapper>
                   <item.icon />
                 </ListIconWrapper>
               ) : (
-                <span className="item-icon icon-text">{item.iconText}</span>
+                <span className='item-icon icon-text'>{item.iconText}</span>
               )}
 
               <StyledText compact={COMPACT}>{item.name}</StyledText>
@@ -88,7 +88,7 @@ const DashboardSidebar = (props) => {
           <Box key={index}>
             <NavItemButton
               key={item.name}
-              className="navItem"
+              className='navItem'
               active={activeRoute(item.path)}
               onClick={() => handleNavigation(item.path)}
             >
@@ -119,7 +119,7 @@ const DashboardSidebar = (props) => {
       autoHide
       clickOnTrack={false}
       sx={{
-        overflowX: "hidden",
+        overflowX: 'hidden',
         maxHeight: `calc(100vh - ${TOP_HEADER_AREA}px)`,
       }}
     >
@@ -134,10 +134,10 @@ const DashboardSidebar = (props) => {
       <LayoutDrawer open={showMobileSideBar} onClose={setShowMobileSideBar}>
         <Box p={2} maxHeight={TOP_HEADER_AREA}>
           <img
-            alt="Logo"
-            width="auto"
+            alt='Logo'
+            width='auto'
             height={24}
-            src="/assets/images/logo.svg"
+            src='/assets/images/logo.svg'
             style={{
               marginLeft: 8,
             }}
@@ -158,20 +158,20 @@ const DashboardSidebar = (props) => {
       <FlexBetween
         p={2}
         maxHeight={TOP_HEADER_AREA}
-        justifyContent={COMPACT ? "center" : "space-between"}
+        justifyContent={COMPACT ? 'center' : 'space-between'}
       >
         <Avatar
-          src={COMPACT ? "/assets/white-fav.svg" : "/assets/images/logo.svg"}
+          src={COMPACT ? '/assets/white-fav.svg' : '/assets/images/logo.svg'}
           sx={{
             borderRadius: 0,
-            width: "auto",
+            width: 'auto',
             height: 24,
             marginLeft: COMPACT ? 0 : 1,
           }}
         />
 
         <ChevronLeftIcon
-          color="disabled"
+          color='disabled'
           compact={COMPACT}
           onClick={setSidebarCompact}
           sidebarcompact={sidebarCompact ? 1 : 0}

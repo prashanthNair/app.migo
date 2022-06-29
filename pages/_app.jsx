@@ -1,5 +1,5 @@
 import RTL from 'components/RTL';
-import { AppProvider } from 'contexts/AppContext';
+// import { AppProvider } from 'contexts/AppContext';
 import SettingsProvider from 'contexts/SettingContext';
 import Head from 'next/head';
 import Router from 'next/router';
@@ -41,13 +41,13 @@ const App = ({ Component, pageProps }) => {
         <OpenGraphTags />
       </Head>
 
-      <SettingsProvider>
-        <AppProvider>
-          <MuiTheme>
-            <RTL>{getLayout(<Component {...pageProps} />)}</RTL>
-          </MuiTheme>
-        </AppProvider>
-      </SettingsProvider>
+      {/* <SettingsProvider> */}
+      {/* <AppProvider> */}
+      <MuiTheme>
+        <RTL>{getLayout(<Component {...pageProps} />)}</RTL>
+      </MuiTheme>
+      {/* </AppProvider> */}
+      {/* </SettingsProvider> */}
     </Fragment>
   );
 }; // Only uncomment this method if you have blocking data requirements for

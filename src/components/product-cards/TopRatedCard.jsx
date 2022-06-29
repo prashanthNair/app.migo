@@ -9,7 +9,7 @@ import React from 'react';
 const TopRatedCard = ({
   ImageUrl,
   Rating,
-  Tittle,
+  Title,
   SellingPrice,
   ReviewCount = 0,
 }) => {
@@ -21,7 +21,7 @@ const TopRatedCard = ({
           width={0}
           height={0}
           layout='responsive'
-          alt={Tittle}
+          alt={Title}
           mx='auto'
         />
       </HoverBox>
@@ -33,8 +33,8 @@ const TopRatedCard = ({
         </Small>
       </FlexRowCenter>
 
-      <H4 fontSize={14} textAlign='center' mb={0.5} title={Tittle} ellipsis>
-        {Tittle}
+      <H4 fontSize={14} textAlign='center' mb={0.5} title={Title} ellipsis>
+        {Title}
       </H4>
       <H4 fontSize={14} textAlign='center' color='primary.main'>
         ${Math.ceil(SellingPrice).toLocaleString()}

@@ -1,32 +1,32 @@
-import { Box, Button, Card, Divider, Stack, TextField } from "@mui/material";
-import VendorDashboardLayout from "components/layouts/vendor-dashboard";
-import { H3, Paragraph } from "components/Typography";
-import { Formik } from "formik";
-import React from "react";
-import * as Yup from "yup";
+import { Box, Button, Card, Divider, Stack, TextField } from '@mui/material';
+import VendorDashboardLayout from 'components/layouts/vendor-dashboard';
+import { H3, Paragraph } from 'components/Typography';
+import { Formik } from 'formik';
+import React from 'react';
+import * as Yup from 'yup';
 const cardInitialValues = {
-  amount: "$250",
-  cardCvc: "255",
-  cardNo: "12345678910",
-  cardHolderName: "Gage Paquette",
+  amount: '$250',
+  cardCvc: '255',
+  cardNo: '12345678910',
+  cardHolderName: 'Gage Paquette',
 };
 const accountInitialValues = {
-  amount: "$250",
-  routingNo: "255",
-  accountNo: "12345678910",
-  accountHolderName: "Gage Paquette",
+  amount: '$250',
+  routingNo: '255',
+  accountNo: '12345678910',
+  accountHolderName: 'Gage Paquette',
 };
 const validationSchema = Yup.object().shape({
-  cardCvc: Yup.number().required("Card CVC is required!"),
-  amount: Yup.string().required("Amount is required!"),
-  cardNo: Yup.string().required("Card No is required!"),
-  cardHolderName: Yup.string().required("Card Holder Name is required!"),
+  cardCvc: Yup.number().required('Card CVC is required!'),
+  amount: Yup.string().required('Amount is required!'),
+  cardNo: Yup.string().required('Card No is required!'),
+  cardHolderName: Yup.string().required('Card Holder Name is required!'),
 });
 const accountValidateSchema = Yup.object().shape({
-  routingNo: Yup.number().required("Routing No is required!"),
-  amount: Yup.string().required("Amount is required!"),
-  accountNo: Yup.string().required("Account No is required!"),
-  accountHolderName: Yup.string().required("Acc. Holder Name is required!"),
+  routingNo: Yup.number().required('Routing No is required!'),
+  amount: Yup.string().required('Amount is required!'),
+  accountNo: Yup.string().required('Account No is required!'),
+  accountHolderName: Yup.string().required('Acc. Holder Name is required!'),
 }); // =============================================================================
 
 PayoutSettings.getLayout = function getLayout(page) {
@@ -40,7 +40,7 @@ export default function PayoutSettings() {
   const handleAccountPaymentSubmit = (values) => {};
 
   return (
-    <Box py={4} maxWidth={740} margin="auto">
+    <Box py={4} maxWidth={740} margin='auto'>
       <H3 mb={2}>Payout Settings</H3>
 
       <Card
@@ -54,17 +54,17 @@ export default function PayoutSettings() {
 
         <TextField
           fullWidth
-          color="info"
-          size="medium"
-          name="amount"
-          label="Amount"
-          defaultValue="$250"
+          color='info'
+          size='medium'
+          name='amount'
+          label='Amount'
+          defaultValue='$250'
           sx={{
             mb: 3,
           }}
         />
 
-        <Button type="submit" color="info" variant="contained">
+        <Button type='submit' color='info' variant='contained'>
           Save Changes
         </Button>
 
@@ -94,10 +94,10 @@ export default function PayoutSettings() {
             <form onSubmit={handleSubmit}>
               <Stack spacing={3} mb={3}>
                 <TextField
-                  color="info"
-                  size="medium"
-                  name="amount"
-                  label="Amount"
+                  color='info'
+                  size='medium'
+                  name='amount'
+                  label='Amount'
                   onBlur={handleBlur}
                   value={values.amount}
                   onChange={handleChange}
@@ -106,12 +106,12 @@ export default function PayoutSettings() {
                 />
 
                 <TextField
-                  color="info"
-                  size="medium"
+                  color='info'
+                  size='medium'
                   onBlur={handleBlur}
-                  name="cardHolderName"
+                  name='cardHolderName'
                   onChange={handleChange}
-                  label="Card Holder Name"
+                  label='Card Holder Name'
                   value={values.cardHolderName}
                   helperText={touched.cardHolderName && errors.cardHolderName}
                   error={Boolean(
@@ -120,10 +120,10 @@ export default function PayoutSettings() {
                 />
 
                 <TextField
-                  color="info"
-                  size="medium"
-                  name="cardNo"
-                  label="Card No"
+                  color='info'
+                  size='medium'
+                  name='cardNo'
+                  label='Card No'
                   onBlur={handleBlur}
                   value={values.cardNo}
                   onChange={handleChange}
@@ -132,10 +132,10 @@ export default function PayoutSettings() {
                 />
 
                 <TextField
-                  color="info"
-                  size="medium"
-                  name="cardCvc"
-                  label="Card CVC"
+                  color='info'
+                  size='medium'
+                  name='cardCvc'
+                  label='Card CVC'
                   onBlur={handleBlur}
                   value={values.cardCvc}
                   onChange={handleChange}
@@ -144,7 +144,7 @@ export default function PayoutSettings() {
                 />
               </Stack>
 
-              <Button type="submit" color="info" variant="contained">
+              <Button type='submit' color='info' variant='contained'>
                 Save Changes
               </Button>
             </form>
@@ -177,10 +177,10 @@ export default function PayoutSettings() {
             <form onSubmit={handleSubmit}>
               <Stack spacing={3} mb={3}>
                 <TextField
-                  color="info"
-                  size="medium"
-                  name="amount"
-                  label="Amount"
+                  color='info'
+                  size='medium'
+                  name='amount'
+                  label='Amount'
                   onBlur={handleBlur}
                   value={values.amount}
                   onChange={handleChange}
@@ -189,12 +189,12 @@ export default function PayoutSettings() {
                 />
 
                 <TextField
-                  color="info"
-                  size="medium"
+                  color='info'
+                  size='medium'
                   onBlur={handleBlur}
                   onChange={handleChange}
-                  name="accountHolderName"
-                  label="Account Holder Name"
+                  name='accountHolderName'
+                  label='Account Holder Name'
                   value={values.accountHolderName}
                   helperText={
                     touched.accountHolderName && errors.accountHolderName
@@ -205,10 +205,10 @@ export default function PayoutSettings() {
                 />
 
                 <TextField
-                  color="info"
-                  size="medium"
-                  name="accountNo"
-                  label="Account No"
+                  color='info'
+                  size='medium'
+                  name='accountNo'
+                  label='Account No'
                   onBlur={handleBlur}
                   onChange={handleChange}
                   value={values.accountNo}
@@ -217,10 +217,10 @@ export default function PayoutSettings() {
                 />
 
                 <TextField
-                  color="info"
-                  size="medium"
-                  name="routingNo"
-                  label="Routing No"
+                  color='info'
+                  size='medium'
+                  name='routingNo'
+                  label='Routing No'
                   onBlur={handleBlur}
                   onChange={handleChange}
                   value={values.routingNo}
@@ -229,7 +229,7 @@ export default function PayoutSettings() {
                 />
               </Stack>
 
-              <Button type="submit" color="info" variant="contained">
+              <Button type='submit' color='info' variant='contained'>
                 Save Changes
               </Button>
             </form>

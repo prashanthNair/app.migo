@@ -39,12 +39,12 @@ const Categories = ({ categories }) => {
                     width={52}
                     height={52}
                     alt='fashion'
-                    src={item.imgUrl}
+                    src={item.ImageUrl}
                     objectFit='contain'
                     borderRadius='8px'
                   />
                   <Box fontWeight='600' ml={1.25}>
-                    {item.name}
+                    {item.Name}
                   </Box>
                 </StyledMigobucksCard>
               </a>

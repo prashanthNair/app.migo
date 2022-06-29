@@ -1,49 +1,49 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Badge, Box, Drawer, styled } from "@mui/material";
-import CategoryOutlined from "components/icons/CategoryOutline";
-import Home from "components/icons/Home";
-import ShoppingBagOutlined from "components/icons/ShoppingBagOutlined";
-import User2 from "components/icons/User2";
-import NavLink from "components/nav-link/NavLink";
-import { useAppContext } from "contexts/AppContext";
-import useWindowSize from "hooks/useWindowSize";
-import React, { useEffect, useState } from "react";
-import { layoutConstant } from "utils/constants"; // styled components
+import { Badge, Box, Drawer, styled } from '@mui/material';
+import CategoryOutlined from 'components/icons/CategoryOutline';
+import Home from 'components/icons/Home';
+import ShoppingBagOutlined from 'components/icons/ShoppingBagOutlined';
+import User2 from 'components/icons/User2';
+import NavLink from 'components/nav-link/NavLink';
+import { useAppContext } from 'contexts/AppContext';
+import useWindowSize from 'hooks/useWindowSize';
+import React, { useEffect, useState } from 'react';
+import { layoutConstant } from 'utils/constants'; // styled components
 
 const Wrapper = styled(Box)(({ theme }) => ({
-  display: "none",
-  position: "fixed",
+  display: 'none',
+  position: 'fixed',
   bottom: 0,
   left: 0,
   right: 0,
   height: layoutConstant.mobileNavHeight,
-  justifyContent: "space-around",
+  justifyContent: 'space-around',
   backgroundColor: theme.palette.background.paper,
-  boxShadow: "0px 1px 4px 3px rgba(0, 0, 0, 0.1)",
+  boxShadow: '0px 1px 4px 3px rgba(0, 0, 0, 0.1)',
   zIndex: theme.zIndex.drawer + 1,
-  "@media only screen and (max-width: 900px)": {
-    display: "flex",
-    width: "100vw",
+  '@media only screen and (max-width: 900px)': {
+    display: 'flex',
+    width: '100vw',
   },
 }));
 const StyledNavLink = styled(NavLink)(() => ({
-  flex: "1 1 0",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  fontSize: "13px",
+  flex: '1 1 0',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  fontSize: '13px',
 }));
 const StyledBox = styled(Box)(({ theme }) => ({
-  flex: "1 1 0",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  fontSize: "13px",
-  cursor: "pointer",
-  transition: "color 150ms ease-in-out",
-  "&:hover": {
+  flex: '1 1 0',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  fontSize: '13px',
+  cursor: 'pointer',
+  transition: 'color 150ms ease-in-out',
+  '&:hover': {
     color: `${theme.palette.primary.main} !important`,
   },
 }));
@@ -51,14 +51,14 @@ const { mobileHeaderHeight } = layoutConstant;
 const StyledDrawer = styled(Drawer)(({ theme, totalheight }) => ({
   width: 250,
   flexShrink: 0,
-  "& .MuiDrawer-paper": {
+  '& .MuiDrawer-paper': {
     width: 250,
     top: totalheight,
     height: `calc(100% - ${totalheight + mobileHeaderHeight}px)`,
     boxShadow: theme.shadows[2],
-    boxSizing: "border-box",
+    boxSizing: 'border-box',
   },
-  "& .MuiBackdrop-root.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop": {
+  '& .MuiBackdrop-root.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop': {
     top: totalheight,
   },
 }));
@@ -68,10 +68,10 @@ const MobileNavigationBar2 = ({ children }) => {
   const { state } = useAppContext();
   const cartList = state.cart;
   const iconStyle = {
-    marginBottom: "4px",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    marginBottom: '4px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   };
   const [open, setOpen] = React.useState(false);
 
@@ -87,20 +87,20 @@ const MobileNavigationBar2 = ({ children }) => {
   const total = mobileNavHeight + topbarHeight;
   const [totalHeight, setTotalHeight] = useState(total);
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       if (window.scrollY > 30) {
         setTotalHeight(mobileNavHeight);
       } else {
         setTotalHeight(total);
       }
     });
-    return () => window.removeEventListener("scroll", null);
+    return () => window.removeEventListener('scroll', null);
   }, []);
   return width <= 900 ? (
-    <Box position="relative" display="flex" flexDirection="column">
+    <Box position='relative' display='flex' flexDirection='column'>
       <StyledDrawer
         open={open}
-        anchor="left" // variant="persistent"
+        anchor='left' // variant="persistent"
         totalheight={totalHeight}
         onClose={handleDrawerClose}
       >
@@ -112,12 +112,12 @@ const MobileNavigationBar2 = ({ children }) => {
           if (item.href) {
             return (
               <StyledNavLink href={item.href} key={item.title}>
-                {item.title === "Cart" ? (
-                  <Badge badgeContent={cartList.length} color="primary">
-                    <item.icon fontSize="small" sx={iconStyle} />
+                {item.title === 'Cart' ? (
+                  <Badge badgeContent={cartList.length} color='primary'>
+                    <item.icon fontSize='small' sx={iconStyle} />
                   </Badge>
                 ) : (
-                  <item.icon sx={iconStyle} fontSize="small" />
+                  <item.icon sx={iconStyle} fontSize='small' />
                 )}
 
                 {item.title}
@@ -129,12 +129,12 @@ const MobileNavigationBar2 = ({ children }) => {
                 onClick={open ? handleDrawerClose : handleDrawerOpen}
                 key={item.title}
               >
-                {item.title === "Cart" ? (
-                  <Badge badgeContent={cartList.length} color="primary">
-                    <item.icon fontSize="small" sx={iconStyle} />
+                {item.title === 'Cart' ? (
+                  <Badge badgeContent={cartList.length} color='primary'>
+                    <item.icon fontSize='small' sx={iconStyle} />
                   </Badge>
                 ) : (
-                  <item.icon sx={iconStyle} fontSize="small" />
+                  <item.icon sx={iconStyle} fontSize='small' />
                 )}
 
                 {item.title}
@@ -149,23 +149,23 @@ const MobileNavigationBar2 = ({ children }) => {
 
 const list = [
   {
-    title: "Home",
+    title: 'Home',
     icon: Home,
-    href: "/",
+    href: '/',
   },
   {
-    title: "Category",
+    title: 'Category',
     icon: CategoryOutlined,
   },
   {
-    title: "Cart",
+    title: 'Cart',
     icon: ShoppingBagOutlined,
-    href: "/cart",
+    href: '/cart',
   },
   {
-    title: "Account",
+    title: 'Account',
     icon: User2,
-    href: "/profile",
+    href: '/profile',
   },
 ];
 export default MobileNavigationBar2;

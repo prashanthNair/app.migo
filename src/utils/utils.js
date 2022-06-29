@@ -1,6 +1,7 @@
 import { differenceInMinutes } from "date-fns";
 import ceil from "lodash/ceil";
 export const getDateDifference = (date) => {
+  debugger
   let diff = differenceInMinutes(new Date(), new Date(date));
   if (diff < 60) return diff + " minutes ago";
   diff = ceil(diff / 60);

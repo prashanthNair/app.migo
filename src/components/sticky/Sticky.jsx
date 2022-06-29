@@ -1,29 +1,29 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { styled } from "@mui/material/styles";
-import { slideDown } from "animations/keyframes";
-import clsx from "clsx";
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import { styled } from '@mui/material/styles';
+import { slideDown } from 'animations/keyframes';
+import clsx from 'clsx';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 export const StyledBox = styled(
   ({ children, componentHeight, fixedOn, fixed, ...rest }) => (
     <div {...rest}>{children}</div>
   )
 )(({ theme, componentHeight, fixedOn, fixed }) => ({
-  "& .hold": {
+  '& .hold': {
     zIndex: 2,
-    boxShadow: "none",
-    position: "relative",
+    boxShadow: 'none',
+    position: 'relative',
   },
-  "& .fixed": {
+  '& .fixed': {
     left: 0,
     right: 0,
     zIndex: 1500,
-    position: "fixed",
+    position: 'fixed',
     top: `${fixedOn}px`,
     boxShadow: theme.shadows[2],
-    transition: "all 350ms ease-in-out",
+    transition: 'all 350ms ease-in-out',
     animation: `${slideDown} 400ms ${theme.transitions.easing.easeInOut}`,
   },
-  "& + .section-after-sticky": {
+  '& + .section-after-sticky': {
     paddingTop: fixed ? componentHeight : 0,
   },
 }));
@@ -73,11 +73,11 @@ const Sticky = ({
   }, []);
   useEffect(() => {
     if (!window) return;
-    window.addEventListener("scroll", scrollListener);
-    window.addEventListener("resize", scrollListener);
+    window.addEventListener('scroll', scrollListener);
+    window.addEventListener('resize', scrollListener);
     return () => {
-      window.removeEventListener("scroll", scrollListener);
-      window.removeEventListener("resize", scrollListener);
+      window.removeEventListener('scroll', scrollListener);
+      window.removeEventListener('resize', scrollListener);
     };
   }, []);
   useEffect(() => {

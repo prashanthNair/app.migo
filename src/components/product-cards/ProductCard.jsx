@@ -48,7 +48,7 @@ const LoveIconWrapper = styled(Box)(() => ({
 }));
 const ContentWrapper = styled(Box)(() => ({
   padding: '1rem',
-  '& .Tittle, & .categories': {
+  '& .title, & .categories': {
     overflow: 'hidden',
     whiteSpace: 'nowrap',
     textOverflow: 'ellipsis',
@@ -57,19 +57,20 @@ const ContentWrapper = styled(Box)(() => ({
 
 // ========================================================
 const ProductCard = ({
-  ImageUrl,
-  ProductId,
-  Tittle,
-  SellingPrice,
-  Rating = 5,
+  imgUrl,
+  id,
+  tittle,
+  price,
+  rating,
   hideRating,
   hoverEffect,
-  DiscountPercentage = 5,
+  discount = 0,
   showProductSize,
 }) => {
+  debugger;
   const { state, dispatch } = useAppContext();
   const [isFavorite, setIsFavorite] = useState(false);
-  const cartItem = state.cart.find((item) => item.id === ProductId);
+  const cartItem = state.cart.find((item) => item.id === id);
   debugger;
   const toggleIsFavorite = () => setIsFavorite((fav) => !fav);
 
@@ -78,11 +79,11 @@ const ProductCard = ({
       dispatch({
         type: 'CHANGE_CART_AMOUNT',
         payload: {
-          name: Tittle,
+          name: tittle,
           qty: amount,
-          SellingPrice,
-          ImageUrl,
-          ProductId,
+          price,
+          imgUrl,
+          id,
         },
       });
     },
@@ -91,12 +92,8 @@ const ProductCard = ({
   return (
     <StyledMigobucksCard hoverEffect={hoverEffect}>
       <ImageWrapper>
-        {!!DiscountPercentage && (
-          <StyledChip
-            color='primary'
-            size='small'
-            label={`${DiscountPercentage}% off`}
-          />
+        {!!discount && (
+          <StyledChip color='primary' size='small' label={`${discount}% off`} />
         )}
 
         <LoveIconWrapper>
@@ -114,16 +111,16 @@ const ProductCard = ({
           </IconButton>
         </LoveIconWrapper>
 
-        <Link href={`/product/${ProductId}`}>
+        <Link href={`/product/${id}`}>
           <a>
-            {/* <LazyImage
-              src={ImageUrl || ''}
-              width={5}
+            <LazyImage
+              src={imgUrl || ''}
               paddingTop={10}
-              height={7}
+              width={0}
+              height={0}
               layout='responsive'
-              alt={Tittle}
-            /> */}
+              alt={tittle}
+            />
           </a>
         </Link>
       </ImageWrapper>
@@ -131,23 +128,23 @@ const ProductCard = ({
       <ContentWrapper>
         <FlexBox>
           <Box flex='1 1 0' minWidth='0px' mr={1}>
-            <Link href={`/product/${ProductId}`}>
+            <Link href={`/product/${id}`}>
               <a>
                 <H3
                   mb={1}
-                  Tittle={Tittle}
+                  title={tittle}
                   fontSize='14px'
                   fontWeight='600'
-                  className='Tittle'
+                  className='title'
                   color='text.secondary'
                 >
-                  {Tittle}
+                  {tittle}
                 </H3>
               </a>
             </Link>
 
             {!hideRating && (
-              <MigobucksRating value={Rating || 0} color='warn' readOnly />
+              <MigobucksRating value={rating || 0} color='warn' readOnly />
             )}
 
             {showProductSize && (
@@ -158,12 +155,13 @@ const ProductCard = ({
 
             <FlexBox alignItems='center' gap={1} mt={0.5}>
               <Box fontWeight='600' color='primary.main'>
-                ${SellingPrice?.toFixed(2)}
+                ${price}
+                {/* ?.toFixed(2) */}
               </Box>
 
-              {!!DiscountPercentage && (
+              {!!discount && (
                 <Box color='grey.600' fontWeight='600'>
-                  <del>{DiscountPercentage?.toFixed(2)}</del>
+                  <del>{discount?.toFixed(2)}</del>
                 </Box>
               )}
             </FlexBox>

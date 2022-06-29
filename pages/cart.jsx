@@ -1,15 +1,16 @@
-import { Button, Card, Divider, Grid, TextField } from "@mui/material";
-import Autocomplete from "@mui/material/Autocomplete";
-import MenuItem from "@mui/material/MenuItem";
-import { FlexBetween, FlexBox } from "components/flex-box";
-import CheckoutNavLayout from "components/layouts/CheckoutNavLayout";
-import ProductCard7 from "components/product-cards/ProductCard7";
-import { Span } from "components/Typography";
-import { useAppContext } from "contexts/AppContext";
-import countryList from "data/countryList";
-import Link from "next/link";
+import { Button, Card, Divider, Grid, TextField } from '@mui/material';
+import Autocomplete from '@mui/material/Autocomplete';
+import MenuItem from '@mui/material/MenuItem';
+import { FlexBetween, FlexBox } from 'components/flex-box';
+import CheckoutNavLayout from 'components/layouts/CheckoutNavLayout';
+import ProductCard7 from 'components/product-cards/ProductCard7';
+import { Span } from 'components/Typography';
+import { useAppContext } from 'contexts/AppContext';
+import countryList from 'data/countryList';
+import Link from 'next/link';
 
 const Cart = () => {
+  debugger;
   const { state } = useAppContext();
   const cartList = state.cart;
 
@@ -33,9 +34,9 @@ const Cart = () => {
             }}
           >
             <FlexBetween mb={2}>
-              <Span color="grey.600">Total:</Span>
+              <Span color='grey.600'>Total:</Span>
 
-              <Span fontSize={18} fontWeight={600} lineHeight="1">
+              <Span fontSize={18} fontWeight={600} lineHeight='1'>
                 ${getTotalPrice().toFixed(2)}
               </Span>
             </FlexBetween>
@@ -46,23 +47,23 @@ const Cart = () => {
               }}
             />
 
-            <FlexBox alignItems="center" columnGap={1} mb={2}>
-              <Span fontWeight="600">Additional Comments</Span>
+            <FlexBox alignItems='center' columnGap={1} mb={2}>
+              <Span fontWeight='600'>Additional Comments</Span>
 
               <Span
-                p="6px 10px"
+                p='6px 10px'
                 fontSize={12}
-                lineHeight="1"
-                borderRadius="3px"
-                color="primary.main"
-                bgcolor="primary.light"
+                lineHeight='1'
+                borderRadius='3px'
+                color='primary.main'
+                bgcolor='primary.light'
               >
                 Note
               </Span>
             </FlexBox>
 
             <TextField
-              variant="outlined"
+              variant='outlined'
               rows={6}
               fullWidth
               multiline
@@ -79,15 +80,15 @@ const Cart = () => {
 
             <TextField
               fullWidth
-              size="small"
-              label="Voucher"
-              variant="outlined"
-              placeholder="Voucher"
+              size='small'
+              label='Voucher'
+              variant='outlined'
+              placeholder='Voucher'
             />
 
             <Button
-              variant="outlined"
-              color="primary"
+              variant='outlined'
+              color='primary'
               fullWidth
               sx={{
                 mt: 2,
@@ -103,11 +104,11 @@ const Cart = () => {
               }}
             />
 
-            <Span fontWeight={600} mb={2} display="block">
+            <Span fontWeight={600} mb={2} display='block'>
               Shipping Estimates
             </Span>
 
-            <Autocomplete
+            {/* <Autocomplete
               fullWidth
               sx={{
                 mb: 2,
@@ -116,43 +117,43 @@ const Cart = () => {
               renderInput={(params) => (
                 <TextField
                   {...params}
-                  size="small"
-                  label="Country"
-                  variant="outlined"
-                  placeholder="Select Country"
+                  size='small'
+                  label='Country'
+                  variant='outlined'
+                  placeholder='Select Country'
                 />
               )}
-            />
+            /> */}
 
-            <TextField
+            {/* <TextField
               select
               fullWidth
-              size="small"
-              label="State"
-              variant="outlined"
-              placeholder="Select State"
+              size='small'
+              label='State'
+              variant='outlined'
+              placeholder='Select State'
             >
               {stateList.map((item) => (
                 <MenuItem value={item.value} key={item.label}>
                   {item.label}
                 </MenuItem>
               ))}
-            </TextField>
+            </TextField> */}
 
             <TextField
               fullWidth
-              size="small"
-              label="Zip Code"
-              placeholder="3100"
-              variant="outlined"
+              size='small'
+              label='Zip Code'
+              placeholder='3100'
+              variant='outlined'
               sx={{
                 mt: 2,
               }}
             />
 
             <Button
-              variant="outlined"
-              color="primary"
+              variant='outlined'
+              color='primary'
               fullWidth
               sx={{
                 my: 2,
@@ -161,8 +162,8 @@ const Cart = () => {
               Calculate Shipping
             </Button>
 
-            <Link href="/checkout" passHref>
-              <Button variant="contained" color="primary" fullWidth>
+            <Link href='/checkout' passHref>
+              <Button variant='contained' color='primary' fullWidth>
                 Checkout Now
               </Button>
             </Link>
@@ -173,14 +174,4 @@ const Cart = () => {
   );
 };
 
-const stateList = [
-  {
-    value: "New York",
-    label: "New York",
-  },
-  {
-    value: "Chicago",
-    label: "Chicago",
-  },
-];
 export default Cart;

@@ -1,41 +1,41 @@
-import { Box, Chip, Container, Grid, Pagination, styled } from "@mui/material";
-import { FlexBetween, FlexBox, FlexRowCenter } from "components/flex-box";
-import BeautyProducts from "components/icons/BeautyProducts";
-import Camera from "components/icons/Camera";
-import Sofa from "components/icons/Sofa";
-import WomenDress from "components/icons/WomenDress";
-import SaleLayout1 from "components/layouts/SaleLayout1";
-import SaleNavbar from "components/navbar/SaleNavbar";
-import ProductCard1 from "components/product-cards/ProductCard1";
-import { H1, H5, Span } from "components/Typography";
-import productDB from "data/product-database";
-import { renderProductCount } from "lib";
-import React, { useCallback, useEffect, useRef, useState } from "react"; //  styled components
+import { Box, Chip, Container, Grid, Pagination, styled } from '@mui/material';
+import { FlexBetween, FlexBox, FlexRowCenter } from 'components/flex-box';
+import BeautyProducts from 'components/icons/BeautyProducts';
+import Camera from 'components/icons/Camera';
+import Sofa from 'components/icons/Sofa';
+import WomenDress from 'components/icons/WomenDress';
+import SaleLayout1 from 'components/layouts/SaleLayout1';
+import SaleNavbar from 'components/navbar/SaleNavbar';
+import ProductCard1 from 'components/product-cards/ProductCard1';
+import { H1, H5, Span } from 'components/Typography';
+import productDB from 'data/product-database';
+import { renderProductCount } from 'lib';
+import React, { useCallback, useEffect, useRef, useState } from 'react'; //  styled components
 
 const CategoryBoxWrapper = styled(FlexRowCenter)(({ selected, theme }) => ({
-  flex: "1 1 0",
-  height: "175px",
-  margin: "0.75rem",
-  minWidth: "200px",
-  cursor: "pointer",
-  borderRadius: "8px",
-  position: "relative",
-  flexDirection: "column",
-  transition: "all 250ms ease-in-out",
+  flex: '1 1 0',
+  height: '175px',
+  margin: '0.75rem',
+  minWidth: '200px',
+  cursor: 'pointer',
+  borderRadius: '8px',
+  position: 'relative',
+  flexDirection: 'column',
+  transition: 'all 250ms ease-in-out',
   border: `1px solid ${theme.palette.grey[400]}`,
-  background: selected ? "white" : "transparent",
+  background: selected ? 'white' : 'transparent',
 }));
 const StyledChip = styled(Chip)(({ selected, theme }) => ({
-  top: "1rem",
-  right: "1rem",
+  top: '1rem',
+  right: '1rem',
   fontWeight: 600,
-  fontSize: "10px",
-  padding: "5px 10px",
-  position: "absolute",
-  color: selected ? "white" : "inherit",
+  fontSize: '10px',
+  padding: '5px 10px',
+  position: 'absolute',
+  color: selected ? 'white' : 'inherit',
   boxShadow: selected
-    ? "0px 8px 20px -5px rgba(255, 103, 128, 0.9)"
-    : "inherit",
+    ? '0px 8px 20px -5px rgba(255, 103, 128, 0.9)'
+    : 'inherit',
   backgroundColor: selected
     ? theme.palette.primary.main
     : theme.palette.grey[300],
@@ -43,11 +43,11 @@ const StyledChip = styled(Chip)(({ selected, theme }) => ({
 const CategoryWrapper = styled(Box)(({ show, theme }) => ({
   left: 0,
   zIndex: 99,
-  width: "100%",
-  position: "fixed",
+  width: '100%',
+  position: 'fixed',
   top: show ? 0 : -90,
   boxShadow: theme.shadows[2],
-  transition: "top 0.3s ease-in-out",
+  transition: 'top 0.3s ease-in-out',
 }));
 
 const SalePage1 = () => {
@@ -87,31 +87,31 @@ const SalePage1 = () => {
   }, []);
   useEffect(() => {
     if (!window) return;
-    window.addEventListener("scroll", scroller);
-    return () => window.removeEventListener("scroll", scroller);
+    window.addEventListener('scroll', scroller);
+    return () => window.removeEventListener('scroll', scroller);
   }, [scroller]);
   return (
     <SaleLayout1>
       <Container
         sx={{
-          mt: "2rem",
+          mt: '2rem',
         }}
       >
         <CategoryWrapper show={isFixedHeader}>
           <SaleNavbar saleCategoryList={saleCategoryList} />
         </CategoryWrapper>
 
-        <FlexBox mb={4} flexWrap="wrap">
-          <H1 color="primary.main" mr={1} lineHeight="1">
+        <FlexBox mb={4} flexWrap='wrap'>
+          <H1 color='primary.main' mr={1} lineHeight='1'>
             Flash Deals,
           </H1>
-          <H1 color="grey.600" lineHeight="1">
+          <H1 color='grey.600' lineHeight='1'>
             Enjoy Upto 80% discounts
           </H1>
         </FlexBox>
 
-        <Box mb={4} overflow="hidden" ref={categoryRef}>
-          <FlexBox m={-1.5} flexWrap="wrap">
+        <Box mb={4} overflow='hidden' ref={categoryRef}>
+          <FlexBox m={-1.5} flexWrap='wrap'>
             {saleCategoryList.map((item, ind) => {
               const selectedItem = ind === selected;
               return (
@@ -121,20 +121,20 @@ const SalePage1 = () => {
                   onClick={handleCategoryClick(ind)}
                 >
                   <item.icon
-                    fontSize="inherit"
+                    fontSize='inherit'
                     sx={{
                       fontSize: 44,
                     }}
-                    color={selectedItem ? "primary" : "secondary"}
+                    color={selectedItem ? 'primary' : 'secondary'}
                   />
 
-                  <H5 color={selectedItem ? "primary.main" : "inherit"}>
+                  <H5 color={selectedItem ? 'primary.main' : 'inherit'}>
                     {item.title}
                   </H5>
                   <StyledChip
-                    size="small"
-                    color="primary"
-                    label="Upto 40% off"
+                    size='small'
+                    color='primary'
+                    label='Upto 40% off'
                     selected={selectedItem}
                   />
                 </CategoryBoxWrapper>
@@ -151,14 +151,14 @@ const SalePage1 = () => {
           ))}
         </Grid>
 
-        <FlexBetween flexWrap="wrap" my={8}>
+        <FlexBetween flexWrap='wrap' my={8}>
           <Span>
             {renderProductCount(page, productPerPage, productDB.length)}
           </Span>
           <Pagination
             page={page}
-            color="primary"
-            variant="outlined"
+            color='primary'
+            variant='outlined'
             onChange={handlePageChange}
             count={Math.ceil(productDB.length / productPerPage)}
           />
@@ -171,19 +171,19 @@ const SalePage1 = () => {
 const saleCategoryList = [
   {
     icon: Sofa,
-    title: "Furniture",
+    title: 'Furniture',
   },
   {
     icon: WomenDress,
-    title: "Women",
+    title: 'Women',
   },
   {
     icon: Camera,
-    title: "Eelctronics",
+    title: 'Eelctronics',
   },
   {
     icon: BeautyProducts,
-    title: "Cosmetics",
+    title: 'Cosmetics',
   },
 ];
 export default SalePage1;

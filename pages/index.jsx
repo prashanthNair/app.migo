@@ -8,7 +8,6 @@ import FlashDeals from 'pages-sections/superstore-shop/FlashDeals';
 import TopCategory from 'pages-sections/superstore-shop/TopCategory';
 import TopRated from 'pages-sections/superstore-shop/TopRated';
 import NewArrivals from 'pages-sections/superstore-shop/NewArrivals';
-import Highlighted from 'pages-sections/superstore-shop/Highlighted';
 import FlashPromo from 'pages-sections/superstore-shop/FlashPromo';
 import api from 'utils/api//superstore-shop';
 // import useSWR from 'swr';
@@ -17,13 +16,7 @@ import api from 'utils/api//superstore-shop';
 const IndexPage = (props) => {
   const {
     moreItems,
-    mobileList,
-    opticsList,
     serviceList,
-    mobileShops,
-    opticsShops,
-    mobileBrands,
-    opticsBrands,
     topCategories,
     flashDealsData,
     topRatedBrands,
@@ -33,19 +26,6 @@ const IndexPage = (props) => {
     topRatedProducts,
     bottomCategories,
   } = props;
-
-  // const url =
-  //   'https://api.dev.migobucks.com/inventory/products?Status=PUBLISHED';
-  // const fetcher = async (url) => await axios.get(url).then((res) => res.data);
-  // const { data, error } = useSWR(url, fetcher);
-
-  // if (error) return <div>Failed to load users</div>;
-  // if (!data) {
-  //   return <h1>Loading...</h1>;
-  // } else {
-  //   alert(JSON.stringify(data));
-  // }
-
   return (
     <AppLayout>
       <Section1 carouselData={mainCarouselData} />
@@ -57,47 +37,13 @@ const IndexPage = (props) => {
       />
       <NewArrivals newArrivalsList={newArrivalsList} />
       <BigDiscount bigDiscountList={bigDiscountList} />
-
       <Categories categories={bottomCategories} />
-      <Highlighted
-        shops={mobileShops}
-        brands={mobileBrands}
-        title='Mobile Phones'
-        productList={mobileList}
-      />
-
       <FlashPromo />
-
-      <Highlighted
-        shops={opticsShops}
-        brands={opticsBrands}
-        title='Optics / Watch'
-        productList={opticsList}
-      />
-
-      {/* <MoreItems moreItems={moreItems} /> */}
+      <MoreItems moreItems={moreItems} />
       <ShoppingOptions serviceList={serviceList} />
-
-      {/* <Setting /> */}
     </AppLayout>
   );
 };
-
-// export const getServerSideProps = async () => {
-//
-//   const res = await apiInstance.get(`/inventory/products`, {
-//     params: {
-//       Status: 'PUBLISHED',
-//     },
-//   });
-//   const product = await res.json();
-
-//   return {
-//     props: {
-//       product,
-//     },
-//   };
-// };
 
 export async function getStaticProps() {
   const { data } = await api.getProducts();
@@ -113,13 +59,13 @@ export async function getStaticProps() {
   const mobileBrands = []; //await api.getMobileBrands();
   // const flashDealsData = await api.getFlashDeals();
   const opticsBrands = []; //await api.getOpticsBrands();
-  const bottomCategories = []; //await api.getCategories();
-  // const topCategories = await api.getTopCategories();
-  // const topRatedBrands = await api.getTopRatedBrand();
+  const bottomCategories = await api.getCategories();
+  const topCategories = await api.getTopCategories();
+  const topRatedBrands = await api.getTopRatedBrand();
   const mainCarouselData = []; //await api.getMainCarousel();
   // const newArrivalsList = await api.getNewArrivalList();
   // const bigDiscountList = await api.getBigDiscountList();
-  // const topRatedProducts = await api.getTopRatedProduct();
+  const topRatedProducts = await api.getTopRatedProduct();
   return {
     props: {
       carList,
@@ -132,13 +78,13 @@ export async function getStaticProps() {
       opticsShops,
       mobileBrands,
       opticsBrands,
-      topCategories: data?.TopCategories || [],
+      topCategories: topCategories || [],
       flashDealsData: data?.FlashDeals || [],
-      topRatedBrands: data?.TopRated || [],
-      newArrivalsList: data?.NewArrivals || [],
+      topRatedBrands: topRatedBrands || [],
+      newArrivalsList: data?.NewArrivals?.slice(0, 6) || [],
       bigDiscountList: data?.BigDiscount || [],
-      mainCarouselData,
-      topRatedProducts: [],
+      mainCarouselData: data?.CarouselData,
+      topRatedProducts: topRatedProducts,
       bottomCategories,
     },
   };

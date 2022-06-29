@@ -15,16 +15,27 @@ import { FlexBox, FlexRowCenter } from '../flex-box'; // =======================
 
 // ================================================================
 const ProductIntro = ({ product }) => {
-  const { id, price, title, imgGroup } = product;
+  debugger;
+  const {
+    ProductId,
+    Title,
+    ImageLinks,
+    ProductBrand,
+    Rating,
+    Reviews,
+    BrandName,
+  } = product;
+  const { SellingPrice } = product?.VariantInfo || 0;
   const router = useRouter();
   const routerId = router.query.id;
   const [selectedImage, setSelectedImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
   const { state, dispatch } = useAppContext();
+
   const cartList = state.cart;
   const cartItem = cartList.find(
-    (item) => item.id === id || item.id === routerId
+    (item) => item.id === ProductId || item.id === routerId
   );
 
   const handleImageClick = (ind) => () => {
@@ -46,16 +57,20 @@ const ProductIntro = ({ product }) => {
       dispatch({
         type: 'CHANGE_CART_AMOUNT',
         payload: {
-          price,
+          price: SellingPrice,
           qty: amount,
-          name: title,
-          imgUrl: imgGroup[0],
-          id: id || routerId,
+          name: Title,
+          imgUrl: ImageLinks[0],
+          id: ProductId || routerId,
         },
       });
     },
     []
   );
+
+  // const handleBuy = () => {
+  //   router.replace('/cart');
+  // };
   return (
     <Box width='100%'>
       <Grid container spacing={3} justifyContent='space-around'>
@@ -63,18 +78,18 @@ const ProductIntro = ({ product }) => {
           <FlexBox justifyContent='center' mb={6}>
             <LazyImage
               width={300}
-              alt={title}
+              alt={Title}
               height={300}
               loading='eager'
               objectFit='contain'
-              src={product.imgGroup[selectedImage]}
+              src={product.ImageLinks[selectedImage]}
               onClick={() =>
-                openImageViewer(imgGroup.indexOf(imgGroup[selectedImage]))
+                openImageViewer(ImageLinks?.indexOf(ImageLinks[selectedImage]))
               }
             />
             {isViewerOpen && (
               <ImageViewer
-                src={imgGroup}
+                src={ImageLinks}
                 onClose={closeImageViewer}
                 currentIndex={currentImage}
                 backgroundStyle={{
@@ -86,7 +101,7 @@ const ProductIntro = ({ product }) => {
           </FlexBox>
 
           <FlexBox overflow='auto'>
-            {imgGroup.map((url, ind) => (
+            {ImageLinks?.map((url, ind) => (
               <FlexRowCenter
                 key={ind}
                 width={64}
@@ -100,7 +115,7 @@ const ProductIntro = ({ product }) => {
                   cursor: 'pointer',
                 }}
                 onClick={handleImageClick(ind)}
-                mr={ind === imgGroup.length - 1 ? 'auto' : '10px'}
+                mr={ind === ImageLinks?.length - 1 ? 'auto' : '10px'}
                 borderColor={
                   selectedImage === ind ? 'primary.main' : 'grey.400'
                 }
@@ -112,11 +127,11 @@ const ProductIntro = ({ product }) => {
         </Grid>
 
         <Grid item md={6} xs={12} alignItems='center'>
-          <H1 mb={2}>{title}</H1>
+          <H1 mb={2}>{Title}</H1>
 
           <FlexBox alignItems='center' mb={2}>
             <Box>Brand:</Box>
-            <H6 ml={1}>Xiaomi</H6>
+            <H6 ml={1}>{ProductBrand}</H6>
           </FlexBox>
 
           <FlexBox alignItems='center' mb={2}>
@@ -125,16 +140,16 @@ const ProductIntro = ({ product }) => {
               <MigobucksRating
                 color='warn'
                 fontSize='1.25rem'
-                value={4}
+                value={Rating}
                 readOnly
               />
             </Box>
-            <H6 lineHeight='1'>(50)</H6>
+            <H6 lineHeight='1'>{`(${Reviews.length})`}</H6>
           </FlexBox>
 
           <Box mb={3}>
             <H2 color='primary.main' mb={0.5} lineHeight='1'>
-              ${price.toFixed(2)}
+              ₹{SellingPrice}
             </H2>
             <Box color='inherit'>Stock Available</Box>
           </Box>
@@ -156,7 +171,9 @@ const ProductIntro = ({ product }) => {
               <MigobucksButton
                 color='primary'
                 variant='contained'
-                onClick={handleCartAmountChange(1)}
+                onClick={() => {
+                  router.replace('/cart');
+                }}
                 sx={{
                   mb: 4.5,
                   px: '1.75rem',
@@ -202,7 +219,7 @@ const ProductIntro = ({ product }) => {
             <Box>Sold By:</Box>
             <Link href='/shops/fdfdsa'>
               <a>
-                <H6 ml={1}>Mobile Store</H6>
+                <H6 ml={1}>{BrandName}</H6>
               </a>
             </Link>
           </FlexBox>

@@ -161,7 +161,7 @@ export const megaMenus = [
         },
         {
           title: "Alternative Checkout",
-          url: "/checkout-alternative",
+          url: "/checkout",
         },
         {
           title: "Order confirmation",
@@ -268,7 +268,7 @@ const navbarNavigations = [
   //         },
   //         {
   //           title: "Alternative Checkout",
-  //           url: "/checkout-alternative",
+  //           url: "/checkout",
   //         },
   //         {
   //           title: "Order confirmation",
@@ -280,7 +280,7 @@ const navbarNavigations = [
   // },
   {
     title: "Home",
-    child:[]
+    url: "/",
   },
   {
     title: "User Account",
@@ -382,9 +382,9 @@ const navbarNavigations = [
   //     },
   //   ],
   // },
-  // {
-  //   title: "Back to Demos",
-  //   url: "/",
-  // },
+  {
+    title: "Your Circles",
+    url: "/",
+  } 
 ];
 export default navbarNavigations;

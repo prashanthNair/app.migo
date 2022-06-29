@@ -8,9 +8,20 @@ import GiftBox from 'components/icons/GiftBox';
 import LazyImage from 'components/LazyImage';
 import { H4 } from 'components/Typography';
 import useWindowSize from 'hooks/useWindowSize';
+import { styled } from '@mui/system';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-
+const ContentWrapper = styled(Box)(() => ({
+  padding: '1rem',
+  overflow: 'hidden',
+  whiteSpace: 'nowrap',
+  textOverflow: 'ellipsis',
+  '& .Tittle, & .categories': {
+    overflow: 'hidden',
+    whiteSpace: 'nowrap',
+    textOverflow: 'ellipsis',
+  },
+}));
 const BigDiscount = ({ bigDiscountList }) => {
   debugger;
   const [visibleSlides, setVisibleSlides] = useState(6);
@@ -44,13 +55,20 @@ const BigDiscount = ({ bigDiscountList }) => {
                         height={100}
                         src={item.ImageUrl || ''}
                         layout='responsive'
-                        alt={item.Tittle}
+                        alt={item.Title}
                       />
                     </HoverBox>
-                    <H4 fontWeight='600' fontSize='14px' mb={0.5}>
-                      {item.Tittle}
-                    </H4>
-
+                    <ContentWrapper>
+                      <H4
+                        fontWeight='600'
+                        fontSize='14px'
+                        className='Tittle'
+                        mb={0.5}
+                        title={item.Title}
+                      >
+                        {item.Title}
+                      </H4>
+                    </ContentWrapper>
                     <FlexBox gap={1}>
                       <H4 fontWeight='600' fontSize='14px' color='primary.main'>
                         ${Math.ceil(item.SellingPrice).toLocaleString()}
