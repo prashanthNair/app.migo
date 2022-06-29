@@ -15,7 +15,6 @@ import { FlexBox, FlexRowCenter } from '../flex-box'; // =======================
 
 // ================================================================
 const ProductIntro = ({ product }) => {
-  debugger;
   const {
     ProductId,
     Title,
@@ -82,7 +81,7 @@ const ProductIntro = ({ product }) => {
               height={300}
               loading='eager'
               objectFit='contain'
-              src={product.ImageLinks[selectedImage]}
+              src={product?.ImageLinks[selectedImage] || Title}
               onClick={() =>
                 openImageViewer(ImageLinks?.indexOf(ImageLinks[selectedImage]))
               }
@@ -144,7 +143,7 @@ const ProductIntro = ({ product }) => {
                 readOnly
               />
             </Box>
-            <H6 lineHeight='1'>{`(${Reviews.length})`}</H6>
+            <H6 lineHeight='1'>{`(${Reviews?.length})`}</H6>
           </FlexBox>
 
           <Box mb={3}>

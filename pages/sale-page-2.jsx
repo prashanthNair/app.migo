@@ -1,7 +1,7 @@
 import { Container, Grid, Pagination } from '@mui/material';
 import { FlexBetween } from 'components/flex-box';
 import SaleLayout2 from 'components/layouts/SaleLayout2';
-import ProductCard1 from 'components/product-cards/ProductCard1';
+import ProductCard from 'components/product-cards/ProductCard';
 import { Span } from 'components/Typography';
 import productDatabase from 'data/product-database';
 import { renderProductCount } from '../src/utils/helper/index';
@@ -29,7 +29,7 @@ const SalePage2 = () => {
         <Grid container spacing={3} minHeight={500}>
           {productList.map((item, ind) => (
             <Grid item lg={3} md={4} sm={6} xs={12} key={ind}>
-              <ProductCard1 {...item} />
+              <ProductCard {...item} />
             </Grid>
           ))}
         </Grid>

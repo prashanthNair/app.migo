@@ -10,7 +10,6 @@ import countryList from 'data/countryList';
 import Link from 'next/link';
 
 const Cart = () => {
-  debugger;
   const { state } = useAppContext();
   const cartList = state.cart;
 

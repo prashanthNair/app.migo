@@ -1,13 +1,13 @@
 import { Box, Chip, Container, Grid, Pagination, styled } from '@mui/material';
 import { FlexBetween, FlexBox, FlexRowCenter } from 'components/flex-box';
-import BeautyProducts from 'components/icons/BeautyProducts';
-import Camera from 'components/icons/Camera';
-import Sofa from 'components/icons/Sofa';
-import WomenDress from 'components/icons/WomenDress';
-import SaleLayout1 from 'components/layouts/SaleLayout1';
-import SaleNavbar from 'components/navbar/SaleNavbar';
-import ProductCard1 from 'components/product-cards/ProductCard1';
-import { H1, H5, Span } from 'components/Typography';
+import BeautyProducts from '../src/components/icons/BeautyProducts';
+import Camera from '../src/components/icons/Camera';
+import Sofa from '../src/components/icons/Sofa';
+import WomenDress from '../src/components/icons/WomenDress';
+import SaleLayout1 from '../src/components/layouts/SaleLayout1';
+import SaleNavbar from '../src/components/navbar/SaleNavbar';
+import ProductCard from '../src/components/product-cards/ProductCard';
+import { H1, H5, Span } from '../src/components/Typography';
 import productDB from 'data/product-database';
 import { renderProductCount } from '../src/utils/helper/index';
 import React, { useCallback, useEffect, useRef, useState } from 'react'; //  styled components
@@ -146,7 +146,7 @@ const SalePage1 = () => {
         <Grid container spacing={3} minHeight={500}>
           {productList.map((item, ind) => (
             <Grid item lg={3} md={4} sm={6} xs={12} key={ind}>
-              <ProductCard1 {...item} />
+              <ProductCard {...item} />
             </Grid>
           ))}
         </Grid>

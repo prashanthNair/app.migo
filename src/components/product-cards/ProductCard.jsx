@@ -67,11 +67,10 @@ const ProductCard = ({
   discount = 0,
   showProductSize,
 }) => {
-  debugger;
   const { state, dispatch } = useAppContext();
   const [isFavorite, setIsFavorite] = useState(false);
   const cartItem = state.cart.find((item) => item.id === id);
-  debugger;
+
   const toggleIsFavorite = () => setIsFavorite((fav) => !fav);
 
   const handleCartAmountChange = useCallback(

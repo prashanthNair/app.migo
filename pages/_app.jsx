@@ -1,12 +1,12 @@
 import RTL from 'components/RTL';
 // import { AppProvider } from 'contexts/AppContext';
-import SettingsProvider from 'contexts/SettingContext';
+// import SettingsProvider from 'contexts/SettingContext';
 import Head from 'next/head';
 import Router from 'next/router';
 import nProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import { Fragment, useEffect } from 'react';
-import 'react-quill/dist/quill.snow.css';
+// import 'react-quill/dist/quill.snow.css';
 import 'simplebar/dist/simplebar.min.css';
 import MuiTheme from 'theme/MuiTheme';
 import GoogleAnalytics from 'utils/GoogleAnalytics';

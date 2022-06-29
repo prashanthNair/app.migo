@@ -1,10 +1,11 @@
-import axios from "axios"
+// import axios from "axios"
+import{apiInstance} from "utils/helper/api"
 import { baseApiUrl } from "utils/helper/api"; 
 import { responseBuilder } from '../helper/index';
 
 export const getProducts = async () => {
     debugger
-    const {data} = await axios.get(`${baseApiUrl}/inventory/products`,{
+    const {data} = await apiInstance.get(`${baseApiUrl}/inventory/products`,{
       params: {
         Status: "PUBLISHED",
       }
@@ -12,9 +13,8 @@ export const getProducts = async () => {
    return data
   };
   export const getProductDetails = async (productId) => {
-    debugger
-    // const data={id:productId}
-   return responseBuilder(await axios.get(`${baseApiUrl}/inventory/products/product/details/${productId}`,{
+    debugger 
+   return responseBuilder(await apiInstance.get(`${baseApiUrl}/inventory/products/product/details/${productId}`,{
       params: {
         Status: "PUBLISHED",
       }

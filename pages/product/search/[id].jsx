@@ -10,15 +10,14 @@ import {
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { FlexBox } from 'components/flex-box';
 import NavbarLayout from 'components/layouts/NavbarLayout';
-import ProductCard1List from 'components/products/ProductCard1List';
-import ProductCard9List from 'components/products/ProductCard9List';
+import ProductCardList from 'components/products/ProductCardList';
+import PaginationCard from 'components/products/PaginationCard';
 import ProductFilterCard from 'components/products/ProductFilterCard';
 import Sidenav from 'components/sidenav/Sidenav';
 import { H5, Paragraph } from 'components/Typography';
 import React, { useCallback, useState } from 'react';
 
 const ProductSearchResult = () => {
-  debugger;
   const [view, setView] = useState('grid');
   const downMd = useMediaQuery((theme) => theme.breakpoints.down('md'));
   const toggleView = useCallback((v) => () => setView(v), []);
@@ -125,7 +124,7 @@ const ProductSearchResult = () => {
           </Grid>
 
           <Grid item md={9} xs={12}>
-            {view === 'grid' ? <ProductCard1List /> : <ProductCard9List />}
+            {view === 'grid' ? <ProductCardList /> : <PaginationCard />}
           </Grid>
         </Grid>
       </Box>

@@ -23,7 +23,6 @@ const ContentWrapper = styled(Box)(() => ({
   },
 }));
 const BigDiscount = ({ bigDiscountList }) => {
-  debugger;
   const [visibleSlides, setVisibleSlides] = useState(6);
   const width = useWindowSize();
   useEffect(() => {

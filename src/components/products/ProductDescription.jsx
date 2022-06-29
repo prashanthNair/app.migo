@@ -4,7 +4,6 @@ import React from 'react'; // ==================================================
 
 // ======================================================
 const ProductDescription = ({ data }) => {
-  debugger;
   const { ProductBrand, CountryOfOrigin, KeyPoints } = data;
   const { ModelName } = data?.VariantInfo || '';
   const fields = Object.keys(data?.VariantInfo);

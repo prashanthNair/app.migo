@@ -1,17 +1,17 @@
 import { Box, styled, Tab, Tabs } from '@mui/material';
-import NavbarLayout from 'components/layouts/NavbarLayout';
-import FrequentlyBought from 'components/products/FrequentlyBought';
-import ProductDescription from 'components/products/ProductDescription';
-import ProductReview from 'components/products/ProductReview';
-import RelatedProducts from 'components/products/RelatedProducts';
-import ProductIntro from 'components/products/ProductIntro';
+import NavbarLayout from '../../src/components/layouts/NavbarLayout';
+import FrequentlyBought from '../../src/components/products/FrequentlyBought';
+import ProductDescription from '../../src/components/products/ProductDescription';
+import ProductReview from '../../src/components/products/ProductReview';
+import RelatedProducts from '../../src/components/products/RelatedProducts';
+import ProductIntro from '../../src/components/products/ProductIntro';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { getProductDetails } from 'utils/api/products';
+import { getProductDetails } from '../../src/utils/api/products';
 import {
   getFrequentlyBought,
   getRelatedProducts,
-} from 'utils/api/related-products';
+} from '../../src/utils/api/related-products';
 const StyledTabs = styled(Tabs)(({ theme }) => ({
   minHeight: 0,
   marginTop: 80,
@@ -26,11 +26,9 @@ const StyledTabs = styled(Tabs)(({ theme }) => ({
 
 // ===============================================================
 const ProductDetails = (props) => {
-  debugger;
   const { frequentlyBought, relatedProducts, data } = props;
   const router = useRouter();
   const { id } = router.query;
-  const [product, setProduct] = useState();
   const [selectedOption, setSelectedOption] = useState(0);
   // useEffect(() => {
   //   if (id) {
@@ -73,16 +71,16 @@ const ProductDetails = (props) => {
   );
 };
 
-export const getStaticPaths = async () => {
-  return {
-    paths: [],
-    //indicates that no page needs be created at build time
-    fallback: 'blocking', //indicates the type of fallback
-  };
-};
-export async function getStaticProps(context) {
+// export const getStaticPaths = async () => {
+//   return {
+//     paths: [],
+//     //indicates that no page needs be created at build time
+//     fallback: 'blocking', //indicates the type of fallback
+//   };
+// };
+export async function getServerSideProps(context) {
   console.log(context);
-  debugger;
+
   const productId = context.params.id;
   const data = await getProductDetails(productId);
   const frequentlyBought = await getFrequentlyBought();

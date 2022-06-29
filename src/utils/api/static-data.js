@@ -1,17 +1,18 @@
 import axios from "axios";
-import { baseApiUrl } from "utils/helper/api"; 
-export const getProducts = async () => {
-  debugger
-  const {data} = await axios.get(`${baseApiUrl}/inventory/products`,{
-    params: {
-      Status: "PUBLISHED",
-    }
-  }); 
- return data
-};
+import {apiInstance} from "utils/helper/api"
+// import { baseApiUrl } from "utils/helper/api"; 
+// export const getProducts = async () => {
+//   debugger
+//   const {data} = await apiInstance.get(`/inventory/products`,{
+//     params: {
+//       Status: "PUBLISHED",
+//     }
+//   }); 
+//  return data
+// };
 export const getProductDetails = async (productId) => {
   debugger
-  const {data} = await axios.get(`${baseApiUrl}/inventory/products/product/${productId}`,{
+  const {data} = await apiInstance.get(`/inventory/products/product/${productId}`,{
     params: {
       Status: "PUBLISHED",
     }
@@ -19,8 +20,8 @@ export const getProductDetails = async (productId) => {
  return data
 };
 
-const getTopRatedProduct = async () => {
-  const response = await axios.get("/api/super-store/toprated-product");
+export const getTopRatedProduct = async () => {
+  const response = await apiInstance.get("/api/super-store/toprated-product");
   return response.data;
 };
 
@@ -110,7 +111,7 @@ const getBigDiscountList = async () => {
 }; // eslint-disable-next-line import/no-anonymous-default-export
 
 export default {
-  getProducts,
+  // getProducts,
   getProductDetails,
   getMainCarousel,
   getFlashDeals,
