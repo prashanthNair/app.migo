@@ -1,18 +1,15 @@
-import AppLayout from 'components/layouts/AppLayout';
-import Section1 from 'pages-sections/superstore-shop/Section1';
-import Categories from 'pages-sections/superstore-shop/Categories';
-import MoreItems from 'pages-sections/superstore-shop/MoreItems';
-import ShoppingOptions from 'pages-sections/superstore-shop/ShoppingOptions';
-import BigDiscount from 'pages-sections/superstore-shop/BigDiscount';
-import FlashDeals from 'pages-sections/superstore-shop/FlashDeals';
-import TopCategory from 'pages-sections/superstore-shop/TopCategory';
-import TopRated from 'pages-sections/superstore-shop/TopRated';
-import NewArrivals from 'pages-sections/superstore-shop/NewArrivals';
-import FlashPromo from 'pages-sections/superstore-shop/FlashPromo';
-import api from 'utils/api//superstore-shop';
-// import useSWR from 'swr';
-// import axios from 'axios';
-
+import AppLayout from '../src/components/layouts/AppLayout';
+import MainCarousel from '../src/components/product-listing/MainCarousel';
+import Categories from '../src/components/product-listing/Categories';
+import MoreItems from '../src/components/product-listing/MoreItems';
+import ShoppingOptions from '../src/components/product-listing/ShoppingOptions';
+import BigDiscount from '../src/components/product-listing/BigDiscount';
+import FlashDeals from '../src/components/product-listing/FlashDeals';
+import TopCategory from '../src/components/product-listing/TopCategory';
+import TopRated from '../src/components/product-listing/TopRated';
+import NewArrivals from '../src/components/product-listing/NewArrivals';
+import FlashPromo from '../src/components/product-listing/FlashPromo';
+import api from '../src/utils/api/static-data';
 const IndexPage = (props) => {
   const {
     moreItems,
@@ -28,7 +25,7 @@ const IndexPage = (props) => {
   } = props;
   return (
     <AppLayout>
-      <Section1 carouselData={mainCarouselData} />
+      <MainCarousel carouselData={mainCarouselData} />
       <FlashDeals flashDeals={flashDealsData} />
       <TopCategory categoryList={topCategories} />
       <TopRated
@@ -62,7 +59,7 @@ export async function getStaticProps() {
   const bottomCategories = await api.getCategories();
   const topCategories = await api.getTopCategories();
   const topRatedBrands = await api.getTopRatedBrand();
-  const mainCarouselData = []; //await api.getMainCarousel();
+  // const mainCarouselData = []; //await api.getMainCarousel();
   // const newArrivalsList = await api.getNewArrivalList();
   // const bigDiscountList = await api.getBigDiscountList();
   const topRatedProducts = await api.getTopRatedProduct();

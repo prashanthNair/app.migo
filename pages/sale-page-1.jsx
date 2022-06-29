@@ -9,7 +9,7 @@ import SaleNavbar from 'components/navbar/SaleNavbar';
 import ProductCard1 from 'components/product-cards/ProductCard1';
 import { H1, H5, Span } from 'components/Typography';
 import productDB from 'data/product-database';
-import { renderProductCount } from 'lib';
+import { renderProductCount } from '../src/utils/helper/index';
 import React, { useCallback, useEffect, useRef, useState } from 'react'; //  styled components
 
 const CategoryBoxWrapper = styled(FlexRowCenter)(({ selected, theme }) => ({

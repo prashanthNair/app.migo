@@ -33,7 +33,7 @@ const OrderConfirmation = () => {
           <Paragraph color='grey.800' mt='0.3rem'>
             You will be receiving confirmation email with order details.
           </Paragraph>
-          <Link href='/home-1' passHref>
+          <Link href='/' passHref>
             <StyledButton
               color='primary'
               disableElevation

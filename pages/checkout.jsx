@@ -1,28 +1,27 @@
-import { Container, Grid } from "@mui/material";
-import GroceryLayout from "components/layouts/GroceryLayout";
-import CheckoutForm2 from "pages-sections/checkout/CheckoutForm2";
-import CheckoutSummary2 from "pages-sections/checkout/CheckoutSummary2";
-import React from "react";
+import { Container, Grid } from '@mui/material';
+import CheckoutInfo from '../src/components/checkout/CheckoutInfo';
+import CheckoutBreakOut from '../src/components/checkout/CheckoutBreakOut';
+import AppLayout from '../src/components/layouts/AppLayout';
 
 const CheckoutAlternative = () => {
   return (
-    <GroceryLayout>
+    <AppLayout>
       <Container
         sx={{
-          my: "1.5rem",
+          my: '1.5rem',
         }}
       >
         <Grid container spacing={3}>
           <Grid item lg={8} md={8} xs={12}>
-            <CheckoutForm2 />
+            <CheckoutInfo />
           </Grid>
 
           <Grid item lg={4} md={4} xs={12}>
-            <CheckoutSummary2 />
+            <CheckoutBreakOut />
           </Grid>
         </Grid>
       </Container>
-    </GroceryLayout>
+    </AppLayout>
   );
 };
 

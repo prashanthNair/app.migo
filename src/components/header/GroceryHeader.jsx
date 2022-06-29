@@ -12,7 +12,7 @@ import MiniCart from 'components/mini-cart/MiniCart';
 import GrocerySearchBox from 'components/search-box/GrocerySearchBox';
 import { useAppContext } from 'contexts/AppContext';
 import Link from 'next/link';
-import Login from 'pages-sections/sessions/Login';
+import Login from '../sessions/Login';
 import React, { useState } from 'react';
 import { HeaderWrapper } from './Header'; // =====================================================================
 

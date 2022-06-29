@@ -1,11 +1,11 @@
-import { Container, Grid, Pagination } from "@mui/material";
-import { FlexBetween } from "components/flex-box";
-import SaleLayout2 from "components/layouts/SaleLayout2";
-import ProductCard1 from "components/product-cards/ProductCard1";
-import { Span } from "components/Typography";
-import productDatabase from "data/product-database";
-import { renderProductCount } from "lib";
-import { useEffect, useState } from "react";
+import { Container, Grid, Pagination } from '@mui/material';
+import { FlexBetween } from 'components/flex-box';
+import SaleLayout2 from 'components/layouts/SaleLayout2';
+import ProductCard1 from 'components/product-cards/ProductCard1';
+import { Span } from 'components/Typography';
+import productDatabase from 'data/product-database';
+import { renderProductCount } from '../src/utils/helper/index';
+import { useEffect, useState } from 'react';
 
 const SalePage2 = () => {
   const productPerPage = 28;
@@ -34,15 +34,15 @@ const SalePage2 = () => {
           ))}
         </Grid>
 
-        <FlexBetween flexWrap="wrap" my={8}>
+        <FlexBetween flexWrap='wrap' my={8}>
           <Span>
             {renderProductCount(page, productPerPage, productDatabase.length)}
           </Span>
 
           <Pagination
             page={page}
-            color="primary"
-            variant="outlined"
+            color='primary'
+            variant='outlined'
             onChange={handlePageChange}
             count={Math.ceil(productDatabase.length / productPerPage)}
           />

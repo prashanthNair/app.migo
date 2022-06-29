@@ -11,7 +11,6 @@ import 'simplebar/dist/simplebar.min.css';
 import MuiTheme from 'theme/MuiTheme';
 import GoogleAnalytics from 'utils/GoogleAnalytics';
 import OpenGraphTags from 'utils/OpenGraphTags';
-import '../src/fake-db';
 //Binding events.
 Router.events.on('routeChangeStart', () => nProgress.start());
 Router.events.on('routeChangeComplete', () => nProgress.done());
