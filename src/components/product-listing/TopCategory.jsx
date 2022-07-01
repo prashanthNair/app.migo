@@ -8,7 +8,6 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 const TopCategory = ({ categoryList }) => {
-  debugger;
   const [visibleSlides, setVisibleSlides] = useState(3);
   const width = useWindowSize();
   useEffect(() => {

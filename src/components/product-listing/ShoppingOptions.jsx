@@ -4,8 +4,14 @@ import MigobucksIconButton from '../MigobucksIconButton';
 import appIcons from '../icons';
 import { H4, Span } from '../Typography';
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { H2 } from 'components/Typography';
 
-const ShoppingOptions = ({ serviceList }) => {
+const ShoppingOptions = () => {
+  const serviceList =
+    useSelector((state) => state.migoStore?.serviceList) || [];
+  if (!serviceList) return <H2>Loading</H2>;
+
   return (
     <Container
       sx={{

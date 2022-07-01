@@ -7,8 +7,8 @@ import Link from 'next/link';
 import React from 'react'; // =======================================================
 
 // =======================================================
-const ProductCard8 = (props) => {
-  const { id, imgUrl, price, title, sx = {} } = props;
+const FrequentProductCard = (props) => {
+  const { ProductId, ImageUrl, SellingPrice, Title, sx = {} } = props;
   return (
     <MigobucksCard
       sx={{
@@ -16,7 +16,7 @@ const ProductCard8 = (props) => {
         ...sx,
       }}
     >
-      <Link href={`/product/${id}`}>
+      <Link href={`/product/${ProductId}`}>
         <a>
           <HoverBox mb={1.5} borderRadius='8px'>
             <LazyImage
@@ -26,17 +26,17 @@ const ProductCard8 = (props) => {
               layout='responsive'
               objectFit='contain'
               objectPosition='center'
-              src={imgUrl || '/assets/images/products/Rectangle 116.png'}
+              src={ImageUrl || '/assets/images/products/Rectangle 116.png'}
             />
           </HoverBox>
 
-          <Span title={title} mb={0.5} color='inherit' ellipsis display='block'>
-            {title}
+          <Span Title={Title} mb={0.5} color='inherit' ellipsis display='block'>
+            {Title}
           </Span>
 
           <FlexBox alignItems='center'>
             <H6 color='primary.main' mr={0.5}>
-              ${price}
+              ${SellingPrice}
             </H6>
 
             <Span color='grey.600'>
@@ -49,4 +49,4 @@ const ProductCard8 = (props) => {
   );
 };
 
-export default ProductCard8;
+export default FrequentProductCard;

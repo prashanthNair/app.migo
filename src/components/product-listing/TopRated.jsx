@@ -7,10 +7,15 @@ import TopRatedCard from '../product-cards/TopRatedCard';
 import TopRatedBrand from '../product-cards/TopRatedBrand';
 import Link from 'next/link';
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { H2 } from 'components/Typography';
 
-const TopRated = (props) => {
-  const { topRatedBrands, topRatedList } = props;
-
+const TopRated = () => {
+  const topRatedList =
+    useSelector((state) => state.migoStore?.topRatedProduct) || [];
+  const topRatedBrands =
+    useSelector((state) => state.migoStore?.topRatedBrands) || [];
+  if (!topRatedList || !topRatedBrands) return <H2>Loading</H2>;
   return (
     <Box mb={7.5}>
       <Container>

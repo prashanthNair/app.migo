@@ -1,5 +1,30 @@
 /* eslint-disable import/prefer-default-export */
 
+export const FILTER_CATEGORIES = 
+  {
+   "Mobile":{
+    Brands:[
+      "Samsung",
+      "OnePlus",
+      "Apple"
+    ],
+    Price:[
+      "10000 - 20000",
+      "30000 - 40000",
+      "40000 - 50000",
+      "Over 50000"
+    ],
+    Ram: [
+      "8 GB & above",
+      "6 GB",
+      "4 GB",
+      "3 GB",
+      "2 GB",
+      "1 GB", 
+    ],
+   } 
+  } 
+
 export const BUSINESS_CATEGORY = [
   {
     category: "Electronics",

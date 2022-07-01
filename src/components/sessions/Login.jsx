@@ -61,7 +61,7 @@ const Login = () => {
     <Wrapper elevation={3} passwordVisibility={passwordVisibility}>
       <form onSubmit={handleSubmit}>
         <H3 textAlign='center' mb={1}>
-          Welcome To Ecommerce
+          Welcome To Migobucks
         </H3>
         <Small
           mb={4.5}

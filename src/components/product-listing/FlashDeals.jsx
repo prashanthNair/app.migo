@@ -7,6 +7,7 @@ import useWindowSize from 'hooks/useWindowSize';
 import React, { useEffect, useState } from 'react';
 
 const FlashDeals = ({ flashDeals }) => {
+  debugger;
   const [visibleSlides, setVisibleSlides] = useState(4);
   const width = useWindowSize();
   useEffect(() => {

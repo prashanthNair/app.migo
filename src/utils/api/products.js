@@ -5,12 +5,12 @@ import { responseBuilder } from '../helper/index';
 
 export const getProducts = async () => {
     debugger
-    const {data} = await apiInstance.get(`${baseApiUrl}/inventory/products`,{
+    return responseBuilder(await apiInstance.get(`${baseApiUrl}/inventory/products`,{
       params: {
         Status: "PUBLISHED",
       }
-    }); 
-   return data
+    })); 
+ 
   };
   export const getProductDetails = async (productId) => {
     debugger 
@@ -21,3 +21,11 @@ export const getProducts = async () => {
     }));  
   };
   
+  export const searchProduct = async (params) => {
+    debugger 
+   return responseBuilder(await apiInstance.get(`${baseApiUrl}/inventory/products/product/search`,{
+      params: {
+        params: params,
+      }
+    }));  
+  };

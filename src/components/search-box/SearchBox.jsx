@@ -145,5 +145,6 @@ const dummySearchResult = [
   'Asus K555LA',
   'Acer Aspire X453',
   'iPad Mini 3',
+  'Mobile',
 ];
 export default SearchBox;

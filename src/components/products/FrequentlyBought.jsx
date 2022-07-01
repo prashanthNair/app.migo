@@ -1,7 +1,7 @@
 import { Box, styled } from '@mui/material';
 import MigobucksButton from 'components/MigobucksButton';
 import { FlexBox, FlexRowCenter } from 'components/flex-box';
-import ProductCard8 from 'components/product-cards/ProductCard8';
+import FrequentProductCard from 'components/product-cards/FrequentProductCard';
 import { H2, H3, Span } from 'components/Typography';
 import React, { Fragment } from 'react'; // styled component
 
@@ -22,7 +22,7 @@ const FrequentlyBought = ({ productsData }) => {
       <FlexBox className='card-holder' flexWrap='wrap' m={-1}>
         {productsData.map((item, ind) => (
           <Fragment key={item.id}>
-            <ProductCard8
+            <FrequentProductCard
               sx={{
                 width: '100%',
                 flex: '1 1 0',

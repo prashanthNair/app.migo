@@ -2,17 +2,28 @@ import { Grid, Pagination } from '@mui/material';
 import { FlexBetween } from 'components/flex-box';
 import ProductCard from 'components/product-cards/ProductCard';
 import { Span } from 'components/Typography';
-import productDatabase from 'data/product-database';
-import React, { Fragment } from 'react'; // ========================================================
-
-// ========================================================
-const ProductCardList = () => {
+import { Fragment } from 'react';
+const ProductCardList = ({ products }) => {
+  debugger;
   return (
     <Fragment>
       <Grid container spacing={3}>
-        {productDatabase.slice(95, 104).map((item, ind) => (
+        {products.map((item, ind) => (
           <Grid item lg={4} sm={6} xs={12} key={ind}>
-            <ProductCard {...item} />
+            <ProductCard
+              imgUrl={
+                item.ImageUrl ||
+                'https://mibuploaddev.s3.ap-south-1.amazonaws.com/inbound/inventory/brand/BR1651736511090/P1651745595431/aa2e4e45-92aa-4166-956b-507d9f6724ad.jpg'
+              }
+              id={item.ProductId}
+              tittle={item.Title}
+              price={item.SellingPrice || 0}
+              rating={item.Rating}
+              hideRating={''}
+              hoverEffect={''}
+              discount={item.DiscountPercentage}
+              showProductSize={''}
+            />
           </Grid>
         ))}
       </Grid>

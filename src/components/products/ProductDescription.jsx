@@ -6,7 +6,7 @@ import React from 'react'; // ==================================================
 const ProductDescription = ({ data }) => {
   const { ProductBrand, CountryOfOrigin, KeyPoints } = data;
   const { ModelName } = data?.VariantInfo || '';
-  const fields = Object.keys(data?.VariantInfo);
+  const fields = Object.keys(data?.VariantInfo || {});
   return (
     <Box>
       <H3 mb={2}>About this item:</H3>

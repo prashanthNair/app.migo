@@ -11,6 +11,9 @@ import 'simplebar/dist/simplebar.min.css';
 import MuiTheme from 'theme/MuiTheme';
 import GoogleAnalytics from 'utils/GoogleAnalytics';
 import OpenGraphTags from 'utils/OpenGraphTags';
+import { useDispatch } from 'react-redux';
+import { getProductsThunk } from '../src/store/slices/productSlice';
+import { wrapper } from '../src/store/store';
 //Binding events.
 Router.events.on('routeChangeStart', () => nProgress.start());
 Router.events.on('routeChangeComplete', () => nProgress.done());
@@ -22,11 +25,11 @@ nProgress.configure({
 
 const App = ({ Component, pageProps }) => {
   const getLayout = Component.getLayout ?? ((page) => page);
-
+  const dispatch = useDispatch();
   useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
-
+    dispatch(getProductsThunk());
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
@@ -60,4 +63,4 @@ const App = ({ Component, pageProps }) => {
 //   return { ...appProps };
 // };
 
-export default App;
+export default wrapper.withRedux(App);

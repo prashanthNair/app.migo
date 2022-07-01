@@ -21,24 +21,6 @@ const SocialButtons = (props) => {
           </Box>
         </FlexBox>
       </Box>
-
-      <MigobucksButton
-        className='facebookButton'
-        size='medium'
-        fullWidth
-        sx={{
-          height: 44,
-        }}
-      >
-        <Image
-          src='/assets/images/icons/facebook-filled-white.svg'
-          alt='facebook'
-        />
-        <Box fontSize='12px' ml={1}>
-          Continue with Facebook
-        </Box>
-      </MigobucksButton>
-
       <MigobucksButton
         className='googleButton'
         size='medium'

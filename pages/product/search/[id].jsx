@@ -16,8 +16,13 @@ import ProductFilterCard from 'components/products/ProductFilterCard';
 import Sidenav from 'components/sidenav/Sidenav';
 import { H5, Paragraph } from 'components/Typography';
 import React, { useCallback, useState } from 'react';
+import { searchProduct } from '../../../src/utils/api/products';
+import { useRouter } from 'next/router';
 
-const ProductSearchResult = () => {
+const ProductSearchResult = ({ data, params }) => {
+  debugger;
+  const router = useRouter();
+  const { id } = router.query;
   const [view, setView] = useState('grid');
   const downMd = useMediaQuery((theme) => theme.breakpoints.down('md'));
   const toggleView = useCallback((v) => () => setView(v), []);
@@ -40,8 +45,10 @@ const ProductSearchResult = () => {
           }}
         >
           <Box>
-            <H5>Searching for “ mobile phone ”</H5>
-            <Paragraph color='grey.600'>48 results found</Paragraph>
+            <H5>{`Searching for ${params}`} </H5>
+            <Paragraph color='grey.600'>
+              {`${data?.length} results found`}{' '}
+            </Paragraph>
           </Box>
 
           <FlexBox
@@ -102,7 +109,7 @@ const ProductSearchResult = () => {
                     </IconButton>
                   }
                 >
-                  <ProductFilterCard />
+                  <ProductFilterCard category={params} />
                 </Sidenav>
               )}
             </FlexBox>
@@ -120,11 +127,15 @@ const ProductSearchResult = () => {
               },
             }}
           >
-            <ProductFilterCard />
+            <ProductFilterCard category={params} />
           </Grid>
 
           <Grid item md={9} xs={12}>
-            {view === 'grid' ? <ProductCardList /> : <PaginationCard />}
+            {view === 'grid' ? (
+              <ProductCardList products={data || []} />
+            ) : (
+              <PaginationCard />
+            )}
           </Grid>
         </Grid>
       </Box>
@@ -150,4 +161,17 @@ const sortOptions = [
     value: 'Price High to Low',
   },
 ];
+export async function getServerSideProps(context) {
+  debugger;
+  console.log(context);
+
+  const params = context.params.id;
+  const data = await searchProduct(params);
+  return {
+    props: {
+      data: data || null,
+      params,
+    },
+  };
+}
 export default ProductSearchResult;
