@@ -2,7 +2,8 @@
 import ShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import FavoriteIcon from '@mui/icons-material/FavoriteBorder';
 import PreviewIcon from '@mui/icons-material/RemoveRedEye';
-import { Box, Chip, Divider, styled, useTheme } from '@mui/material';
+import { Box, Chip, Divider, useTheme } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import MigobucksRating from 'components/MigobucksRating';
 import { FlexBetween, FlexRowCenter } from 'components/flex-box';
 import LazyImage from 'components/LazyImage';

@@ -1,4 +1,5 @@
-import { Box, styled } from '@mui/material';
+import { Box } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import MigobucksButton from 'components/MigobucksButton';
 import { FlexBox, FlexRowCenter } from 'components/flex-box';
 import FrequentProductCard from 'components/product-cards/FrequentProductCard';

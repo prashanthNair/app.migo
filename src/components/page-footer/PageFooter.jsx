@@ -1,4 +1,5 @@
-import { Box, Container, Grid, styled } from '@mui/material';
+import { Box, Container, Grid } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import AppStore from 'components/AppStore';
 import MigobucksIconButton from 'components/MigobucksIconButton';
 import MigobucksImage from 'components/MigobucksImage';
@@ -39,7 +40,11 @@ const PageFooter = ({ sx, id, bgcolor }) => {
       <Container>
         <Link href='/'>
           <a>
-            <MigobucksImage mb={2.5} src='/assets/images/logo.svg' alt='logo' />
+            <MigobucksImage
+              mb={2.5}
+              src='/assets/images/mib-log.png'
+              alt='logo'
+            />
           </a>
         </Link>
 

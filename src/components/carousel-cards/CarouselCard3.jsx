@@ -1,4 +1,4 @@
-import { styled } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import MigobucksCard from 'components/MigobucksCard';
 import MigobucksImage from 'components/MigobucksImage';
 import { FlexBox } from 'components/flex-box';

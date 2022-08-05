@@ -1,4 +1,5 @@
-import { Card, Chip, styled } from '@mui/material';
+import { Card, Chip } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import HoverBox from 'components/HoverBox';
 import LazyImage from 'components/LazyImage';
 import React from 'react'; // styled components

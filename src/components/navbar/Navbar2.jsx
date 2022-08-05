@@ -1,5 +1,6 @@
 import ChevronRight from '@mui/icons-material/ChevronRight';
-import { Box, Container, styled } from '@mui/material';
+import { Box, Container } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import MigobucksButton from 'components/MigobucksButton';
 import MigobucksCard from 'components/MigobucksCard';
 import CategoryMenu from 'components/categories/CategoryMenu';

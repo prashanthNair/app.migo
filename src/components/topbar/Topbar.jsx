@@ -98,7 +98,7 @@ const Topbar = () => {
               <Image
                 display='block'
                 height='28px'
-                src='/assets/images/logo.svg'
+                src='/assets/images/mib-log.png'
                 alt='logo'
               />
             </Link>

@@ -1,6 +1,7 @@
-import { Box, styled } from "@mui/material";
-import { useRouter } from "next/router";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { Box } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import { useRouter } from 'next/router';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import {
   BadgeValue,
   BulletIcon,
@@ -8,21 +9,21 @@ import {
   ListIconWrapper,
   NavItemButton,
   StyledText,
-} from "./LayoutStyledComponents"; // styled component
+} from './LayoutStyledComponents'; // styled component
 
 const NavExpandRoot = styled(Box)(() => ({
-  "& .subMenu": {
+  '& .subMenu': {
     padding: 0,
   },
-  "& .navItem": {
-    background: "transparent",
+  '& .navItem': {
+    background: 'transparent',
   },
-  "& .expansion-panel": {
-    "& .expansion-panel": {
+  '& .expansion-panel': {
+    '& .expansion-panel': {
       paddingLeft: 8,
     },
-    overflow: "hidden",
-    transition: "max-height 0.3s cubic-bezier(0, 0, 0.2, 1)",
+    overflow: 'hidden',
+    transition: 'max-height 0.3s cubic-bezier(0, 0, 0.2, 1)',
   },
 })); // ================================================================
 
@@ -43,13 +44,13 @@ const SidebarAccordion = (props) => {
   };
 
   const calcaulateHeight = useCallback((node) => {
-    if (node.name !== "child") {
+    if (node.name !== 'child') {
       for (let child of node.children) {
         calcaulateHeight(child);
       }
     }
 
-    if (node.name === "child") componentHeight.current += node.scrollHeight;
+    if (node.name === 'child') componentHeight.current += node.scrollHeight;
     else componentHeight.current += 44; //here 44 is node height
 
     return;
@@ -71,15 +72,15 @@ const SidebarAccordion = (props) => {
     };
   }, [calcaulateHeight, item.children, router.pathname]);
   return (
-    <NavExpandRoot className="subMenu">
+    <NavExpandRoot className='subMenu'>
       <NavItemButton
         onClick={handleClick}
         active={hasActive ? 1 : 0}
         sx={{
-          justifyContent: "space-between",
+          justifyContent: 'space-between',
         }}
       >
-        <Box display="flex" alignItems="center">
+        <Box display='flex' alignItems='center'>
           {/* //@ts-ignore */}
           {icon && (
             <ListIconWrapper>
@@ -91,27 +92,27 @@ const SidebarAccordion = (props) => {
         </Box>
 
         {badge && (
-          <BadgeValue compact={sidebarCompact} className="itemIcon">
+          <BadgeValue compact={sidebarCompact} className='itemIcon'>
             {badge.value}
           </BadgeValue>
         )}
 
         <ChevronRightIcon
-          color="disabled"
+          color='disabled'
           compact={sidebarCompact}
-          className="accordionArrow"
+          className='accordionArrow'
           collapsed={collapsed ? 1 : 0}
         />
       </NavItemButton>
 
       <div
         ref={elementRef}
-        className="expansion-panel"
+        className='expansion-panel'
         style={{
           maxHeight:
             !collapsed || sidebarCompact
-              ? "0px"
-              : componentHeight.current + "px",
+              ? '0px'
+              : componentHeight.current + 'px',
         }}
       >
         {children}

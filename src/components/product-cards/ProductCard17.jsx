@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Add, Remove } from '@mui/icons-material';
-import { Box, Button, Chip, styled, useTheme } from '@mui/material';
+import { Box, Button, Chip, useTheme } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import MigobucksRating from 'components/MigobucksRating';
 import { FlexBox } from 'components/flex-box';
 import LazyImage from 'components/LazyImage';

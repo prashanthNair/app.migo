@@ -1,4 +1,6 @@
-import { Button, Grid, styled } from '@mui/material';
+import { Button, Grid } from '@mui/material';
+
+import { styled } from '@mui/material/styles';
 import MigobucksImage from 'components/MigobucksImage';
 import { FlexBetween } from 'components/flex-box';
 import { Paragraph } from 'components/Typography';

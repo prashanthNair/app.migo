@@ -1,5 +1,6 @@
 import { KeyboardArrowDown, PersonOutline } from '@mui/icons-material';
-import { Badge, Box, Dialog, Drawer, styled } from '@mui/material';
+import { Badge, Box, Dialog, Drawer } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import IconButton from '@mui/material/IconButton';
 import { useTheme } from '@mui/material/styles';
@@ -81,7 +82,7 @@ const Header = ({ isFixed, className }) => {
               <Image
                 height={28}
                 mb={0.5}
-                src='/assets/images/miblogo.png'
+                src='/assets/images/mib-log.png'
                 alt='logo'
               />
             </a>

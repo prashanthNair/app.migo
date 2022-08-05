@@ -1,10 +1,11 @@
-import { Drawer, styled } from "@mui/material";
-import clsx from "clsx";
-import React, { cloneElement, useEffect, useState } from "react"; // styled component
+import { Drawer } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import clsx from 'clsx';
+import React, { cloneElement, useEffect, useState } from 'react'; // styled component
 
-const Wrapper = styled("div")(() => ({
-  "& .handle": {
-    cursor: "pointer",
+const Wrapper = styled('div')(() => ({
+  '& .handle': {
+    cursor: 'pointer',
   },
 })); // ================================================================
 
@@ -45,7 +46,7 @@ const Sidenav = (props) => {
       {handle &&
         cloneElement(handle, {
           onClick: toggleSidenav || handleToggleSidenav,
-          className: clsx(handle.props?.className, "handle"),
+          className: clsx(handle.props?.className, 'handle'),
         })}
     </Wrapper>
   );
@@ -53,7 +54,7 @@ const Sidenav = (props) => {
 
 Sidenav.defaultProps = {
   width: 280,
-  position: "left",
+  position: 'left',
   open: false,
 };
 export default Sidenav;

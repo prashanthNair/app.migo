@@ -2,7 +2,8 @@
 import { Add, Remove, RemoveRedEye } from '@mui/icons-material';
 import ShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
-import { Box, Button, Chip, styled } from '@mui/material';
+import { Box, Button, Chip } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import MigobucksCard from 'components/MigobucksCard';
 import MigobucksRating from 'components/MigobucksRating';
 import { FlexBetween, FlexBox } from 'components/flex-box';

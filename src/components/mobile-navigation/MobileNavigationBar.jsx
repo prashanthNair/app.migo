@@ -1,4 +1,5 @@
-import { Badge, Box, styled } from '@mui/material';
+import { Badge, Box } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import CategoryOutlined from 'components/icons/CategoryOutline';
 import Home from 'components/icons/Home';
 import ShoppingBagOutlined from 'components/icons/ShoppingBagOutlined';

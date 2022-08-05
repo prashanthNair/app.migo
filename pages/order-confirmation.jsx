@@ -1,4 +1,6 @@
-import { Grid, styled } from '@mui/material';
+import { Grid } from '@mui/material';
+
+import { styled } from '@mui/material/styles';
 import MigobucksButton from 'components/MigobucksButton';
 import MigobucksCard from 'components/MigobucksCard';
 import NavbarLayout from 'components/layouts/NavbarLayout';

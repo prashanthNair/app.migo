@@ -20,7 +20,7 @@ const NewArrivals = ({ newArrivalsList }) => {
         <Grid container spacing={3}>
           {newArrivalsList.map((item) => (
             <Grid item lg={2} md={3} sm={4} xs={6} key={item.title}>
-              <NewArrivalCard {...item} />
+              <NewArrivalCard {...item} key={item.title} />
             </Grid>
           ))}
         </Grid>

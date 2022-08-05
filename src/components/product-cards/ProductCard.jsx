@@ -1,7 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Add, Favorite, Remove } from '@mui/icons-material';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
-import { Box, Button, Chip, IconButton, styled } from '@mui/material';
+import { Box, Button, Chip, IconButton } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import MigobucksCard from 'components/MigobucksCard';
 import MigobucksRating from 'components/MigobucksRating';
 import LazyImage from 'components/LazyImage';

@@ -1,4 +1,6 @@
-import { Box, Chip, Container, Grid, Pagination, styled } from '@mui/material';
+import { Box, Chip, Container, Grid, Pagination } from '@mui/material';
+
+import { styled } from '@mui/material/styles';
 import { FlexBetween, FlexBox, FlexRowCenter } from 'components/flex-box';
 import BeautyProducts from '../src/components/icons/BeautyProducts';
 import Camera from '../src/components/icons/Camera';

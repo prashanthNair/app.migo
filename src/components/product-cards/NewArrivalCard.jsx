@@ -1,4 +1,5 @@
-import { Box, styled } from '@mui/material';
+import { Box } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import HoverBox from 'components/HoverBox';
 import LazyImage from 'components/LazyImage';
 import { H4 } from 'components/Typography';

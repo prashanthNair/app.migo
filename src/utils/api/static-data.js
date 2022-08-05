@@ -1,112 +1,116 @@
-import axios from "axios";
-import {apiInstance} from "utils/helper/api"
-// import { baseApiUrl } from "utils/helper/api"; 
+import axios from 'axios';
+import { apiInstance } from 'utils/helper/api';
+// import { baseApiUrl } from "utils/helper/api";
 // export const getProducts = async () => {
 //   debugger
 //   const {data} = await apiInstance.get(`/inventory/products`,{
 //     params: {
 //       Status: "PUBLISHED",
 //     }
-//   }); 
+//   });
 //  return data
 // };
-export const getProductDetails = async (productId) => {
-  debugger
-  const {data} = await apiInstance.get(`/inventory/products/product/${productId}`,{
-    params: {
-      Status: "PUBLISHED",
+export const getProductDetails = async (productId, brandId) => {
+  debugger;
+
+  const { data } = await apiInstance.get(
+    `${baseApiUrl}/inventory/products/brand/${brandId}/product/${productId}`,
+    {
+      params: {
+        Status: 'PUBLISHED',
+      },
     }
-  }); 
- return data
+  );
+  return data;
 };
 
 export const getTopRatedProduct = async () => {
-  const response = await apiInstance.get("/api/super-store/toprated-product");
+  const response = await apiInstance.get('/api/super-store/toprated-product');
   return response.data;
 };
 
 const getTopRatedBrand = async () => {
-  const response = await axios.get("/api/super-store/toprated-brand");
+  const response = await axios.get('/api/super-store/toprated-brand');
   return response.data;
 };
 
 const getNewArrivalList = async () => {
-  const response = await axios.get("/api/super-store/new-arrivals");
+  const response = await axios.get('/api/super-store/new-arrivals');
   return response.data;
 };
 
 const getCarBrands = async () => {
-  const response = await axios.get("/api/super-store/car-brand-list");
+  const response = await axios.get('/api/super-store/car-brand-list');
   return response.data;
 };
 
 const getCarList = async () => {
-  const response = await axios.get("/api/super-store/car-list");
+  const response = await axios.get('/api/super-store/car-list');
   return response.data;
 };
 
 const getMobileBrands = async () => {
-  const response = await axios.get("/api/super-store/mobile-brand-list");
+  const response = await axios.get('/api/super-store/mobile-brand-list');
   return response.data;
 };
 
 const getMobileShops = async () => {
-  const response = await axios.get("/api/super-store/mobile-shop-list");
+  const response = await axios.get('/api/super-store/mobile-shop-list');
   return response.data;
 };
 
 const getMobileList = async () => {
-  const response = await axios.get("/api/super-store/mobile-list");
+  const response = await axios.get('/api/super-store/mobile-list');
   return response.data;
 };
 
 const getOpticsBrands = async () => {
-  const response = await axios.get("/api/super-store/optics/watch-brands");
+  const response = await axios.get('/api/super-store/optics/watch-brands');
   return response.data;
 };
 
 const getOpticsShops = async () => {
-  const response = await axios.get("/api/super-store/optics/watch-shops");
+  const response = await axios.get('/api/super-store/optics/watch-shops');
   return response.data;
 };
 
 const getOpticsList = async () => {
-  const response = await axios.get("/api/super-store/optics-list");
+  const response = await axios.get('/api/super-store/optics-list');
   return response.data;
 };
 
 const getCategories = async () => {
-  const response = await axios.get("/api/super-store/bottom-categories");
+  const response = await axios.get('/api/super-store/bottom-categories');
   return response.data;
 };
 
 const getMoreItems = async () => {
-  const response = await axios.get("/api/super-store/get-more-items");
+  const response = await axios.get('/api/super-store/get-more-items');
   return response.data;
 };
 
 const getServiceList = async () => {
-  const response = await axios.get("/api/super-store/get-service-list");
+  const response = await axios.get('/api/super-store/get-service-list');
   return response.data;
 };
 
 const getMainCarousel = async () => {
-  const response = await axios.get("/api/super-store/main-carousel");
+  const response = await axios.get('/api/super-store/main-carousel');
   return response.data;
 };
 
 const getFlashDeals = async () => {
-  const response = await axios.get("/api/super-store/flash-deals");
+  const response = await axios.get('/api/super-store/flash-deals');
   return response.data;
 };
 
 const getTopCategories = async () => {
-  const response = await axios.get("/api/super-store/top-categories");
+  const response = await axios.get('/api/super-store/top-categories');
   return response.data;
 };
 
 const getBigDiscountList = async () => {
-  const response = await axios.get("/api/super-store/big-discounts");
+  const response = await axios.get('/api/super-store/big-discounts');
   return response.data;
 }; // eslint-disable-next-line import/no-anonymous-default-export
 

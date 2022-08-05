@@ -1,4 +1,5 @@
-import { Box, styled, useTheme } from '@mui/material';
+import { Box, useTheme } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import Accordion from 'components/accordion/Accordion';
 import AccordionHeader from 'components/accordion/AccordionHeader';
 import MigobucksCard from 'components/MigobucksCard';

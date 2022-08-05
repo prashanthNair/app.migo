@@ -1,4 +1,5 @@
-import { Box, Container, Grid, styled } from '@mui/material';
+import { Box, Container, Grid } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import MigobucksCard from '../MigobucksCard';
 import CategorySectionHeader from '../CategorySectionHeader';
 import Category from '../icons/Category';

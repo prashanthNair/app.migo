@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Badge, Box, Drawer, styled } from '@mui/material';
+import { Badge, Box, Drawer } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import CategoryOutlined from 'components/icons/CategoryOutline';
 import Home from 'components/icons/Home';
 import ShoppingBagOutlined from 'components/icons/ShoppingBagOutlined';

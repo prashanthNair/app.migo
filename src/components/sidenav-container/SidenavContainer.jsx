@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Box, Container, styled } from '@mui/material';
+import { Box, Container } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import clsx from 'clsx';
 import React, { useCallback, useEffect, useState } from 'react';
 import { layoutConstant } from 'utils/constants';

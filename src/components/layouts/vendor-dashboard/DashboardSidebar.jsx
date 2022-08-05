@@ -137,7 +137,7 @@ const DashboardSidebar = (props) => {
             alt='Logo'
             width='auto'
             height={24}
-            src='/assets/images/logo.svg'
+            src='/assets/images/mib-log.png'
             style={{
               marginLeft: 8,
             }}
@@ -161,7 +161,7 @@ const DashboardSidebar = (props) => {
         justifyContent={COMPACT ? 'center' : 'space-between'}
       >
         <Avatar
-          src={COMPACT ? '/assets/white-fav.svg' : '/assets/images/logo.svg'}
+          src={COMPACT ? '/assets/white-fav.svg' : '/assets/images/mib-log.png'}
           sx={{
             borderRadius: 0,
             width: 'auto',

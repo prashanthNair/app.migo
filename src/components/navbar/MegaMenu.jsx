@@ -1,4 +1,5 @@
-import { Box, Grid, List, ListItem, styled } from '@mui/material';
+import { Box, Grid, List, ListItem } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import MigobucksCard from 'components/MigobucksCard';
 import NavLink from 'components/nav-link/NavLink';
 import { H6 } from 'components/Typography';

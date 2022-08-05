@@ -1,23 +1,24 @@
-import { alpha, styled } from "@mui/material";
-import SimpleBar from "simplebar-react";
+import { alpha } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import SimpleBar from 'simplebar-react';
 const StyledScrollBar = styled(SimpleBar)(({ theme }) => ({
-  maxHeight: "100%",
-  "& .simplebar-scrollbar": {
-    "&.simplebar-visible:before": {
+  maxHeight: '100%',
+  '& .simplebar-scrollbar': {
+    '&.simplebar-visible:before': {
       opacity: 1,
     },
-    "&:before": {
+    '&:before': {
       backgroundColor: alpha(theme.palette.grey[400], 0.6),
     },
   },
-  "& .simplebar-track.simplebar-vertical": {
+  '& .simplebar-track.simplebar-vertical': {
     width: 9,
   },
-  "& .simplebar-track.simplebar-horizontal .simplebar-scrollbar": {
+  '& .simplebar-track.simplebar-horizontal .simplebar-scrollbar': {
     height: 6,
   },
-  "& .simplebar-mask": {
-    zIndex: "inherit",
+  '& .simplebar-mask': {
+    zIndex: 'inherit',
   },
 })); // props type
 

@@ -1,20 +1,22 @@
-import { Box, FormHelperText, styled } from "@mui/material";
-import dynamic from "next/dynamic";
-import React from "react"; //react quill
+import { Box, FormHelperText } from '@mui/material';
 
-const CustomQuill = dynamic(() => import("react-quill"), {
+import { styled } from '@mui/material/styles';
+import dynamic from 'next/dynamic';
+import React from 'react'; //react quill
+
+const CustomQuill = dynamic(() => import('react-quill'), {
   ssr: false,
 });
 const Container = styled(Box)(({ theme, box_height }) => ({
-  "& .ql-toolbar": {
-    borderColor: "transparent",
-    borderRadius: "12px 12px 0px 0px",
+  '& .ql-toolbar': {
+    borderColor: 'transparent',
+    borderRadius: '12px 12px 0px 0px',
     backgroundColor: theme.palette.divider,
   },
-  "& .ql-editor": {
+  '& .ql-editor': {
     minHeight: box_height ?? 500,
   },
-  "& .ql-container": {
+  '& .ql-container': {
     minHeight: box_height ?? 500,
     borderColor: theme.palette.divider,
   },
@@ -24,7 +26,7 @@ const Container = styled(Box)(({ theme, box_height }) => ({
 const ReactQuill = ({ error, box_height, ...props }) => {
   return (
     <Container box_height={box_height}>
-      <CustomQuill theme="snow" modules={modules} {...props} />
+      <CustomQuill theme='snow' modules={modules} {...props} />
       {error && <FormHelperText error>{error}</FormHelperText>}
     </Container>
   );
@@ -42,23 +44,23 @@ const modules = {
         font: [],
       },
     ],
-    ["bold", "italic", "underline", "strike", "blockquote"],
+    ['bold', 'italic', 'underline', 'strike', 'blockquote'],
     [
       {
-        list: "ordered",
+        list: 'ordered',
       },
       {
-        list: "bullet",
+        list: 'bullet',
       },
       {
-        indent: "-1",
+        indent: '-1',
       },
       {
-        indent: "+1",
+        indent: '+1',
       },
     ],
-    ["link", "image", "video"],
-    ["clean"],
+    ['link', 'image', 'video'],
+    ['clean'],
   ],
 };
 export default ReactQuill;

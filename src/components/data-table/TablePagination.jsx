@@ -1,4 +1,5 @@
-import { Pagination, styled } from '@mui/material';
+import { Pagination } from '@mui/material';
+import { styled } from '@mui/material/styles';
 export const StyledPagination = styled(Pagination)(({ theme }) => ({
   '& .MuiPaginationItem-root': {
     fontSize: 14,

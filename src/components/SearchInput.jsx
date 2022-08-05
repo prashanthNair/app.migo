@@ -1,21 +1,22 @@
-import { Search } from "@mui/icons-material";
-import { InputBase, styled } from "@mui/material";
-import React from "react"; // styled component
+import { Search } from '@mui/icons-material';
+import { InputBase } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import React from 'react'; // styled component
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   height: 44,
   fontSize: 14,
-  width: "100%",
+  width: '100%',
   maxWidth: 350,
   fontWeight: 500,
-  padding: "0 1rem",
-  borderRadius: "8px",
+  padding: '0 1rem',
+  borderRadius: '8px',
   color: theme.palette.grey[600],
   backgroundColor: theme.palette.background.paper,
-  [theme.breakpoints.down("sm")]: {
-    maxWidth: "100%",
+  [theme.breakpoints.down('sm')]: {
+    maxWidth: '100%',
   },
-  "::placeholder": {
+  '::placeholder': {
     color: theme.palette.text.disabled,
   },
 }));

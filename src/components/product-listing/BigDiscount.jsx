@@ -8,7 +8,8 @@ import GiftBox from '../icons/GiftBox';
 import LazyImage from '../LazyImage';
 import { H4 } from '../Typography';
 import useWindowSize from 'hooks/useWindowSize';
-import { styled } from '@mui/system';
+// import { styled } from '@mui/system';
+import { styled } from '@mui/material/styles';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 const ContentWrapper = styled(Box)(() => ({

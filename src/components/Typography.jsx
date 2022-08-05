@@ -1,11 +1,13 @@
-import { Box, styled } from "@mui/material";
-import clsx from "clsx";
-import React from "react";
+import { Box } from '@mui/material';
+
+import { styled } from '@mui/material/styles';
+import clsx from 'clsx';
+import React from 'react';
 const StyledBox = styled(Box)(({ textTransformStyle, ellipsis }) => ({
-  textTransform: textTransformStyle || "none",
-  whiteSpace: ellipsis ? "nowrap" : "normal",
-  overflow: ellipsis ? "hidden" : "",
-  textOverflow: ellipsis ? "ellipsis" : "",
+  textTransform: textTransformStyle || 'none',
+  whiteSpace: ellipsis ? 'nowrap' : 'normal',
+  overflow: ellipsis ? 'hidden' : '',
+  textOverflow: ellipsis ? 'ellipsis' : '',
 }));
 export const H1 = ({
   children,
@@ -19,14 +21,14 @@ export const H1 = ({
       textTransformStyle={textTransform}
       ellipsis={ellipsis}
       className={clsx({
-        [className || ""]: true,
+        [className || '']: true,
       })}
-      component="h1"
+      component='h1'
       mb={0}
       mt={0}
-      fontSize="30px"
-      fontWeight="700"
-      lineHeight="1.5"
+      fontSize='30px'
+      fontWeight='700'
+      lineHeight='1.5'
       {...props}
     >
       {children}
@@ -45,14 +47,14 @@ export const H2 = ({
       textTransformStyle={textTransform}
       ellipsis={ellipsis}
       className={clsx({
-        [className || ""]: true,
+        [className || '']: true,
       })}
-      component="h2"
+      component='h2'
       mb={0}
       mt={0}
-      fontSize="25px"
-      fontWeight="700"
-      lineHeight="1.5"
+      fontSize='25px'
+      fontWeight='700'
+      lineHeight='1.5'
       {...props}
     >
       {children}
@@ -71,14 +73,14 @@ export const H3 = ({
       textTransformStyle={textTransform}
       ellipsis={ellipsis}
       className={clsx({
-        [className || ""]: true,
+        [className || '']: true,
       })}
-      component="h3"
+      component='h3'
       mb={0}
       mt={0}
-      fontSize="20px"
-      fontWeight="700"
-      lineHeight="1.5"
+      fontSize='20px'
+      fontWeight='700'
+      lineHeight='1.5'
       {...props}
     >
       {children}
@@ -97,14 +99,14 @@ export const H4 = ({
       textTransformStyle={textTransform}
       ellipsis={ellipsis}
       className={clsx({
-        [className || ""]: true,
+        [className || '']: true,
       })}
-      component="h4"
+      component='h4'
       mb={0}
       mt={0}
-      fontSize="17px"
-      fontWeight="600"
-      lineHeight="1.5"
+      fontSize='17px'
+      fontWeight='600'
+      lineHeight='1.5'
       {...props}
     >
       {children}
@@ -123,14 +125,14 @@ export const H5 = ({
       textTransformStyle={textTransform}
       ellipsis={ellipsis}
       className={clsx({
-        [className || ""]: true,
+        [className || '']: true,
       })}
-      component="h5"
+      component='h5'
       mb={0}
       mt={0}
-      fontSize="16px"
-      fontWeight="600"
-      lineHeight="1.5"
+      fontSize='16px'
+      fontWeight='600'
+      lineHeight='1.5'
       {...props}
     >
       {children}
@@ -149,14 +151,14 @@ export const H6 = ({
       textTransformStyle={textTransform}
       ellipsis={ellipsis}
       className={clsx({
-        [className || ""]: true,
+        [className || '']: true,
       })}
-      component="h6"
+      component='h6'
       mb={0}
       mt={0}
-      fontSize="14px"
-      fontWeight="600"
-      lineHeight="1.5"
+      fontSize='14px'
+      fontWeight='600'
+      lineHeight='1.5'
       {...props}
     >
       {children}
@@ -175,12 +177,12 @@ export const Paragraph = ({
       textTransformStyle={textTransform}
       ellipsis={ellipsis}
       className={clsx({
-        [className || ""]: true,
+        [className || '']: true,
       })}
-      component="p"
+      component='p'
       mb={0}
       mt={0}
-      fontSize="14px"
+      fontSize='14px'
       {...props}
     >
       {children}
@@ -199,11 +201,11 @@ export const Small = ({
       textTransformStyle={textTransform}
       ellipsis={ellipsis}
       className={clsx({
-        [className || ""]: true,
+        [className || '']: true,
       })}
-      component="small"
-      fontSize="12px"
-      lineHeight="1.5"
+      component='small'
+      fontSize='12px'
+      lineHeight='1.5'
       {...props}
     >
       {children}
@@ -222,10 +224,10 @@ export const Span = ({
       textTransformStyle={textTransform}
       ellipsis={ellipsis}
       className={clsx({
-        [className || ""]: true,
+        [className || '']: true,
       })}
-      component="span"
-      lineHeight="1.5"
+      component='span'
+      lineHeight='1.5'
       {...props}
     >
       {children}
@@ -244,11 +246,11 @@ export const Tiny = ({
       textTransformStyle={textTransform}
       ellipsis={ellipsis}
       className={clsx({
-        [className || ""]: true,
+        [className || '']: true,
       })}
-      component="small"
-      fontSize="10px"
-      lineHeight="1.5"
+      component='small'
+      fontSize='10px'
+      lineHeight='1.5'
       {...props}
     >
       {children}

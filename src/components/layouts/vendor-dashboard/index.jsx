@@ -1,24 +1,25 @@
-import { Box, styled } from "@mui/material";
-import { Fragment, useState } from "react";
-import DashboardNavbar from "./DashboardNavbar";
-import DashboardSidebar from "./DashboardSidebar"; // styled components
+import { Box } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import { Fragment, useState } from 'react';
+import DashboardNavbar from './DashboardNavbar';
+import DashboardSidebar from './DashboardSidebar'; // styled components
 
 const BodyWrapper = styled(Box)(({ theme, compact }) => ({
-  transition: "margin-left 0.3s",
-  marginLeft: compact ? "86px" : "280px",
-  [theme.breakpoints.down("lg")]: {
+  transition: 'margin-left 0.3s',
+  marginLeft: compact ? '86px' : '280px',
+  [theme.breakpoints.down('lg')]: {
     marginLeft: 0,
   },
 }));
 const InnerWrapper = styled(Box)(({ theme }) => ({
-  transition: "all 0.3s",
-  [theme.breakpoints.up("lg")]: {
+  transition: 'all 0.3s',
+  [theme.breakpoints.up('lg')]: {
     maxWidth: 1200,
-    margin: "auto",
+    margin: 'auto',
   },
   [theme.breakpoints.down(1550)]: {
-    paddingLeft: "2rem",
-    paddingRight: "2rem",
+    paddingLeft: '2rem',
+    paddingRight: '2rem',
   },
 }));
 

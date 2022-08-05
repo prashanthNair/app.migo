@@ -1,4 +1,5 @@
-import { Avatar, Box, IconButton, Menu, MenuItem, styled } from '@mui/material';
+import { Avatar, Box, IconButton, Menu, MenuItem } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import { H6, Small } from 'components/Typography';
 import React, { useState } from 'react'; // styled components
 

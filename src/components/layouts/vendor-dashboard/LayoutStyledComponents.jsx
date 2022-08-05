@@ -1,5 +1,6 @@
 import { ChevronLeft, ChevronRight } from '@mui/icons-material';
-import { alpha, Box, ButtonBase, styled } from '@mui/material';
+import { alpha, Box, ButtonBase } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import { Paragraph, Span } from 'components/Typography'; // ===============================================================
 
 // ===============================================================

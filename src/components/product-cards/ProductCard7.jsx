@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Add, Close, Remove } from '@mui/icons-material';
-import { Button, Card, IconButton, styled } from '@mui/material';
+import { Button, Card, IconButton } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import Image from 'components/MigobucksImage';
 import { FlexBox } from 'components/flex-box';
 import { Span } from 'components/Typography';
