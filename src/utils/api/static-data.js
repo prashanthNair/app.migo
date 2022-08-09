@@ -11,7 +11,7 @@ import { apiInstance } from 'utils/helper/api';
 //  return data
 // };
 export const getProductDetails = async (productId, brandId) => {
-  debugger;
+    
 
   const { data } = await apiInstance.get(
     `${baseApiUrl}/inventory/products/brand/${brandId}/product/${productId}`,

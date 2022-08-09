@@ -19,6 +19,7 @@ import Login from '../sessions/Login';
 import { useState } from 'react';
 import { layoutConstant } from 'utils/constants';
 import SearchBox from '../search-box/SearchBox'; // styled component
+import { useSelector, shallowEqual } from 'react-redux';
 
 export const HeaderWrapper = styled(Box)(({ theme }) => ({
   zIndex: 3,
@@ -33,8 +34,10 @@ export const HeaderWrapper = styled(Box)(({ theme }) => ({
 
 // ==============================================================
 const Header = ({ isFixed, className }) => {
+  debugger;
   const theme = useTheme();
-  const { state } = useAppContext();
+  const cartItems =
+    useSelector((state) => state.customer?.cart, shallowEqual) || [];
   const [dialogOpen, setDialogOpen] = useState(false);
   const [sidenavOpen, setSidenavOpen] = useState(false);
   const isMobile = useMediaQuery(theme.breakpoints.down('xs'));
@@ -44,7 +47,7 @@ const Header = ({ isFixed, className }) => {
   const toggleSidenav = () => setSidenavOpen(!sidenavOpen);
 
   const cartHandle = (
-    <Badge badgeContent={state.cart.length} color='primary'>
+    <Badge badgeContent={cartItems?.length || 0} color='primary'>
       <Box
         component={IconButton}
         ml={2.5}

@@ -56,7 +56,7 @@ const MegaMenu3 = ({ data: { categories, rightImage }, minWidth }) => {
           )}
         </FlexBox>
 
-        <Link href='/sale-page-2'>
+        <Link href='/  sale-page'>
           <a>
             <Grid
               className='h-full'

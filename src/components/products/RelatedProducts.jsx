@@ -5,6 +5,7 @@ import React from 'react'; // ==================================================
 
 // ===================================================
 const RelatedProducts = ({ productsData }) => {
+  if (!productsData) return <></>;
   return (
     <Box mb={7.5}>
       <H3 mb={3}>Realted Products</H3>
@@ -19,6 +20,7 @@ const RelatedProducts = ({ productsData }) => {
               }
               id={item.ProductId}
               tittle={item.Title}
+              brandId={item.BrandId}
               price={item.SellingPrice || 0}
               rating={item.Rating}
               hideRating={''}

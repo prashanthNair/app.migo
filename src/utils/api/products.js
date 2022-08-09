@@ -4,7 +4,7 @@ import { baseApiUrl } from 'utils/helper/api';
 import { responseBuilder } from '../helper/index';
 
 export const getProducts = async () => {
-  debugger;
+    
   return responseBuilder(
     await apiInstance.get(`${baseApiUrl}/inventory/products`, {
       params: {
@@ -14,7 +14,7 @@ export const getProducts = async () => {
   );
 };
 export const getProductDetails = async (productId, brandId) => {
-  debugger;
+    
   return responseBuilder(
     await apiInstance.get(
       `${baseApiUrl}/inventory/products/brand/${brandId}/product/${productId}`,
@@ -28,7 +28,7 @@ export const getProductDetails = async (productId, brandId) => {
 };
 
 export const searchProduct = async (params) => {
-  debugger;
+    
   return responseBuilder(
     await apiInstance.get(`${baseApiUrl}/inventory/products/search`, {
       params: {

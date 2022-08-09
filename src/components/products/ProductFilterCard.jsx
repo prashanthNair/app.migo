@@ -15,7 +15,6 @@ import React from 'react';
 import { FILTER_CATEGORIES } from '../../utils/data/index';
 
 const ProductFilterCard = ({ category }) => {
-  debugger;
   console.log(FILTER_CATEGORIES);
   const keys = Object.keys(FILTER_CATEGORIES[category]);
   return (

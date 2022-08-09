@@ -61,6 +61,7 @@ const ProductCard = ({
   imgUrl,
   id,
   tittle,
+  brandId,
   price,
   rating,
   hideRating,
@@ -111,7 +112,7 @@ const ProductCard = ({
           </IconButton>
         </LoveIconWrapper>
 
-        <Link href={`/product/${id}`}>
+        <Link href={`/product/${brandId}/${id}`}>
           <a>
             <LazyImage
               src={imgUrl || ''}
@@ -128,7 +129,7 @@ const ProductCard = ({
       <ContentWrapper>
         <FlexBox>
           <Box flex='1 1 0' minWidth='0px' mr={1}>
-            <Link href={`/product/${id}`}>
+            <Link href={`/product/${brandId}/${id}`}>
               <a>
                 <H3
                   mb={1}

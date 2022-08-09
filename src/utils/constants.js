@@ -12,3 +12,6 @@ export const layoutConstant = {
   headerHeight: 80,
   mobileHeaderHeight: 64,
 };
+
+
+export const baseApiUrl = "https://api.dev.migobucks.com";

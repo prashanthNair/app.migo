@@ -6,15 +6,18 @@ import MigobucksButton from 'components/MigobucksButton';
 import MigobucksRating from 'components/MigobucksRating';
 import LazyImage from 'components/LazyImage';
 import { H1, H2, H3, H6 } from 'components/Typography';
-import { useAppContext } from 'contexts/AppContext';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { Fragment, useCallback, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import React, { useCallback, useState } from 'react';
 import ImageViewer from 'react-simple-image-viewer';
 import { FlexBox, FlexRowCenter } from '../flex-box'; // ================================================================
+import { postCartThunk } from 'store/slices/customerSlice';
 
 // ================================================================
 const ProductIntro = ({ product }) => {
+  const dispatch = useDispatch();
+  debugger;
   const {
     ProductId,
     Title,
@@ -23,16 +26,16 @@ const ProductIntro = ({ product }) => {
     Rating,
     Reviews,
     BrandName,
+    ProductName,
   } = product;
-  const { SellingPrice } = product?.VariantInfo || 0;
+  const { SellingPrice, ModelName, Color } = product?.VariantInfo[0] || {};
   const router = useRouter();
   const routerId = router.query.id;
   const [selectedImage, setSelectedImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
-  const { state, dispatch } = useAppContext();
 
-  const cartList = state.cart;
+  const cartList = [];
   const cartItem = cartList.find(
     (item) => item.id === ProductId || item.id === routerId
   );
@@ -53,16 +56,23 @@ const ProductIntro = ({ product }) => {
 
   const handleCartAmountChange = useCallback(
     (amount) => () => {
-      dispatch({
-        type: 'CHANGE_CART_AMOUNT',
-        payload: {
-          price: SellingPrice,
-          qty: amount,
-          name: Title,
-          imgUrl: ImageLinks[0],
-          id: ProductId || routerId,
-        },
-      });
+      dispatch(
+        postCartThunk({
+          ProductId,
+          Title,
+          ImageLinks,
+          ProductBrand,
+          Rating,
+          Reviews,
+          BrandName,
+          ProductName,
+          SellingPrice,
+
+          ModelName,
+          Color,
+          Quantity: 1,
+        })
+      );
     },
     []
   );

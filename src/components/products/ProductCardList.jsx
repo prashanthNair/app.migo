@@ -4,7 +4,6 @@ import ProductCard from 'components/product-cards/ProductCard';
 import { Span } from 'components/Typography';
 import { Fragment } from 'react';
 const ProductCardList = ({ products }) => {
-  debugger;
   return (
     <Fragment>
       <Grid container spacing={3}>
@@ -16,6 +15,7 @@ const ProductCardList = ({ products }) => {
                 'https://mibuploaddev.s3.ap-south-1.amazonaws.com/inbound/inventory/brand/BR1651736511090/P1651745595431/aa2e4e45-92aa-4166-956b-507d9f6724ad.jpg'
               }
               id={item.ProductId}
+              brandId={item.BrandId}
               tittle={item.Title}
               price={item.SellingPrice || 0}
               rating={item.Rating}

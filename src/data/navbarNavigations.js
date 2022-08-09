@@ -136,7 +136,7 @@ export const megaMenus = [
         },
         {
           title: "Sales Version 2",
-          url: "/sale-page-2",
+          url: "/  sale-page",
         },
       ],
     },
@@ -230,7 +230,7 @@ const navbarNavigations = [
   //         },
   //         {
   //           title: "Version 2",
-  //           url: "/sale-page-2",
+  //           url: "/  sale-page",
   //         },
   //       ],
   //     },

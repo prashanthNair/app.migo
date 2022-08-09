@@ -5,10 +5,12 @@ import { configureStore, getDefaultMiddleware ,combineReducers} from "@reduxjs/t
 import monitorReducersEnhancer from "./enhancers/monitorReducer";
 import loggerMiddleware from "./middleware/logger";
 import productSlice from "./slices/productSlice"; 
+import customerSlice from "./slices/customerSlice"; 
 import { createWrapper,HYDRATE } from 'next-redux-wrapper'
 
 const combinedReducer = combineReducers({
     migoStore: productSlice, 
+    customer:customerSlice
   });
 
 const masterReducer = (state, action) => {

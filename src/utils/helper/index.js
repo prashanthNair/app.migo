@@ -71,8 +71,8 @@ export const getProfileCompletionScore = (data) => {
   return score;
 };
  
-export const responseBuilder = (response) => {
-  debugger
+export const responseBuilder = (response) => { 
+  debugger;
   let responseBody = null;
   if (!response) {
     return responseBody;

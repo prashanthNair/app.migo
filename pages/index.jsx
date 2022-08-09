@@ -16,9 +16,8 @@ import {
   getCategories,
   getTopCategories,
 } from '../src/utils/api/static-data-helper';
-import { getProducts } from '../src/utils/api/products';
+import { getProducts } from './api/products/index';
 const IndexPage = (props) => {
-  debugger;
   const {
     moreItems,
     serviceList,

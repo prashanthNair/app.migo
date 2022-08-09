@@ -20,7 +20,6 @@ import { searchProduct } from '../../../src/utils/api/products';
 import { useRouter } from 'next/router';
 
 const ProductSearchResult = ({ data, params }) => {
-  debugger;
   const router = useRouter();
   const { id } = router.query;
   const [view, setView] = useState('grid');
@@ -162,7 +161,6 @@ const sortOptions = [
   },
 ];
 export async function getServerSideProps(context) {
-  debugger;
   console.log(context);
 
   const params = context.params.id;

@@ -16,12 +16,13 @@ const WrapperBox = styled(Box)(({ theme }) => ({
 
 // ============================================================
 const FrequentlyBought = ({ productsData }) => {
+  if (!productsData) return <></>;
   return (
     <WrapperBox mb={7.5}>
       <H3 mb={3}>Frequently Bought Together</H3>
 
       <FlexBox className='card-holder' flexWrap='wrap' m={-1}>
-        {productsData.map((item, ind) => (
+        {productsData?.map((item, ind) => (
           <Fragment key={item.id}>
             <FrequentProductCard
               sx={{

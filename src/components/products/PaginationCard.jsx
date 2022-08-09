@@ -1,6 +1,6 @@
 import { Pagination } from '@mui/material';
 import { FlexBetween } from 'components/flex-box';
-import ProductCard9 from 'components/product-cards/ProductCard9';
+import ProductCard from 'components/product-cards/ProductCard';
 import productDatabase from 'data/product-database';
 import React from 'react';
 import { Span } from '../Typography'; // ==========================================================
@@ -10,7 +10,7 @@ const PaginationCard = () => {
   return (
     <div>
       {productDatabase.slice(95, 104).map((item, ind) => (
-        <ProductCard9 key={ind} {...item} />
+        <ProductCard key={ind} {...item} />
       ))}
 
       <FlexBetween flexWrap='wrap' mt={4}>

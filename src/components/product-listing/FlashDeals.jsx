@@ -7,7 +7,6 @@ import useWindowSize from 'hooks/useWindowSize';
 import React, { useEffect, useState } from 'react';
 
 const FlashDeals = ({ flashDeals }) => {
-  debugger;
   const [visibleSlides, setVisibleSlides] = useState(4);
   const width = useWindowSize();
   useEffect(() => {
@@ -36,6 +35,7 @@ const FlashDeals = ({ flashDeals }) => {
                   'https://mibuploaddev.s3.ap-south-1.amazonaws.com/inbound/inventory/brand/BR1651736511090/P1651745595431/aa2e4e45-92aa-4166-956b-507d9f6724ad.jpg'
                 }
                 id={item.ProductId}
+                brandId={item.BrandId}
                 tittle={item.Title}
                 price={item.SellingPrice || 0}
                 rating={item.Rating}

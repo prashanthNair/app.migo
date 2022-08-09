@@ -4,11 +4,14 @@ import MobileNavigationBar from 'components/mobile-navigation/MobileNavigationBa
 import Sticky from 'components/sticky/Sticky';
 import Topbar from 'components/topbar/Topbar';
 import Head from 'next/head';
-import React, { Fragment, useCallback, useState } from 'react'; // ===================================================
+import React, { Fragment, useCallback, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { getCartThunk } from 'store/slices/customerSlice';
 
-// ===================================================
 const AppLayout = ({ navbar, children, title = 'Migobucks' }) => {
   const [isFixed, setIsFixed] = useState(false);
+  const dispatch = useDispatch();
+  dispatch(getCartThunk('C131212'));
   const toggleIsFixed = useCallback((fixed) => {
     setIsFixed(fixed);
   }, []);
